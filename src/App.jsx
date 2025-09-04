@@ -1,18 +1,20 @@
 import { useState } from 'react'
+import reactLogo from './assets/react.svg'
 import Header from './components/Layout/Header'
-import Carrousel from './components/ui/Carrousel'
+import ElegantCarousel from './components/ui/Carrousel'
 import Hero from './components/ui/Hero'
+import SingleShowcase from './components/ui/DownloadApp'
 
 function App() {
-  const [count, setCount] = useState(0)
 
 
   return (
-    <>
+    <div className="w-full"> 
         <Header />
         <Hero />
-        <Carrousel />
-    </>
+        <ElegantCarousel />
+        <SingleShowcase />
+    </div>
   )
 }
 

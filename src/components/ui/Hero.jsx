@@ -10,7 +10,7 @@ export default function Hero ({
       
       <div className="w-[300px] flex justify-center">
         <img 
-          src={slides[4].src} 
+          src={slides[3].src} 
           alt="Space Eyes Logo" 
           className="w-full h-auto object-contain"
         />
