@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
 import Header from './components/Layout/Header'
 import Carrousel from './components/ui/Carrousel'
 import Hero from './components/ui/Hero'
@@ -14,7 +12,6 @@ function App() {
         <Header />
         <Hero />
         <Carrousel />
-        
     </>
   )
 }
