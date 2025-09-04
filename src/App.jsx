@@ -5,14 +5,14 @@ import './App.css'
 import Header from './components/Layout/Header'
 import Carrousel from './components/ui/Carrousel'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
+
   return (
     <>
-        <Header />
-        <Carrousel />
-      
+        <Carrousel/>
     </>
   )
 }
