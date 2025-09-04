@@ -1,12 +1,11 @@
-import React from 'react';
-import { Flame, Github, Twitter, Mail, Globe, Shield, AlertTriangle, Heart } from 'lucide-react';
+import { Flame, Github, Mail, Globe, AlertTriangle, Divide } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          
+
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-orange-600 rounded flex items-center justify-center">
@@ -23,7 +22,7 @@ const Footer = () => {
               and natural resources worldwide.
             </p>
 
-            
+
             <div className="bg-red-900 bg-opacity-50 border border-red-700 rounded-lg p-4 mb-6">
               <div className="flex items-start">
                 <AlertTriangle className="w-5 h-5 text-red-400 mt-0.5 mr-3 flex-shrink-0" />
@@ -65,48 +64,30 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
           
-          <div>
-            <h3 className="text-lg font-semibold text-gray-200 mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Live Map</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Data & Analytics</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-            </ul>
-          </div>
+          <div className="col-span-2">
+            <div className="flex flex-col md:flex-row justify-center gap-8">
 
-          
-          <div>
-            <h3 className="text-lg font-semibold text-gray-200 mb-4">Legal & Support</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors flex items-center">
-                  <Shield className="w-4 h-4 mr-2" />
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors flex items-center">
-                  <Heart className="w-4 h-4 mr-2" />
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors flex items-center">
-                  <Globe className="w-4 h-4 mr-2" />
-                  Cookie Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors flex items-center">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Contact
-                </a>
-              </li>
-            </ul>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-200 mb-4">Products</h3>
+                <ul className="space-y-2">
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FireWatch</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">SeaWatch</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">CarbonWatch</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FinancialWatch</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-gray-200 mb-4">Useful Links</h3>
+                <ul className="space-y-2">
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About us</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -121,4 +102,3 @@ const Footer = () => {
 };
 
 export default Footer;
- 
