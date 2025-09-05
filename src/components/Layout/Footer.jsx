@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 import { Flame, Github, Mail, Globe, AlertTriangle } from 'lucide-react';
+=======
+import {  Github, Mail, Globe, AlertTriangle } from 'lucide-react';
+import { LogoSpaceEyesWhite } from '..';
+>>>>>>> Stashed changes
 
 const Footer = () => {
   return (
@@ -8,8 +13,12 @@ const Footer = () => {
 
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-orange-600 rounded flex items-center justify-center">
-                <Flame className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 bg-gradient-to-br  rounded flex items-center justify-center">
+                <img
+                  src={LogoSpaceEyesWhite.src}
+                  alt="Space Eyes Logo"
+                  className="w-full h-auto object-contain"
+                />
               </div>
               <div className="ml-3">
                 <span className="text-xl font-bold">FireWatch</span>

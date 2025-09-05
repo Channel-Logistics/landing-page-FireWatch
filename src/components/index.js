@@ -7,6 +7,7 @@ export const slides = [
 export const imageDownload = {src: "src/assets/images/firewatch-ss.png", alt: "downloadApp"}
 
 export const LogoSpaceEyes = {src: "src/assets/logos/logo.png", alt: "SpaceEyes"}
+export const LogoSpaceEyesWhite = {src: "src/assets/logos/space-eyes-w1.png", alt: "SpaceEyes"}
 
 export const appleImage = {src: "src/assets/images/apple.svg", alt: "appleImage"}
 export const googleImage = {src: "src/assets/images/google.svg", alt: "googleImage"}
