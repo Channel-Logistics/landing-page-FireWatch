@@ -5,6 +5,7 @@ import ElegantCarousel from './components/ui/Carrousel'
 import Hero from './components/ui/Hero'
 import SingleShowcase from './components/ui/DownloadApp'
 import FeaturesCards from './components/ui/FeaturesCards'
+import Footer from './components/Layout/Footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <ElegantCarousel />
         <SingleShowcase />
         <FeaturesCards />
+        <Footer />
     </div>
   )
 }

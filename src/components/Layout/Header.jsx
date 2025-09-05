@@ -41,7 +41,7 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSidebarOpen }) => 
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-red-500 to-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:from-red-600 hover:to-orange-700 transition-all duration-200 shadow-md"
             >
-              Launch App
+              Log In
             </a>
           </div>
 
@@ -54,12 +54,7 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSidebarOpen }) => 
             >
               <Menu className="w-6 h-6" />
             </button>
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
-            >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <BarChart3 className="w-6 h-6" />}
-            </button>
+            
           </div>
         </div>
       </div>
