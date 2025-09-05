@@ -23,7 +23,7 @@ export default function Hero({
                     </div>
                 </div>
 
-                <div className="w-full md:w-1/2 flex justify-end">
+                <div className="w-full md:w-1/2 flex justify-center">
                     <div className="w-full max-w-xs aspect-square rounded-full overflow-hidden shadow-md mt-10">
                         <video
                             src={VideoFireWatch.src}
