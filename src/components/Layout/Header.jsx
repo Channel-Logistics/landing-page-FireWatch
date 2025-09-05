@@ -1,9 +1,7 @@
-import React from 'react';
-import { Search, Menu, X, Flame, Globe, AlertTriangle, BarChart3 } from 'lucide-react';
-import { slides } from '..'; 
+import { Search, Menu, Flame, Globe, AlertTriangle } from 'lucide-react';
 import {LogoSpaceEyes} from '..'
 
-const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSidebarOpen }) => {
+const Header = ({ isMobileMenuOpen, setIsSidebarOpen }) => {
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

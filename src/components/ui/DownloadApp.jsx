@@ -1,4 +1,3 @@
-import React from "react";
 import { imageDownload } from "..";
 import { appleImage } from "..";
 import { googleImage } from "..";

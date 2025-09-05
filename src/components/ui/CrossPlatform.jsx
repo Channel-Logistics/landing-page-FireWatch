@@ -1,7 +1,4 @@
-import React from "react";
 import { imageDownload } from "..";
-import { appleImage } from "..";
-import { googleImage } from "..";
 
 export default function CrossPlatform({
     headline = "Cross-platform ",

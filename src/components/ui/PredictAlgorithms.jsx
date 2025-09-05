@@ -1,6 +1,4 @@
-import React from "react";
 import { imageDownload } from "..";
-
 
 export default function PredictAlgoritgms({
     headline = "Predictive propagation algorithms ",

@@ -8,7 +8,6 @@ import CrossPlatform from './components/ui/CrossPlatform'
 import InfoMap from './components/ui/InfoMap'
 import PredictAlgoritgms from './components/ui/PredictAlgorithms'
 import GeneralMetrics from './components/ui/GeneralMetrics'
-
 import ScrollProgressBar from './components/ui/ScrollProgressBar'
 
 function App() {

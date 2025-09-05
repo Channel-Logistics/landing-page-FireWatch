@@ -1,4 +1,4 @@
-import { Flame, Github, Mail, Globe, AlertTriangle, Divide, Space } from 'lucide-react';
+import { Flame, Github, Mail, Globe, AlertTriangle } from 'lucide-react';
 
 const Footer = () => {
   return (
