@@ -1,28 +1,42 @@
-import { slides } from '..'; 
+import { LogoSpaceEyes } from '..';
+import { VideoFireWatch } from '..';
 
-export default function Hero ({
-    headline = "Datos y visualizaciones en  ",
-    highlight = "tiempo real",
-    subtitle = "Monitoreo con estaciones meteorológicas, capas climáticas dinámicas, detección de calor por satélite, imágenes de calle, alertas locales y simulaciones de propagación con IA.",
+export default function Hero({
+    subtitle = "An AI-powered platform that combines satellite imagery, weather data, and 3D visualization to detect hotspots, send immediate alerts, simulate fire spread, and optimize emergency response with automated reports and community integration.",
 }) {
     return (
-       <section className="px-8 py-12 max-w-6xl mx-auto flex flex-col items-center text-center gap-6">
-      
-      <div className="w-[300px] flex justify-center">
-        <img 
-          src={slides[3].src} 
-          alt="Space Eyes Logo" 
-          className="w-full h-auto object-contain"
-        />
-      </div>
+        <section className="px-4 py-16 w-full max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row items-start gap-12">
+                <div className="flex flex-col space-y-6 w-full md:w-1/2">
+                    <div className="w-full max-w-[600px]">
+                        <img
+                            src={LogoSpaceEyes.src}
+                            alt={LogoSpaceEyes.alt}
+                            className="w-full h-auto object-contain"
+                        />
+                    </div>
 
-      <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
-        {headline} <span className="text-orange-500">{highlight}</span>
-      </h1>
+                    <div className="w-full max-w-2xl">
+                        <p className="text-[13px] text-slate-600 leading-relaxed">
+                            {subtitle}
+                        </p>
+                    </div>
+                </div>
 
-      <p className="max-w-2xl text-base text-slate-600 sm:text-lg">
-        {subtitle}
-      </p>
-    </section>
+                <div className="w-full md:w-1/2 flex justify-end">
+                    <div className="w-full max-w-xs aspect-square rounded-full overflow-hidden shadow-md mt-10">
+                        <video
+                            src={VideoFireWatch.src}
+                            type="video/mp4"
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 }

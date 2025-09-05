@@ -78,7 +78,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="h-38 border-l border-gray-300"></div>
+              <div className="hidden sm:block md:block h-38 border-l border-gray-300"></div>
 
               <div>
                 <h3 className="text-lg font-semibold text-gray-200 mb-4">Useful Links</h3>

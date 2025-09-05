@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import Header from './components/Layout/Header'
 import ElegantCarousel from './components/ui/Carrousel'
 import Hero from './components/ui/Hero'
