@@ -1,4 +1,4 @@
-import { Flame, Github, Mail, Globe, AlertTriangle, Divide } from 'lucide-react';
+import { Flame, Github, Mail, Globe, AlertTriangle, Divide, Space } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
           
           <div className="col-span-2">
-            <div className="flex flex-col md:flex-row justify-center gap-8">
+            <div className="flex flex-col md:flex-row" style={{justifyContent: 'space-around'}}>
 
               <div>
                 <h3 className="text-lg font-semibold text-gray-200 mb-4">Products</h3>
@@ -77,6 +77,8 @@ const Footer = () => {
                   <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FinancialWatch</a></li>
                 </ul>
               </div>
+
+              <div className="h-38 border-l border-gray-300"></div>
 
               <div>
                 <h3 className="text-lg font-semibold text-gray-200 mb-4">Useful Links</h3>
