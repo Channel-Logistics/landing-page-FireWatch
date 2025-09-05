@@ -64,9 +64,9 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          
-          <div className="col-span-2">
-            <div className="flex flex-col md:flex-row" style={{justifyContent: 'space-around'}}>
+
+          <div className="col-span-2 grid grid-cols-1 space-x-1.5">
+            <div className="flex sm:flex-row md:flex-row justify-between">
 
               <div>
                 <h3 className="text-lg font-semibold text-gray-200 mb-4">Products</h3>
@@ -78,9 +78,9 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="hidden sm:block md:block h-38 border-l border-gray-300"></div>
+              <div className="md:h-43 sm:50 border-l border-gray-300"></div>
 
-              <div>
+              <div className='sm: mx-16'>
                 <h3 className="text-lg font-semibold text-gray-200 mb-4">Useful Links</h3>
                 <ul className="space-y-2">
                   <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About us</a></li>
@@ -91,6 +91,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
         </div>
 
         <div className="mt-12 border-t border-gray-800 pt-8 text-center">

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Search, Menu, X, Flame, Globe, AlertTriangle, BarChart3 } from 'lucide-react';
+import { slides } from '..'; 
+import {LogoSpaceEyes} from '..'
 
 const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSidebarOpen }) => {
   return (
@@ -9,8 +11,12 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSidebarOpen }) => 
 
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-orange-600 rounded flex items-center justify-center">
-                <Flame className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 bg-gradient-to-br flex items-center justify-center">
+                <img
+                  src={LogoSpaceEyes.src}
+                  alt="Space Eyes Logo"
+                  className="w-full h-auto object-contain"
+                />
               </div>
               <div className="ml-3">
                 <span className="text-xl font-bold text-gray-900">FireWatch</span>
@@ -21,7 +27,7 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSidebarOpen }) => 
 
 
           <div className="hidden md:flex items-center space-x-6">
-            
+
             <nav className="flex space-x-8">
               <a
                 href="#overview"
@@ -31,10 +37,10 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSidebarOpen }) => 
               </a>
             </nav>
 
-            
+
             <div className="h-6 border-l border-gray-300"></div>
 
-            
+
             <a
               href="https://firewatch.space-eyes.com/"
               target="_blank"
@@ -54,7 +60,7 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen, setIsSidebarOpen }) => 
             >
               <Menu className="w-6 h-6" />
             </button>
-            
+
           </div>
         </div>
       </div>
