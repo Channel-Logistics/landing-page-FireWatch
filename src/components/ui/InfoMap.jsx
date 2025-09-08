@@ -7,7 +7,7 @@ export default function InfoMap({
 }) {
   return (
     
-    <section className="w-full h-full bg-white">
+    <section className="w-full h-full">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:py-16">
         <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="flex-shrink-0 md:w-1/2 flex justify-center">

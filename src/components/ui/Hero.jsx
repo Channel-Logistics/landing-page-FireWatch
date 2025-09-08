@@ -1,50 +1,59 @@
-import { VideoFireWatch } from '..';
+import { VideoFireWatch } from '..'; //video
+import { LogoSpaceEyes } from '..'; // imagenes
 
 export default function Hero({
-  subtitle = "An AI-powered platform that combines satellite imagery, weather data, and 3D visualization to detect hotspots, send immediate alerts, simulate fire spread, and optimize emergency response with automated reports and community integration",
+  subtitle = "An AI-powered platform that combines satellite imagery, weather data, and 3D visualization to detect hotspots, send immediate alerts, simulate fire spread, and optimize emergency response with automated reports and community integration.",
 }) {
   return (
-    <section className="min-h-screen bg-white flex items-center">
+    <section className="min-h-screen flex items-center justify-center">
       <div className="w-full max-w-7xl mx-auto px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-          
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+
           <div className="flex-1 max-w-2xl text-center md:text-left">
-            <h1 
-              className="text-6xl lg:text-7xl font-black mb-8 bg-gradient-to-r from-orange-600 via-orange-500 to-orange-400 bg-clip-text text-transparent animate-pulse"
+
+            <img
+              src={LogoSpaceEyes.src}
+              alt={LogoSpaceEyes.alt}
+              className="w-full max-w-[200px] h-auto md:ml-[65px] mb-4"
+            />
+
+            <h1
+              className="text-6xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-normal mb-6 bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 bg-clip-text text-transparent"
               style={{
                 backgroundSize: "200% 200%",
-                animation: "fireAnimation 3s ease-in-out infinite"
+                animation: "fireAnimation 3s ease-in-out infinite",
+                textShadow: "0 2px 4px rgba(0,0,0,0.1)"
               }}
             >
               FireWatch
             </h1>
-            
-            <p className="text-xl text-gray-600 leading-relaxed font-normal">
+
+            <p className="text-lg text-gray-700 leading-relaxed font-medium max-w-xl">
               {subtitle}
             </p>
           </div>
-          
-          
+
           <div className="flex-1 flex justify-center items-center">
             <div className="relative">
-              
-              <div 
-                className="absolute -inset-8 rounded-full opacity-70"
+
+              <div
+                className="absolute -inset-6 rounded-full opacity-50"
                 style={{
-                  background: "radial-gradient(circle, transparent 50%, rgba(249, 115, 22, 0.15) 80%, transparent 100%)",
-                  
+                  background: "radial-gradient(circle, transparent 40%, rgba(251, 146, 60, 0.2) 70%, transparent 100%)",
+                  animation: "glowPulse 4s ease-in-out infinite"
                 }}
               ></div>
-              
-              
-              <div 
-                className="w-96 h-96 rounded-full overflow-hidden relative shadow-2xl"
+
+              <div
+                className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden relative"
                 style={{
                   boxShadow: `
-                    0 0 30px rgba(249, 115, 22, 0.3),
-                    inset -15px -15px 40px rgba(0, 0, 0, 0.1),
-                    inset 15px 15px 40px rgba(255, 255, 255, 0.8)
-                  `
+                    0 8px 32px rgba(249, 115, 22, 0.25),
+                    0 4px 16px rgba(0, 0, 0, 0.1),
+                    inset -8px -8px 24px rgba(0, 0, 0, 0.05),
+                    inset 8px 8px 24px rgba(255, 255, 255, 0.9)
+                  `,
+                  border: "2px solid rgba(255, 255, 255, 0.8)"
                 }}
               >
                 <video
@@ -56,15 +65,11 @@ export default function Hero({
                   playsInline
                   className="w-full h-full object-cover"
                 />
-                
-            
-                
               </div>
             </div>
           </div>
         </div>
       </div>
-      
       
       <style jsx>{`
         @keyframes fireAnimation {
@@ -74,46 +79,21 @@ export default function Hero({
           }
           50% { 
             background-position: 100% 50%;
-            filter: brightness(1.1);
-          }
-        }
-        
-        @keyframes slowRotate {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-        
-        @keyframes firePulse {
-          0%, 100% { 
-            transform: scale(1);
-            opacity: 1;
-          }
-          50% { 
-            transform: scale(1.3);
-            opacity: 0.8;
+            filter: brightness(1.15);
           }
         }
         
         @keyframes glowPulse {
-          0%, 100% { opacity: 0.7; transform: scale(1); }
-          50% { opacity: 1; transform: scale(1.1); }
+          0%, 100% { 
+            opacity: 0.3; 
+            transform: scale(1); 
+          }
+          50% { 
+            opacity: 0.6; 
+            transform: scale(1.05); 
+          }
         }
       `}</style>
     </section>
   );
-}
-
-
-function getFirePointPosition(index) {
-  const positions = [
-    { top: '15%', left: '20%' },
-    { top: '25%', right: '15%' },
-    { bottom: '30%', left: '30%' },
-    { top: '40%', right: '25%' },
-    { bottom: '15%', right: '35%' },
-    { top: '10%', left: '50%' },
-    { bottom: '40%', left: '50%' },
-    { top: '35%', left: '40%' }
-  ];
-  return positions[index] || positions[0];
 }
