@@ -1,7 +1,10 @@
-import { Search, Menu, Flame, Globe, AlertTriangle } from 'lucide-react';
-import {LogoSpaceEyes} from '..'
+import { useState } from 'react';
+import { Menu, Globe, X } from 'lucide-react';
+import { LogoSpaceEyes } from '..'
 
-const Header = ({ isMobileMenuOpen, setIsSidebarOpen }) => {
+const Header = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,19 +55,28 @@ const Header = ({ isMobileMenuOpen, setIsSidebarOpen }) => {
 
 
           <div className="md:hidden flex items-center space-x-2">
-            <button
-              onClick={() => setIsSidebarOpen(true)}
-              className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600 lg:hidden"
-            >
-              <Menu className="w-6 h-6" />
-            </button>
-
+            {isSidebarOpen ? (
+              <button
+                onClick={() => setIsSidebarOpen(false)}
+                className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600 lg:hidden"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            ) : (
+              <button
+                onClick={() => setIsSidebarOpen(true)}
+                className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600 lg:hidden"
+              >
+                <Menu className="w-6 h-6" />
+              </button>
+            )}
           </div>
+
         </div>
       </div>
 
 
-      {isMobileMenuOpen && (
+      {isSidebarOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <a
@@ -72,28 +84,7 @@ const Header = ({ isMobileMenuOpen, setIsSidebarOpen }) => {
               className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg"
             >
               <Globe className="w-4 h-4 mr-3" />
-              Overview
-            </a>
-            <a
-              href="#fires"
-              className="flex items-center px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 rounded-lg"
-            >
-              <Flame className="w-4 h-4 mr-3" />
-              Fires
-            </a>
-            <a
-              href="#alerts"
-              className="flex items-center px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 rounded-lg"
-            >
-              <AlertTriangle className="w-4 h-4 mr-3" />
-              Alerts
-            </a>
-            <a
-              href="#data-sources"
-              className="flex items-center px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 rounded-lg"
-            >
-              <Search className="w-4 h-4 mr-3" />
-              Data Sources
+              Docs
             </a>
           </div>
           <div className="px-4 py-3 border-t border-gray-200">
@@ -103,7 +94,7 @@ const Header = ({ isMobileMenuOpen, setIsSidebarOpen }) => {
               rel="noopener noreferrer"
               className="w-full bg-gradient-to-r from-red-500 to-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium block text-center"
             >
-              Launch FireWatch App
+              Log In
             </a>
           </div>
         </div>

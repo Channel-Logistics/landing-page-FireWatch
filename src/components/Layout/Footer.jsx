@@ -1,9 +1,5 @@
-<<<<<<< Updated upstream
-import { Flame, Github, Mail, Globe, AlertTriangle } from 'lucide-react';
-=======
 import {  Github, Mail, Globe, AlertTriangle } from 'lucide-react';
 import { LogoSpaceEyesWhite } from '..';
->>>>>>> Stashed changes
 
 const Footer = () => {
   return (
