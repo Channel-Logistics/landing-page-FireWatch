@@ -17,7 +17,7 @@ const Footer = () => {
                 />
               </div>
               <div className="ml-3">
-                <span className="text-xl font-bold">FireWatch</span>
+                <span className="text-orange-500 text-xl font-bold">FireWatch</span>
                 <span className="text-xs text-gray-400 block">Global Fire Monitor</span>
               </div>
             </div>

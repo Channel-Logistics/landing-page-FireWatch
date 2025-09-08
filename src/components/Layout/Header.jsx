@@ -20,7 +20,7 @@ const Header = () => {
                 />
               </div>
               <div className="ml-3">
-                <span className="text-xl font-bold text-gray-900">FireWatch</span>
+                <span className="text-xl font-bold text-orange-500">FireWatch</span>
                 <span className="text-xs text-gray-500 block -mt-1">Global Fire Monitor</span>
               </div>
             </div>
