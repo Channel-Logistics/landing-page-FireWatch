@@ -49,7 +49,7 @@ export default function CustomCarousel() {
   return (
     
     <section className="w-full max-w-[100vw] overflow-x-hidden">
-      <div className="relative w-full mx-auto my-8 h-80 mb-2.5">
+      <div className="relative w-full mx-auto my-8 h-[32rem] mb-2.5">
     
         <div className="relative w-full h-full flex items-center justify-center overflow-hidden mb-2">
           {slides.map((slide, index) => {
@@ -58,7 +58,7 @@ export default function CustomCarousel() {
             return (
               <div
                 key={index}
-                className="absolute h-80 w-[min(90vw,720px)] transition-all duration-700 ease-in-out"
+                className="absolute h-[32rem] w-[min(99vw,1200px)] transition-all duration-700 ease-in-out"
                 style={style}
               >
                 <img
