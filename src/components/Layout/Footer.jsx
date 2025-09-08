@@ -9,7 +9,7 @@ const Footer = () => {
 
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br  rounded flex items-center justify-center">
+              <div className="w-18 h-18 bg-gradient-to-br  rounded flex items-center justify-center">
                 <img
                   src={LogoSpaceEyesWhite.src}
                   alt="Space Eyes Logo"
@@ -74,12 +74,11 @@ const Footer = () => {
             <div className="flex sm:flex-row md:flex-row justify-between">
 
               <div>
-                <h3 className="text-lg font-semibold text-gray-200 mb-4">Products</h3>
+                <h3 className="text-lg font-semibold text-gray-200 mb-4">Documentation</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FireWatch</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">SeaWatch</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">CarbonWatch</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">FinancialWatch</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Overview</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Resources</a></li>
+                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">API</a></li>
                 </ul>
               </div>
 

@@ -1,8 +1,9 @@
+
 import { motion, useScroll, useSpring } from "motion/react";
 
-export default function ScrollProgressBar() {
+export default function ScrollProgressBar({ containerRef }) {
   
-  const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll({ container: containerRef });
 
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 120,
@@ -13,11 +14,8 @@ export default function ScrollProgressBar() {
   return (
     <motion.div
       aria-hidden
-      style={{
-        scaleX,
-        transformOrigin: "left",   
-      }}
-      className="fixed left-0 top-0 h-1 w-full bg-orange-500 z-50 pointer-events-none"
+      style={{ scaleX, transformOrigin: "left" }}
+      className="fixed left-0 top-0 h-1 w-full bg-orange-500 z-[60] pointer-events-none"
     />
   );
 }

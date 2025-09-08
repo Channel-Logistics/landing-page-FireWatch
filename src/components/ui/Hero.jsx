@@ -1,7 +1,7 @@
 import { VideoFireWatch } from '..';
 
 export default function Hero({
-  subtitle = "An AI-powered platform that combines satellite imagery, weather data, and 3D visualization to detect hotspots, send immediate alerts, simulate fire spread, and optimize emergency response with automated reports and community integration.",
+  subtitle = "An AI-powered platform that combines satellite imagery, weather data, and 3D visualization to detect hotspots, send immediate alerts, simulate fire spread, and optimize emergency response with automated reports and community integration",
 }) {
   return (
     <section className="min-h-screen bg-white flex items-center">
