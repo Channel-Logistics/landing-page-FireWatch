@@ -4,7 +4,7 @@ export default function Section({ id, className = "", children }) {
       id={id}
       className={`min-h-[100dvh] flex items-center justify-center
                  snap-center
-                 scroll-mt-[calc(64px+env(safe-area-inset-top))] md:scroll-mt-15
+                 scroll-mt-[calc(64px+env(safe-area-inset-top))] md:scroll-mt-15 sm:scroll-pt-5
                 ${className}`}
     >
       <div className="w-full">{children}</div>

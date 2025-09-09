@@ -85,7 +85,7 @@ const Footer = () => {
 
               <div className="md:h-43 sm:50 border-l border-gray-300"></div>
 
-              <div className='sm: mx-16'>
+              <div className='sm: mx-1'>
                 <h3 className="text-lg font-semibold text-gray-200 mb-4">Useful Links</h3>
                 <ul className="space-y-2">
                   <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About us</a></li>
