@@ -4,7 +4,7 @@ import { imageDownload } from "..";
 export default function Hero() {
   return (
     <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200" />
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-500" />
 
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -21,7 +21,8 @@ export default function Hero() {
               style={{
                 backgroundSize: "200% 200%",
                 animation: "fireAnimation 3s ease-in-out infinite",
-                textShadow: "0 2px 4px rgba(0,0,0,0.1)"
+                textShadow: "0 2px 4px rgba(0,0,0,0.1)",
+                filter: 'drop-shadow(0 4px 8px rgba(249, 115, 22, 0.2))'
               }}
             >
               FireWatch
@@ -42,24 +43,18 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          className="relative block w-full h-32 sm:h-40 lg:h-48"
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="rgb(229 231 235)" />
-              <stop offset="50%" stopColor="rgb(243 244 246)" />
-              <stop offset="100%" stopColor="rgb(255 255 255)" />
-            </linearGradient>
-          </defs>
+      <div className="absolute bottom-0 left-0 w-full h-full overflow-hidden">
+        <svg viewBox="0 0 1200 300" className="absolute bottom-0 w-full h-auto" preserveAspectRatio="none">
           <path
-            d="M0,60L48,80C96,100,192,140,288,140C384,140,480,100,576,80C672,60,768,60,864,80C960,100,1056,140,1152,140C1200,140,1248,100,1296,80L1344,60L1344,320L1296,320C1248,320,1152,320,1056,320C960,320,864,320,768,320C672,320,576,320,480,320C384,320,288,320,192,320C96,320,48,320,24,320L0,320Z"
+            d="M0,260 C80,245 120,235 180,225 C240,215 280,205 340,190 C400,175 440,165 500,155 C560,145 600,140 660,135 C720,130 760,125 820,115 C880,105 920,95 980,80 C1040,65 1080,50 1120,35 C1160,20 1180,15 1200,8 L1200,300 L0,300 Z"
+            fill="white"
+            className="drop-shadow-sm"
+          />
+          <path
+            d="M0,240 C60,228 100,220 160,212 C220,204 260,198 320,185 C380,172 420,165 480,158 C540,151 580,148 640,145 C700,142 740,140 800,132 C860,124 900,118 960,105 C1020,92 1060,80 1100,65 C1140,50 1170,35 1200,20 L1200,300 L0,300 Z"
             fill="#D6D6D6"
+            fillOpacity="0.9"
+            className="drop-shadow-sm"
           />
         </svg>
       </div>
