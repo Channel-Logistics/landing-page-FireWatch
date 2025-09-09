@@ -71,15 +71,18 @@ export default function SingleShowcase({
                                 href="https://firewatch.space-eyes.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-1 text-base font-medium text-orange-600 hover:text-orange-700"
+                                className="flex items-center gap-1 text-sm sm:text-base md:text-lg font-medium text-orange-600 hover:text-orange-700"
                                 initial={{ opacity: 0, x: -40 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
                             >
-                                or visit our webApp
-                                <SquareArrowOutUpRight className="h-2 w-2" />
+                                <span className="inline-block">or visit our webApp</span>
+                                <span className="inline-block align-middle">
+                                    <SquareArrowOutUpRight className="w-3 h-3" />
+                                </span>
                             </motion.a>
+
                         </div>
                     </div>
                 </div>
