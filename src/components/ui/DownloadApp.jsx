@@ -77,10 +77,8 @@ export default function SingleShowcase({
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
                             >
-                                or visit our website
-                                <span className="h-0 w-0">
-                                    <SquareArrowOutUpRight />
-                                </span>
+                                or visit our webApp
+                                <SquareArrowOutUpRight className="h-2 w-2" />
                             </motion.a>
                         </div>
                     </div>

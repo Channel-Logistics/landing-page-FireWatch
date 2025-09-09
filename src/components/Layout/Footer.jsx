@@ -9,14 +9,15 @@ const Footer = () => {
 
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <div className="w-18 h-18 bg-gradient-to-br  rounded flex items-center justify-center">
+              <div className="w-28 h-28 bg-gradient-to-br  rounded flex items-center justify-center">
                 <img
                   src={LogoSpaceEyesWhite.src}
                   alt="Space Eyes Logo"
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="ml-3">
+              <div className="h-7 border-l border-gray-300 mx-4"  />
+              <div className="ml-0">
                 <span className="text-orange-500 text-xl font-bold">FireWatch</span>
                 <span className="text-xs text-gray-400 block">Global Fire Monitor</span>
               </div>
