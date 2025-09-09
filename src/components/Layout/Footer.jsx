@@ -77,9 +77,9 @@ const Footer = () => {
               <div>
                 <h3 className="text-lg font-semibold text-gray-200 mb-4">Documentation</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Overview</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Resources</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">API</a></li>
+                  <li><a href="https://r3s7014k-3000.use2.devtunnels.ms/" className="text-gray-400 hover:text-white transition-colors">Overview</a></li>
+                  <li><a href="https://r3s7014k-3000.use2.devtunnels.ms/" className="text-gray-400 hover:text-white transition-colors">Resources</a></li>
+                  <li><a href="https://r3s7014k-3000.use2.devtunnels.ms/" className="text-gray-400 hover:text-white transition-colors">API</a></li>
                 </ul>
               </div>
 

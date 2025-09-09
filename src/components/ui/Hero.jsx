@@ -1,5 +1,5 @@
 import { LogoSpaceEyes } from ".."
-import { imageDownload } from "..";
+import { VideoFireWatch } from "..";
 
 export default function Hero() {
   return (
@@ -8,36 +8,48 @@ export default function Hero() {
 
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 items-center sm:mt-5">
 
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left flex flex-col items-center lg:items-start ">
             <img
               src={LogoSpaceEyes.src}
               alt={LogoSpaceEyes.alt}
               className="mx-auto md:mx-0 w-[220px] sm:w-[260px] md:w-[320px] lg:w-[380px] h-auto "
             />
+
             <h1
-              className="text-6xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-normal mb-6 bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 bg-clip-text text-transparent"
+              className="text-4xl sm:text-1xl md:text-[2rem] lg:text-[3.5rem] font-normal-mt-1 sm:-mt-1 leading-[0.9] bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 bg-clip-text text-transparent "
               style={{
                 backgroundSize: "200% 200%",
                 animation: "fireAnimation 3s ease-in-out infinite",
                 textShadow: "0 2px 4px rgba(0,0,0,0.1)",
-                filter: 'drop-shadow(0 4px 8px rgba(249, 115, 22, 0.2))'
+                filter: "drop-shadow(0 4px 8px rgba(249, 115, 22, 0.2))",
               }}
             >
               FireWatch
             </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground mb-8 text-pretty leading-relaxed">
+
+            <p className="text-lg sm:text-xl text-muted-foreground mt-3 sm:mt-4 mb-8 text-pretty leading-relaxed">
               An AI-powered platform that combines satellite imagery, weather data, and 3D visualization to detect hotspots, send immediate alerts, simulate fire spread, and optimize emergency response with automated reports and community integration.
             </p>
           </div>
 
-          <div className="justify-self-center flex justify-center">
-            <img
-              src={imageDownload.src}
-              alt={imageDownload.alt}
-              className="block mx-auto w-[320px] md:w-[400px] h-auto object-cover"
-            />
+
+          <div className="w-full md:w-2xl md:h-full flex justify-center">
+            <div className="w-full flex justify-center">
+              <video
+                src={VideoFireWatch.src}
+                type="video/mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className=" mt-10 aspect-square object-cover bg-transparent w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] [clip-path:circle(50%_at_50%_50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
+                style={{
+                  WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
+                }}
+              />
+            </div>
           </div>
 
         </div>

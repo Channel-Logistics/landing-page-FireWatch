@@ -28,7 +28,8 @@ function App() {
 
       <main
         ref={scrollRef}
-        className="flex-1 overflow-y-auto snap-y snap-mandatory scroll-smooth relative z-10"
+        className="flex-1 overflow-y-auto snap-y snap-mandatory scroll-smooth relative z-10
+           scroll-pt-[calc(64px+env(safe-area-inset-top))] md:scroll-pt-15 lg:scroll-pt-0"
       >
         <Section id="hero"><Hero /></Section>
         <Section id="carousel" className="bg-[#D6D6D6]/90 drop-shadow-sm">
