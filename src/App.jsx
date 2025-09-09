@@ -31,7 +31,10 @@ function App() {
         className="flex-1 overflow-y-auto snap-y snap-mandatory scroll-smooth relative z-10"
       >
         <Section id="hero"><Hero /></Section>
-        <Section id="carousel"><ElegantCarousel /></Section>
+        <Section id="carousel" className="bg-[#D6D6D6]/90 drop-shadow-sm">
+          <ElegantCarousel />
+        </Section>
+
 
         <Section id="showcase" className="items-stretch"><SingleShowcase /></Section>
         <Section id="cross-platform" className="items-stretch"><CrossPlatform /></Section>
