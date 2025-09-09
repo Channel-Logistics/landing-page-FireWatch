@@ -1,15 +1,15 @@
 import { LogoSpaceEyes } from ".."
-
+import { imageDownload } from "..";
 
 export default function Hero() {
   return (
     <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200" />
 
-      
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           <div className="text-center lg:text-left">
             <img
               src={LogoSpaceEyes.src}
@@ -31,34 +31,14 @@ export default function Hero() {
             </p>
           </div>
 
-          
-          <div className="relative">
-            <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
-              
-              <div className="relative bg-white rounded-3xl shadow-2xl p-2 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                <div className="bg-orange-500 rounded-2xl p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-8 h-8 bg-white/20 rounded-full"></div>
-                    <div className="text-sm font-medium text-white">Dashboard</div>
-                    <div className="w-6 h-6 bg-white/20 rounded"></div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="h-4 bg-white/30 rounded w-3/4"></div>
-                    <div className="h-4 bg-white/30 rounded w-1/2"></div>
-                    <div className="h-20 bg-white/20 rounded-lg"></div>
-                    <div className="grid grid-cols-2 gap-2">
-                      <div className="h-12 bg-white/20 rounded"></div>
-                      <div className="h-12 bg-white/20 rounded"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-secondary rounded-full opacity-80 animate-bounce"></div>
-              <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-primary rounded-full opacity-60 animate-pulse"></div>
-            </div>
+          <div className="justify-self-center flex justify-center">
+            <img
+              src={imageDownload.src}
+              alt={imageDownload.alt}
+              className="block mx-auto w-[320px] md:w-[400px] h-auto object-cover"
+            />
           </div>
+
         </div>
       </div>
 

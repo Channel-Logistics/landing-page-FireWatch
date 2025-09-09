@@ -64,7 +64,7 @@ export default function SingleShowcase({
                 />
               </a>
 
-              <div className="hidden sm:block h-8 w-px bg-slate-200" />
+              <div className=" h-8 w-px bg-slate-200" />
 
               <motion.a
                 href="https://firewatch.space-eyes.com/"

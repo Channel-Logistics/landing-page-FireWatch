@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { Menu, X, Globe } from "lucide-react"
 import { LogoSpaceEyes } from ".."
