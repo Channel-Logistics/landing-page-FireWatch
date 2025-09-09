@@ -29,7 +29,7 @@ export default function SingleShowcase({
               {subtitle}
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-6">
+            <div className="mt-10 flex  sm:flex-row sm:items-center gap-6">
               <a
                 href="https://apps.apple.com/co/app/firewatch-ai-space-monitoring/id6498717343"
                 target="_blank"

@@ -13,7 +13,7 @@ const Header = () => {
 
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-18 h-18 bg-gradient-to-br flex items-center justify-center">
+              <div className="w-36 h-36 bg-gradient-to-br flex items-center justify-center">
                 <img
                   src={LogoSpaceEyes.src}
                   alt="Space Eyes Logo"
@@ -31,7 +31,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-6">
             <nav className="flex space-x-8">
               <a
-                href="#overview"
+                href="https://r3s7014k-3000.use2.devtunnels.ms/"
                 className="text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
               >
                 Docs
@@ -99,7 +99,7 @@ const Header = () => {
         <div className="md:hidden bg-white border-t border-gray-200 mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <a
-              href="#overview"
+              href="https://r3s7014k-3000.use2.devtunnels.ms/"
               className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"
             >
               <Globe className="w-4 h-4 mr-3" />

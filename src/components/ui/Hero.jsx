@@ -14,8 +14,9 @@ export default function Hero({
             <img
               src={LogoSpaceEyes.src}
               alt={LogoSpaceEyes.alt}
-              className="w-full max-w-[200px] h-auto md:ml-[65px] mb-4"
+              className="mx-auto md:mx-0 w-[220px] sm:w-[260px] md:w-[320px] lg:w-[380px] h-auto mb-4"
             />
+
 
             <h1
               className="text-6xl sm:text-7xl md:text-[5.5rem] lg:text-[6.5rem] font-normal mb-6 bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 bg-clip-text text-transparent"
@@ -70,7 +71,7 @@ export default function Hero({
           </div>
         </div>
       </div>
-      
+
       <style jsx>{`
         @keyframes fireAnimation {
           0%, 100% { 
