@@ -32,7 +32,7 @@ const Header = () => {
               <img
                 src={LogoSpaceEyes.src}
                 alt="Space Eyes Logo"
-                className="h-10 w-auto object-contain"
+                className="h-6 w-auto object-contain"
               />
               <div className="h-6 border-l border-gray-300 mx-2"  />
               <div className="ml-1 leading-tight">
