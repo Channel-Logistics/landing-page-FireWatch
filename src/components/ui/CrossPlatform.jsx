@@ -67,7 +67,7 @@ export default function CrossPlatform({
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
                             >
-                                <span className="inline-block">or visit our web App</span>
+                                <span className="inline-block">or visit our Web Application</span>
                                 <span className="inline-block align-middle">
                                     <SquareArrowOutUpRight className="w-3 h-3" />
                                 </span>
