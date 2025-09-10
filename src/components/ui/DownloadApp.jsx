@@ -1,6 +1,4 @@
-import { Square, SquareArrowOutUpRight } from "lucide-react";
-import { imageDownload, appleImage, googleImage } from "..";
-import * as motion from "motion/react-client";
+import { imageDownload } from "..";
 
 export default function SingleShowcase({
     headline = "Smart maps that ",
@@ -29,61 +27,6 @@ export default function SingleShowcase({
                         <p className="mt-3 max-w-xl text-slate-700 mx-auto md:mx-0">
                             {subtitle}
                         </p>
-
-                        <div className="mt-10 flex  sm:flex-row sm:items-center gap-6">
-                            <a
-                                href="https://apps.apple.com/co/app/firewatch-ai-space-monitoring/id6498717343"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Download on the App Store"
-                            >
-                                <motion.img
-                                    src={appleImage.src}
-                                    alt={appleImage.alt}
-                                    className="w-[128px] h-[42px] object-contain cursor-pointer"
-                                    initial={{ opacity: 0, x: -80 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true, amount: 0.3 }}
-                                    transition={{ duration: 0.9, ease: "easeOut" }}
-                                />
-                            </a>
-
-                            <a
-                                href="https://play.google.com/store/apps/details?id=XXXXXXXX"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Get it on Google Play"
-                            >
-                                <motion.img
-                                    src={googleImage.src}
-                                    alt={googleImage.alt}
-                                    className="w-[128px] h-[42px] object-contain cursor-pointer"
-                                    initial={{ opacity: 0, x: -80 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true, amount: 0.3 }}
-                                    transition={{ duration: 0.9, ease: "easeOut", delay: 0.05 }}
-                                />
-                            </a>
-
-                            <div className=" h-8 w-px bg-slate-200" />
-
-                            <motion.a
-                                href="https://firewatch.space-eyes.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-1 text-sm sm:text-base md:text-lg font-medium text-orange-600 hover:text-orange-700"
-                                initial={{ opacity: 0, x: -40 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true, amount: 0.3 }}
-                                transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-                            >
-                                <span className="inline-block">or visit our webApp</span>
-                                <span className="inline-block align-middle">
-                                    <SquareArrowOutUpRight className="w-3 h-3" />
-                                </span>
-                            </motion.a>
-
-                        </div>
                     </div>
                 </div>
             </div>
