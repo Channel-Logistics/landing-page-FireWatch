@@ -37,18 +37,24 @@ export default function Hero() {
 
           <div className="w-full md:w-2xl md:h-full flex justify-center">
             <div className="w-full flex justify-center">
-              <video
-                src={VideoFireWatch.src}
-                type="video/mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className=" mt-10 aspect-square object-cover bg-transparent w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] [clip-path:circle(50%_at_50%_50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
-                style={{
-                  WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
-                }}
-              />
+              <div className="relative w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] h-[20rem] sm:h-[26rem] md:h-[26rem] lg:h-[28rem] mt-10">
+                <div
+                  className="absolute inset-0 rounded-full border-2 border-dashed border-blue-300/40"
+                >
+                  <video
+                    src={VideoFireWatch.src}
+                    type="video/mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className=" mt-10 aspect-square object-cover bg-transparent w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] [clip-path:circle(50%_at_50%_50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
+                    style={{
+                      WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
 

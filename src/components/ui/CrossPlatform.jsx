@@ -20,7 +20,7 @@ export default function CrossPlatform({
                             {subtitle}
                         </p>
 
-                        <div className="mt-10 flex justify-center md:justify-start gap-5">
+                        <div className="mt-10 flex  sm:flex-row sm:items-center gap-5">
                             <a
                                 href="https://apps.apple.com/co/app/firewatch-ai-space-monitoring/id6498717343"
                                 target="_blank"
@@ -33,7 +33,7 @@ export default function CrossPlatform({
                                     className="w-[128px] h-[42px] object-contain cursor-pointer"
                                     initial={{ opacity: 0, x: -80 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true, amount: 0.3 }}
+                                    viewport={{ once: true, amount: 0.1 }}
                                     transition={{ duration: 0.9, ease: "easeOut" }}
                                 />
                             </a>
@@ -67,7 +67,7 @@ export default function CrossPlatform({
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
                             >
-                                <span className="inline-block">or visit our Web Application</span>
+                                <span className="inline-block">or visit our web Application</span>
                                 <span className="inline-block align-middle">
                                     <SquareArrowOutUpRight className="w-3 h-3" />
                                 </span>
