@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { Menu, X, Globe } from "lucide-react"
 import { LogoSpaceEyes } from ".."
+import { AlertTriangle, Search, FlameKindling, Database } from "lucide-react"
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -14,19 +15,19 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-hidden
         ${isScrolled
           ? "bg-white/95 supports-[backdrop-filter]:bg-white/85 backdrop-blur-md shadow-lg border-b border-gray-300"
           : "bg-white/80 supports-[backdrop-filter]:bg-white/65 backdrop-blur-md shadow-md border-b border-gray-200"
         }`}
     >
-     
+
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/60 to-white/20" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+      <div className="relative w-full max-w-none mx-0 px-3 sm:px-4 lg:px-6">
+
         <div className="flex justify-between items-center h-16">
-       
+
           <div className="flex items-center space-x-2.5">
             <div className="flex-shrink-0 flex items-center">
               <img
@@ -34,7 +35,7 @@ const Header = () => {
                 alt="Space Eyes Logo"
                 className="h-6 w-auto object-contain"
               />
-              <div className="h-6 border-l border-gray-300 mx-2"  />
+              <div className="h-6 border-l border-gray-300 mx-2" />
               <div className="ml-1 leading-tight">
                 <span className="text-xl font-bold text-orange-500 block">FireWatch</span>
                 <span className="text-xs text-gray-500 -mt-0.5 block">Global Fire Monitor</span>
@@ -42,20 +43,45 @@ const Header = () => {
             </div>
           </div>
 
-          
+
           <div className="hidden md:flex items-center space-x-6">
-            <nav className="flex space-x-2">
-              <a
-                href="https://r3s7014k-3000.use2.devtunnels.ms/"
-                className="text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
-              >
-                Docs
-              </a>
-            </nav>
+            <div className="hidden md:flex flex-1 justify-center">
+              <nav className="flex space-x-6">
+                <a
+                  href="#overview"
+                  className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
+                >
+                  <Globe className="w-4 h-4 mr-3" />
+                  Overview
+                </a>
+                <a
+                  href="#fires"
+                  className=" flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
+                >
+                  <FlameKindling className="w-4 h-4 mr-3" />
+                  Fires
+                </a>
+                <a
+                  href="#alerts"
+                  className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
+                >
+                  <AlertTriangle className="w-4 h-4 mr-3" />
+                  Alerts
+                </a>
+                <a
+                  href="#data-sources"
+                  className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
+                >
+                  <Database className="w-4 h-4 mr-3" />
+                  Data Sources
+                </a>
+              </nav>
+            </div>
+
 
             <div className="h-6 border-l border-gray-300" />
 
-            
+
             <a
               href="https://firewatch.space-eyes.com/"
               target="_blank"
@@ -74,7 +100,7 @@ const Header = () => {
             </a>
           </div>
 
-          
+
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsMobileMenuOpen((v) => !v)}
@@ -86,10 +112,10 @@ const Header = () => {
           </div>
         </div>
 
-        
+
         {isMobileMenuOpen && (
           <div className="md:hidden pb-3">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-lg mt-2 border border-gray-200">
+            <div className="px-0 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-none mt-2 border-t border-gray-200">
               <a
                 href="https://r3s7014k-3000.use2.devtunnels.ms/"
                 className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"

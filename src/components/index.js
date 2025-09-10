@@ -13,6 +13,7 @@ export const appleImage = {src: "src/assets/images/apple.svg", alt: "appleImage"
 export const googleImage = {src: "src/assets/images/google.svg", alt: "googleImage"}
 
 export const VideoFireWatch = {src: "src/assets/videos/VideoFireWatch.mp4", alt: "VideoFireWatch"}
+export const videoSimulation = {src: "src/assets/videos/simulationVideo.mov", alt: "videoSimulation"}
 
 
 export const logos = [
@@ -24,3 +25,8 @@ export const logos = [
     { src: "src/assets/logos/aws-nb.png", alt: "The Weather Channel" },
     
 ];
+
+export const androidImage = {src: "src/assets/images/android.png", alt: "androidImage"}
+export const iosImage = {src: "src/assets/images/iphone.png", alt: "iosImage"}
+export const laptopImage = {src: "src/assets/images/laptop.png", alt: "laptopImage"}
+export const multiplatformImage = {src: "src/assets/images/multiplatform.png", alt: "multiplatformImage"}
