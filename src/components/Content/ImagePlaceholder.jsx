@@ -1,18 +1,18 @@
 import React from "react";
 
-export default function ImagePlaceholder({ icon, title, subtitle, gradientFrom, gradientTo, iconBgColor, iconColor, height = "h-48" }) {
+export default function ImagePlaceholder({ imageSrc, imageAlt = "", height = "h-48" }) {
     return (
-        <div className={`relative w-full ${height} bg-gradient-to-r ${gradientFrom} ${gradientTo} rounded-xl overflow-hidden shadow-lg`} >
-            <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                <div
-                    className={`w-24 h-24 mx-auto ${iconBgColor} rounded-full flex items-center justify-center`}
-                >
-                    <div className={`w-12 h-12 ${iconColor}`}>{icon}</div>
-                </div>
-                <p className="text-lg font-medium text-gray-700">{title}</p>
-                {subtitle && <p className="text-sm text-gray-500">{subtitle}</p>}
-                </div>
+        <div className="flex justify-center items-center w-full">
+            <div className={`relative w-4/5 max-w-2xl ${height} bg-white rounded-2xl overflow-hidden shadow-2xl border border-gray-200`}>
+                {imageSrc && (
+                    <div className="absolute inset-4 bg-white rounded-xl shadow-inner overflow-hidden">
+                        <img
+                            src={imageSrc}
+                            alt={imageAlt}
+                            className="w-full h-full object-contain object-center pointer-events-none select-none"
+                        />
+                    </div>
+                )}
             </div>
         </div>
     );
