@@ -30,7 +30,6 @@ const Sidebar = ({ onSectionChange }) => {
 
           return (
             <div key={section.id}>
-              {/* Botón de sección principal */}
               <button
                 onClick={() => toggleSection(section.id)}
                 className={`flex items-center justify-between w-full px-4 py-3 rounded-lg font-medium transition-colors duration-200 ${
@@ -50,7 +49,7 @@ const Sidebar = ({ onSectionChange }) => {
                 )}
               </button>
 
-              {/* Sub-items */}
+              
               {expandedSections.includes(section.id) && section.items.length > 0 && (
                 <div className="ml-8 mt-1 space-y-1">
                   {section.items.map((item) => {
