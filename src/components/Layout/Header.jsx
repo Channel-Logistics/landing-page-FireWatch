@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react"
 import { Menu, X, Globe } from "lucide-react"
 import { LogoSpaceEyes } from ".."
-import { AlertTriangle, Search, FlameKindling, Database } from "lucide-react"
+import { AlertTriangle, FlameKindling, Database } from "lucide-react"
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -68,13 +69,13 @@ const Header = () => {
                   <AlertTriangle className="w-4 h-4 mr-3" />
                   Alerts
                 </a>
-                <a
-                  href="#data-sources"
+                <Link
+                  to="/docs"
                   className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
                 >
                   <Database className="w-4 h-4 mr-3" />
                   Data Sources
-                </a>
+                </Link>
               </nav>
             </div>
 

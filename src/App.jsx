@@ -1,6 +1,5 @@
 import { useRef } from 'react'
-
-import Header from './components/Layout/Header'
+import Header from './components/layout/Header'
 import ElegantCarousel from './components/ui/Carrousel'
 import Hero from './components/ui/Hero'
 import SingleShowcase from './components/ui/DownloadApp'
@@ -45,9 +44,7 @@ function App() {
         <Section id="algorithms" className="items-stretch"><PredictAlgoritgms /></Section>
         <Section id="metrics" className="items-stretch"><GeneralMetrics /></Section>
 
-        {/*<div className="snap-start">
-          <TrustedBy />
-        </div>*/}
+      
         <div className="snap-start">
           <Footer />
         </div>
