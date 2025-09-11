@@ -3,3 +3,30 @@
 
 
 html, body, #root { height: 100%; }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+}
+
+@keyframes spinSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+

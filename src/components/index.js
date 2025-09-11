@@ -30,3 +30,7 @@ export const androidImage = {src: "src/assets/images/android.png", alt: "android
 export const iosImage = {src: "src/assets/images/iphone.png", alt: "iosImage"}
 export const laptopImage = {src: "src/assets/images/laptop.png", alt: "laptopImage"}
 export const multiplatformImage = {src: "src/assets/images/multiplatform.png", alt: "multiplatformImage"}
+
+export const satelliteRight = {src: "src/assets/images/Sateliteright.svg", alt: "SatelliteRight"} 
+export const satelliteLeft = {src: "src/assets/images/SateliteLeft.svg", alt: "SatelliteLeft"}  
+export const sateliteCenter = {src: "src/assets/images/SateliteCenter.svg", alt: "SateliteCenter"}

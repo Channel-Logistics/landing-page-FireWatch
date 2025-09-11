@@ -1,5 +1,6 @@
 import { LogoSpaceEyes } from ".."
 import { VideoFireWatch } from "..";
+import { sateliteCenter, satelliteLeft, satelliteRight } from ".."
 
 export default function Hero() {
   return (
@@ -38,22 +39,50 @@ export default function Hero() {
           <div className="w-full md:w-2xl md:h-full flex justify-center">
             <div className="w-full flex justify-center">
               <div className="relative w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] h-[20rem] sm:h-[26rem] md:h-[26rem] lg:h-[28rem] mt-10">
-                <div
-                  className="absolute inset-0 rounded-full border-2 border-dashed border-blue-300/40"
-                >
-                  <video
-                    src={VideoFireWatch.src}
-                    type="video/mp4"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className=" mt-10 aspect-square object-cover bg-transparent w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] [clip-path:circle(50%_at_50%_50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
-                    style={{
-                      WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
-                    }}
-                  />
-                </div>
+                <img
+                  src={satelliteLeft.src}
+                  alt={satelliteLeft.alt}
+                  aria-hidden="true"
+                  className="absolute pointer-events-none select-none w-12 sm:w-14 md:w-16 lg:w-20 -translate-y-6 sm:-translate-y-8 -left-12 sm:-left-16 md:-left-20 lg:-left-28 top-1/3 sm:top-2/5 float"
+                />
+
+                <img
+                  src={sateliteCenter.src}
+                  alt={sateliteCenter.alt}
+                  aria-hidden="true"
+                  className="absolute pointer-events-none select-none w-12 sm:w-14 md:w-16 lg:w-20 
+             -translate-y-6 sm:-translate-y-8"
+                  style={{
+                    left: '50%',
+                    top: '-6%',                 
+                    transform: 'translateX(-50%) rotate(-10deg)',
+                  }}
+                />
+
+                <img
+                  src={satelliteRight.src}
+                  alt={satelliteRight.alt}
+                  aria-hidden="true"
+                  className="absolute pointer-events-none select-none w-12 sm:w-14 md:w-16 lg:w-20 float"
+                  style={{
+                    right: '-15%',
+                    top: '25%',
+                  }}
+                />
+
+
+                <video
+                  src={VideoFireWatch.src}
+                  type="video/mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className=" mt-10 aspect-square object-cover bg-transparent w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] [clip-path:circle(50%_at_50%_50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
+                  style={{
+                    WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
+                  }}
+                />
               </div>
             </div>
           </div>
