@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Menu, X, Globe } from "lucide-react"
 import { LogoSpaceEyes } from ".."
-import { AlertTriangle, FlameKindling, Database } from "lucide-react"
+import { AlertTriangle, FlameKindling } from "lucide-react"
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -30,51 +30,46 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
 
           <div className="flex items-center space-x-2.5">
-            <div className="flex-shrink-0 flex items-center">
-              <img
-                src={LogoSpaceEyes.src}
-                alt="Space Eyes Logo"
-                className="h-6 w-auto object-contain"
-              />
-              <div className="h-6 border-l border-gray-300 mx-2" />
-              <div className="ml-1 leading-tight">
-                <span className="text-xl font-bold text-orange-500 block">FireWatch</span>
-                <span className="text-xs text-gray-500 -mt-0.5 block">Global Fire Monitor</span>
+            <Link to="/" className="flex items-center">
+              <div className="shrink-0 flex items-center">
+                <img
+                  src={LogoSpaceEyes.src}
+                  alt="Space Eyes Logo"
+                  className="h-6 w-auto object-contain"
+                />
+                <div className="h-6 border-l border-gray-300 mx-2" />
+                <div className="ml-1 leading-tight">
+                  <span className="text-xl font-bold text-orange-500 block">FireWatch</span>
+                  <span className="text-xs text-gray-500 -mt-0.5 block">Global Fire Monitor</span>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
 
           <div className="hidden md:flex items-center space-x-6">
             <div className="hidden md:flex flex-1 justify-center">
               <nav className="flex space-x-6">
-                <a
-                  href="#overview"
+                <Link
+                  to="/what-is-firewatch"
                   className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
                 >
                   <Globe className="w-4 h-4 mr-3" />
                   Overview
-                </a>
-                <a
-                  href="#fires"
+                </Link>
+                <Link
+                  to="/all-fires"
                   className=" flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
                 >
                   <FlameKindling className="w-4 h-4 mr-3" />
                   Fires
-                </a>
-                <a
-                  href="#alerts"
+                </Link>
+                <Link
+                  to="/alerts"
                   className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
                 >
                   <AlertTriangle className="w-4 h-4 mr-3" />
                   Alerts
-                </a>
-                <Link
-                  to="/docs"
-                  className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
-                >
-                  <Database className="w-4 h-4 mr-3" />
-                  Data Sources
                 </Link>
               </nav>
             </div>
@@ -107,6 +102,8 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen((v) => !v)}
               className="relative z-10 p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors"
               aria-label="Toggle menu"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -115,16 +112,32 @@ const Header = () => {
 
 
         {isMobileMenuOpen && (
-          <div className="md:hidden pb-3">
+          <div id="mobile-menu" className="md:hidden pb-3">
             <div className="px-0 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-none mt-2 border-t border-gray-200">
-              <a
-                href="https://r3s7014k-3000.use2.devtunnels.ms/"
+              <Link
+                to="/what-is-firewatch"
                 className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <Globe className="w-4 h-4 mr-3" />
-                Docs
-              </a>
+                Overview
+              </Link>
+              <Link
+                to="/all-fires"
+                className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <FlameKindling className="w-4 h-4 mr-3" />
+                Fires
+              </Link>
+              <Link
+                to="/alerts"
+                className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <AlertTriangle className="w-4 h-4 mr-3" />
+                Alerts
+              </Link>
               <div className="pt-2 mt-1 border-t border-gray-200 space-y-3">
                 <a
                   href="https://firewatch.space-eyes.com/"
@@ -135,7 +148,7 @@ const Header = () => {
                 >
                   Log In
                 </a>
-                <a
+                <a  
                   href="https://firewatch.space-eyes.com/"
                   target="_blank"
                   rel="noopener noreferrer"

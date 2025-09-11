@@ -1,7 +1,8 @@
 export const slides = [
   { src: "src/assets/images/foto1.png",       alt: "fotoUno"   },
   { src: "src/assets/images/foto1.png",      alt: "fotoDos"   },
-  { src: "src/assets/images/foto1.png",       alt: "fotoTres"  },
+  { src: "src/assets/videos/VideoFireWatch.mp4",    alt: "VideoFireWatch" },
+  { src: "src/assets/images/android.png",       alt: "androidImage" },
 ];
 
 export const imageDownload = {src: "src/assets/images/firewatch-ss.png", alt: "downloadApp"}
@@ -42,3 +43,5 @@ export const pFires = { src: "src/assets/image-docs/p-fires.webp", alt: "pFires"
 export const pFireSpecificAlerts = { src: "src/assets/image-docs/p-fire-specific-alerts.webp", alt: "pFireSpecificAlerts"}
 
 
+export const satellites = {src: "src/assets/animations/Satellites.gif", alt: "Satellites"} 
+export const satellite = {src: "src/assets/animations/Satellite.gif", alt: "Satellite"}  
