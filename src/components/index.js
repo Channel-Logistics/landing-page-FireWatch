@@ -34,3 +34,13 @@ export const multiplatformImage = {src: "src/assets/images/multiplatform.png", a
 
 export const satellites = {src: "src/assets/animations/Satellites.gif", alt: "Satellites"} 
 export const satellite = {src: "src/assets/animations/Satellite.gif", alt: "Satellite"}  
+export const satelliteRight = {src: "src/assets/images/Sateliteright.svg", alt: "SatelliteRight"} 
+export const satelliteLeft = {src: "src/assets/images/SateliteLeft.svg", alt: "SatelliteLeft"}  
+export const sateliteCenter = {src: "src/assets/images/SateliteCenter.svg", alt: "SateliteCenter"}
+export const Prediction = {src: "src/assets/images/prediction1.png", alt: "prediction1"}
+export const Prediction2 = {src: "src/assets/images/prediction2.png", alt: "prediction2"}
+export const Alert1 = {src: "src/assets/images/alert1.png", alt: "alert1"}
+export const Teams3 = {src: "src/assets/images/teams3.png", alt: "teams3"}
+export const Teams1 = {src: "src/assets/images/teams1.png", alt: "teams1"}
+export const Forecast1 = {src: "src/assets/images/forecast1.png", alt: "forecast1"}
+export const Forecast2 = {src: "src/assets/images/forecast2.png", alt: "forecast2"}

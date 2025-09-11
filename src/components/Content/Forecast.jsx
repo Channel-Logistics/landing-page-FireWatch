@@ -1,5 +1,6 @@
 import React from "react";
 import { Cloud, Thermometer, Wind, Droplet, MapPin, Search } from "lucide-react";
+import {Forecast1, Forecast2} from ".."
 
 export default function Forecast() {
   return (
@@ -7,7 +8,7 @@ export default function Forecast() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <header className="text-center mb-12">
-          <h1 className="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          <h1 className="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
             Weather Forecast
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
@@ -16,7 +17,7 @@ export default function Forecast() {
           </p>
         </header>
 
-        {/* What We Monitor Section */}
+        {/* Key Weather Parameters Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Key Weather Parameters</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -62,11 +63,15 @@ export default function Forecast() {
             for fire risk based on key weather parameters.
           </p>
           <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
-            {/* Forecast Data */}
-            <div className="p-8 bg-gray-50 rounded-2xl shadow-md">
+            {/* Daily Breakdown */}
+            <div className="p-8 bg-gray-100 rounded-2xl shadow-md">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Daily Breakdown</h3>
-              <div className="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-4">
-                [Image placeholder: Daily forecast with icons and key data for each day]
+              <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-4 overflow-hidden">
+                <img
+                  src={Forecast1.src} 
+                  alt={Forecast1.alt} 
+                  className="w-full h-full object-contain rounded-lg"
+                />
               </div>
               <p className="text-gray-600 leading-relaxed">
                 The daily breakdown provides a simple, at-a-glance view of the expected temperature range, wind speed and direction, and humidity for each day of the week. This helps you quickly understand how conditions will change.
@@ -74,10 +79,14 @@ export default function Forecast() {
             </div>
 
             {/* Visual Analytics */}
-            <div className="p-8 bg-gray-50 rounded-2xl shadow-md">
+            <div className="p-8 bg-gray-100 rounded-2xl shadow-md">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Visual Analytics</h3>
-              <div className="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-4">
-                [Image placeholder: Graph showing weather trends over 7 days]
+              <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-4 overflow-hidden">
+                <img
+                  src={Forecast2.src} 
+                  alt={Forecast2.alt} 
+                  className="w-full h-full object-contain rounded-lg"
+                />
               </div>
               <p className="text-gray-600 leading-relaxed">
                 This graph shows the trends for temperature, humidity, and wind speed over the coming week. By visualizing the data, you can easily identify patterns, anticipate peak risk days, and prepare accordingly.
