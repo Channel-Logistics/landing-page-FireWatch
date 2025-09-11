@@ -1,6 +1,6 @@
-import { LogoSpaceEyes } from ".."
-import { VideoFireWatch } from "..";
-import { sateliteCenter, satelliteLeft, satelliteRight } from ".."
+import React from "react"
+import { sateliteCenter, satelliteLeft, satelliteRight, VideoFireWatch, LogoSpaceEyes } from ".."
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function Hero() {
   return (
@@ -37,39 +37,31 @@ export default function Hero() {
 
 
           <div className="w-full md:w-2xl md:h-full flex justify-center">
-            <div className="w-full flex justify-center">
-              <div className="relative w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] h-[20rem] sm:h-[26rem] md:h-[26rem] lg:h-[28rem] mt-10">
-                <img
-                  src={satelliteLeft.src}
-                  alt={satelliteLeft.alt}
-                  aria-hidden="true"
-                  className="absolute pointer-events-none select-none w-12 sm:w-14 md:w-16 lg:w-20 -translate-y-6 sm:-translate-y-8 -left-12 sm:-left-16 md:-left-20 lg:-left-28 top-1/3 sm:top-2/5 float"
-                />
+            <div className="flex justify-center items-center w-full h-auto mt-10">
+              <div className="relative w-[20rem] sm:w-[26rem] md:w-[28rem] lg:w-[30rem] aspect-square">
+                <div className="absolute w-28 sm:w-32 md:w-36 lg:w-40 top-[2%] left-[-12%]">
+                  <DotLottieReact
+                    src="https://lottie.host/0958ff86-2657-4ac5-922b-ff50870c128e/6r3zbBDJP7.lottie"
+                    loop
+                    autoplay
+                  />
+                </div>
 
-                <img
-                  src={sateliteCenter.src}
-                  alt={sateliteCenter.alt}
-                  aria-hidden="true"
-                  className="absolute pointer-events-none select-none w-12 sm:w-14 md:w-16 lg:w-20 
-             -translate-y-6 sm:-translate-y-8"
-                  style={{
-                    left: '50%',
-                    top: '-6%',                 
-                    transform: 'translateX(-50%) rotate(-10deg)',
-                  }}
-                />
+                <div className="absolute w-28 sm:w-32 md:w-36 lg:w-40 top-[-16%] left-[33%]">
+                  <DotLottieReact
+                    src="https://lottie.host/0acb79cd-69f1-4700-bdcf-aa1f1b31754c/S7k3uIIsqo.lottie"
+                    loop
+                    autoplay
+                  />
+                </div>
 
-                <img
-                  src={satelliteRight.src}
-                  alt={satelliteRight.alt}
-                  aria-hidden="true"
-                  className="absolute pointer-events-none select-none w-12 sm:w-14 md:w-16 lg:w-20 float"
-                  style={{
-                    right: '-15%',
-                    top: '25%',
-                  }}
-                />
-
+                <div className="absolute w-28 sm:w-32 md:w-36 lg:w-40 top-[2%] right-[-12%]">
+                  <DotLottieReact
+                    src="https://lottie.host/0958ff86-2657-4ac5-922b-ff50870c128e/6r3zbBDJP7.lottie"
+                    loop
+                    autoplay
+                  />
+                </div>
 
                 <video
                   src={VideoFireWatch.src}
@@ -78,7 +70,7 @@ export default function Hero() {
                   muted
                   loop
                   playsInline
-                  className=" mt-10 aspect-square object-cover bg-transparent w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] [clip-path:circle(50%_at_50%_50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
+                  className="w-full h-full object-cover bg-transparent [clip-path:circle(50%_at_50%_50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
                   style={{
                     WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
                   }}
@@ -86,7 +78,6 @@ export default function Hero() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
 

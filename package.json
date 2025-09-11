@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@heroui/card": "^2.2.24",
+    "@lottiefiles/dotlottie-react": "^0.16.1",
     "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.542.0",
     "motion": "^12.23.12",
