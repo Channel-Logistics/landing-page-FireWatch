@@ -23,7 +23,7 @@ export const logos = [
     { src: "src/assets/logos/aws-nb.png", alt: "Strava" },
     { src: "src/assets/logos/aws-nb.png", alt: "Instacart" },
     { src: "src/assets/logos/aws-nb.png", alt: "The Weather Channel" },
-    
+  
 ];
 
 export const androidImage = {src: "src/assets/images/android.png", alt: "androidImage"}
@@ -34,3 +34,11 @@ export const multiplatformImage = {src: "src/assets/images/multiplatform.png", a
 export const satelliteRight = {src: "src/assets/images/Sateliteright.svg", alt: "SatelliteRight"} 
 export const satelliteLeft = {src: "src/assets/images/SateliteLeft.svg", alt: "SatelliteLeft"}  
 export const sateliteCenter = {src: "src/assets/images/SateliteCenter.svg", alt: "SateliteCenter"}
+
+export const whoIsWorks = { src: "src/assets/image-docs/p-who-is-works.webp", alt: "whoIsWork"}
+export const highPriority = { src: "src/assets/image-docs/p-high-priority.webp", alt: "highPriority"}
+export const highPriorityView = { src: "src/assets/image-docs/p-high-priority-view.webp", alt: "highPriorityView"}
+export const pFires = { src: "src/assets/image-docs/p-fires.webp", alt: "pFires"}
+export const pFireSpecificAlerts = { src: "src/assets/image-docs/p-fire-specific-alerts.webp", alt: "pFireSpecificAlerts"}
+
+
