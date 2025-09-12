@@ -25,7 +25,7 @@ export default function DetailFire() {
             <div className="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 order-2 lg:order-1">
               {/* Video Card */}
               <div className="relative w-full h-full aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
-                <video
+                <img
                   className="h-full w-full object-cover"
                   src={DetailVideo.src}
                   autoPlay
