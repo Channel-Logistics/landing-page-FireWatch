@@ -92,7 +92,7 @@ export default function CustomCarousel() {
                   <StyleTextCarousel
                     label="MONITORING AREAS"
                     title="3D maps, live weather data, and accurate predictions to track critical zones."
-                    link="/globalCoverage"
+                    link="/monitoringAreas"
                     linkText="Learn more"
                   />
                 )}

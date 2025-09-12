@@ -21,14 +21,14 @@ export const sidebarSections = [
     icon: Flame,
     items: [
       { id: 'all-fires', title: 'All Fires' },
-      { id: 'detailfire', title: 'Details Fire' }
+      { id: 'detail-fire', title: 'Details Fire' }
     ]
   },
   {
-    id: 'globalCoverage',
+    id: 'monitoringAreas',
     title: 'Monitorig Areas',
     icon: Globe,
-    items: [{ id: 'globalCoverage', title: 'Monitoring Areas' }]
+    items: [{ id: 'monitoring-areas', title: 'Monitoring Areas' }]
   },
   {
     id: 'predictions',
