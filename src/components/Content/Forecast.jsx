@@ -1,6 +1,6 @@
 import React from "react";
 import { Cloud, Thermometer, Wind, Droplet, MapPin, Search } from "lucide-react";
-import {Forecast1, Forecast2} from ".."
+import {Forecastone, Forecasttwo} from ".."
 
 export default function Forecast() {
   return (
@@ -68,8 +68,8 @@ export default function Forecast() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Daily Breakdown</h3>
               <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-4 overflow-hidden">
                 <img
-                  src={Forecast1.src} 
-                  alt={Forecast1.alt} 
+                  src={Forecastone.src} 
+                  alt={Forecastone.alt} 
                   className="w-full h-full object-contain rounded-lg"
                 />
               </div>
@@ -83,8 +83,8 @@ export default function Forecast() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Visual Analytics</h3>
               <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-4 overflow-hidden">
                 <img
-                  src={Forecast2.src} 
-                  alt={Forecast2.alt} 
+                  src={Forecasttwo.src} 
+                  alt={Forecasttwo.alt} 
                   className="w-full h-full object-contain rounded-lg"
                 />
               </div>

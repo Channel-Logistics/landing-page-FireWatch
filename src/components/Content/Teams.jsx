@@ -1,7 +1,7 @@
 import React from 'react';
 import { Users, Bell, MapPin, Clock, ArrowRight } from 'lucide-react';
 // Asegúrate de que las rutas de tus imágenes sean correctas
-import {Teams1, Teams3} from ".."
+import {Teamsone, Teamstwo} from ".."
 
 export default function Teams() {
   return (
@@ -67,15 +67,15 @@ export default function Teams() {
           <div className="space-y-6">
             <div className="w-full h-50 rounded-2xl flex items-center justify-center text-gray-500 overflow-hidden">
               <img
-              src={Teams1.src} 
-              alt={Teams1.alt} 
+              src={Teamsone.src} 
+              alt={Teamsone.alt} 
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
             <div className="w-full h-50  rounded-2xl flex items-center justify-center text-gray-500 overflow-hidden">
               <img
-              src={Teams3.src} 
-              alt={Teams3.alt} 
+              src={Teamstwo.src} 
+              alt={Teamstwo.alt} 
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
