@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import Alerts from "./Alerts";
 import AllFires from "./AllFires";
 import Forecast from "./Forecast";
-import whoIsWorks from "./WhoItWoks";
+import HowItWorks from "./HowItWorks";
 import GlobalCoverage from "./MonitoringAreas";
 import HighPriority from "./HighPriority";
 import Interactive3DTerrain from "./Interactive3DTerrain";
@@ -14,7 +14,7 @@ import MainContent from "../pages/MainContent";
 
 const routeComponents = {
   "/docs": MainContent,
-  "/what-is-firewatch": whoIsWorks,
+  "/how-it-works": HowItWorks,
   "/high-priority": HighPriority,
   "/all-fires": AllFires,
   "/terrain-3D": Interactive3DTerrain,

@@ -4,15 +4,15 @@ import FeatureCard from "./FeatureCard";
 import DataSourceCard from "./DataSourceCard";
 import TechCard from "./TechCard";
 import ImagePlaceholder from "./ImagePlaceholder";
-import { whoIsWorks } from "..";
+import { howItWorks } from "..";
 
-export default function WhoItWoks() {
+export default function HowItWorks() {
   return (
     <div className="bg-gray-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900">
-            Who is works?
+            How is works?
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             FireWatch is a comprehensive real-time wildfire monitoring system
@@ -26,8 +26,8 @@ export default function WhoItWoks() {
       <div className="mb-10 md:mb-14">
         <ImagePlaceholder
           height="h-80 md:h-[28rem]"
-          imageSrc={whoIsWorks.src}
-          imageAlt={whoIsWorks.alt}
+          imageSrc={howItWorks.src}
+          imageAlt={howItWorks.alt}
         />
       </div>
 
