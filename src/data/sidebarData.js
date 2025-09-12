@@ -6,7 +6,7 @@ export const sidebarSections = [
     title: 'Overview',
     icon: Globe,
     items: [
-      { id: 'what-is-firewatch', title: 'What is FireWatch?' }
+      { id: 'how-it-works', title: 'What is FireWatch?' }
     ]
   },
   {
