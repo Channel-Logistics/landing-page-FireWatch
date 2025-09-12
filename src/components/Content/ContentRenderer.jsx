@@ -4,8 +4,8 @@ import Alerts from "./Alerts";
 import AllFires from "./AllFires";
 import Detailfire from "./DetailFire";
 import Forecast from "./Forecast";
-import WhatIsFireWatch from "./WhatIsFireWatch";
-import GlobalCoverage from "./GlobalCoverage";
+import HowItWorks from "./HowItWorks";
+import GlobalCoverage from "./MonitoringAreas";
 import HighPriority from "./HighPriority";
 import Interactive3DTerrain from "./Interactive3DTerrain";
 import Predictions from "./Predictions";
@@ -15,7 +15,7 @@ import MainContent from "../pages/MainContent";
 
 const routeComponents = {
   "/docs": MainContent,
-  "/what-is-firewatch": WhatIsFireWatch,
+  "/how-it-works": HowItWorks,
   "/high-priority": HighPriority,
   "/all-fires": AllFires,
   "/detailfire": Detailfire,

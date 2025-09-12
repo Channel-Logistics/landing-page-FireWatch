@@ -5,7 +5,7 @@ export default function GlobalCoverage() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
+
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Monitoring Areas</h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
@@ -13,7 +13,6 @@ export default function GlobalCoverage() {
           </p>
         </header>
 
-        {/* How to Create a New Area */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How to Create Your Area</h2>
           <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">

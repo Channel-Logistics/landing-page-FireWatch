@@ -10,13 +10,11 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        
         <Route path="/" element={<App />} />
 
-        
         <Route element={<DocsLayout />}>
           <Route path="docs" element={<ContentRenderer />} />
-          <Route path="what-is-firewatch" element={<ContentRenderer />} />
+          <Route path="how-it-works" element={<ContentRenderer />} />
           <Route path="high-priority" element={<ContentRenderer />} />
           <Route path="all-fires" element={<ContentRenderer />} />
           <Route path="detailFire" element={<ContentRenderer />} />
