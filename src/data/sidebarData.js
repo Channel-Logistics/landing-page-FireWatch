@@ -20,7 +20,8 @@ export const sidebarSections = [
     title: 'Fires',
     icon: Flame,
     items: [
-      { id: 'all-fires', title: 'All Fires' }
+      { id: 'all-fires', title: 'All Fires' },
+      { id: 'detailfire', title: 'Details Fire' }
     ]
   },
   {

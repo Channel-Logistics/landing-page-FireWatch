@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import Alerts from "./Alerts";
 import AllFires from "./AllFires";
+import Detailfire from "./DetailFire";
 import Forecast from "./Forecast";
 import WhatIsFireWatch from "./WhatIsFireWatch";
 import GlobalCoverage from "./GlobalCoverage";
@@ -17,6 +18,7 @@ const routeComponents = {
   "/what-is-firewatch": WhatIsFireWatch,
   "/high-priority": HighPriority,
   "/all-fires": AllFires,
+  "/detailfire": Detailfire,
   "/terrain-3D": Interactive3DTerrain,
   "/globalCoverage": GlobalCoverage,
   "/predictions": Predictions,
