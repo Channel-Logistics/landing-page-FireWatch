@@ -5,7 +5,7 @@ export default function SectionCard({
   icon: Icon,
   title,
   description,
-  mediaPosition = "right",
+  mediaPosition = "right"|| "left",
   imageSrc, 
 }) {
   const content = (
