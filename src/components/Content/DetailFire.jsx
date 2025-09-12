@@ -2,7 +2,6 @@ import React from "react";
 import { Map, Building2, Mountain, Building2 as InfrastructureIcon } from "lucide-react";
 import SectionCard from "../Layout/SectionCard";
 import InteractiveCard from "../Layout/InteractiveCard";
-// Asegúrate de que las imágenes se importan correctamente desde tu archivo
 import {simulation, Terrain3d, shelters} from "..";
 
 export default function DetailFire() {
