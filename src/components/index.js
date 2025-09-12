@@ -1,7 +1,8 @@
 export const slides = [
   { src: "src/assets/images/foto1.png",       alt: "fotoUno"   },
   { src: "src/assets/images/foto1.png",      alt: "fotoDos"   },
-  { src: "src/assets/images/foto1.png",       alt: "fotoTres"  },
+  { src: "src/assets/videos/VideoFireWatch.mp4",    alt: "VideoFireWatch" },
+  { src: "src/assets/images/android.png",       alt: "androidImage" },
 ];
 
 export const imageDownload = {src: "src/assets/images/firewatch-ss.png", alt: "downloadApp"}
@@ -30,6 +31,8 @@ export const iosImage = {src: "src/assets/images/iphone.png", alt: "iosImage"}
 export const laptopImage = {src: "src/assets/images/laptop.png", alt: "laptopImage"}
 export const multiplatformImage = {src: "src/assets/images/multiplatform.png", alt: "multiplatformImage"}
 
+export const satellites = {src: "src/assets/animations/Satellites.gif", alt: "Satellites"} 
+export const satellite = {src: "src/assets/animations/Satellite.gif", alt: "Satellite"}  
 export const satelliteRight = {src: "src/assets/images/Sateliteright.svg", alt: "SatelliteRight"}
 export const satelliteLeft = {src: "src/assets/images/SateliteLeft.svg", alt: "SatelliteLeft"}
 export const sateliteCenter = {src: "src/assets/images/SateliteCenter.svg", alt: "SateliteCenter"}
@@ -41,3 +44,11 @@ export const pFires = { src: "src/assets/image-docs/p-fires.webp", alt: "pFires"
 export const pFireSpecificAlerts = { src: "src/assets/image-docs/p-fire-specific-alerts.webp", alt: "pFireSpecificAlerts"}
 
 
+
+export const Prediction = {src: "src/assets/images/predictionone.png", alt: "predictionone"}
+export const Predictiontwo = {src: "src/assets/images/predictiontwo.png", alt: "predictiontwo"}
+export const Alertone = {src: "src/assets/images/alertone.png", alt: "alertone"}
+export const Teamstwo = {src: "src/assets/images/teamstwo.png", alt: "teamstwo"}
+export const Teamsone = {src: "src/assets/images/teamsone.png", alt: "teamsone"}
+export const Forecastone = {src: "src/assets/images/forecastone.png", alt: "forecastone"}
+export const Forecasttwo = {src: "src/assets/images/forecasttwo.png", alt: "forecasttwo"}

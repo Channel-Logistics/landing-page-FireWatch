@@ -1,5 +1,6 @@
-import {  Github, Mail, Globe, AlertTriangle } from 'lucide-react';
+import {  FolderGit2, Mail, Globe, AlertTriangle } from 'lucide-react';
 import { LogoSpaceEyesWhite } from '..';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -29,9 +30,9 @@ const Footer = () => {
             </p>
 
 
-            <div className="bg-red-900 bg-opacity-50 border border-red-700 rounded-lg p-4 mb-6">
+            <div className="bg-red-900/50 border border-red-700 rounded-lg p-4 mb-6">
               <div className="flex items-start">
-                <AlertTriangle className="w-5 h-5 text-red-400 mt-0.5 mr-3 flex-shrink-0" />
+                <AlertTriangle className="w-5 h-5 text-red-400 mt-0.5 mr-3 shrink-0" />
                 <div>
                   <div className="text-red-300 font-medium text-sm mb-1">Emergency Notice</div>
                   <div className="text-red-200 text-sm leading-snug">
@@ -49,8 +50,9 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="GitHub"
+                
               >
-                <Github className="w-5 h-5" />
+                <FolderGit2 className="w-5 h-5" />
               </a>
               <a
                 href="https://space-eyes.com/"
@@ -77,9 +79,9 @@ const Footer = () => {
               <div>
                 <h3 className="text-lg font-semibold text-gray-200 mb-4">Documentation</h3>
                 <ul className="space-y-2">
-                  <li><a href="https://r3s7014k-3000.use2.devtunnels.ms/" className="text-gray-400 hover:text-white transition-colors">Overview</a></li>
-                  <li><a href="https://r3s7014k-3000.use2.devtunnels.ms/" className="text-gray-400 hover:text-white transition-colors">Resources</a></li>
-                  <li><a href="https://r3s7014k-3000.use2.devtunnels.ms/" className="text-gray-400 hover:text-white transition-colors">API</a></li>
+                  <li><Link to="/what-is-firewatch" className="text-gray-400 hover:text-white transition-colors">Overview</Link></li>
+                  <li><Link to="/all-fires" className="text-gray-400 hover:text-white transition-colors">Resources</Link></li>
+                  <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">API</Link></li>
                 </ul>
               </div>
 
