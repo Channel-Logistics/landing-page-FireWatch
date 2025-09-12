@@ -39,7 +39,6 @@ export default function SectionCard({
   return (
     <section className="mb-16">
       <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-        {/* Renderiza el componente de medios a la izquierda si el prop es "left" */}
         {mediaPosition === "left" && mediaComponent}
         {content}
         {mediaPosition === "right" && mediaComponent}
