@@ -30,7 +30,6 @@ export default function SectionCard({
         />
       ) : (
         <div className="w-full h-full bg-gray-200 text-gray-500 flex items-center justify-center rounded-lg">
-          {/* Este es el "placeholder" por defecto si no se pasa ninguna imagen */}
           Image Placeholder
         </div>
       )}
@@ -40,10 +39,8 @@ export default function SectionCard({
   return (
     <section className="mb-16">
       <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-        {/* Renderiza el componente de medios a la izquierda si el prop es "left" */}
         {mediaPosition === "left" && mediaComponent}
         {content}
-        {/* Renderiza el componente de medios a la derecha si el prop es "right" (o por defecto) */}
         {mediaPosition === "right" && mediaComponent}
       </div>
     </section>
