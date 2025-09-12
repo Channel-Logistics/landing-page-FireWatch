@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContentRenderer from "./components/Content/ContentRenderer.jsx";
-import DocsLayout from "./components/layout/DocsLayout.jsx";
+import DocsLayout from "./components/Layout/DocsLayout.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -18,7 +18,6 @@ createRoot(document.getElementById("root")).render(
           <Route path="high-priority" element={<ContentRenderer />} />
           <Route path="all-fires" element={<ContentRenderer />} />
           <Route path="detailFire" element={<ContentRenderer />} />
-          <Route path="terrain-3D" element={<ContentRenderer />} />
           <Route path="globalCoverage" element={<ContentRenderer />} />
           <Route path="predictions" element={<ContentRenderer />} />
           <Route path="teams" element={<ContentRenderer />} />

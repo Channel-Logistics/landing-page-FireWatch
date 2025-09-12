@@ -42,6 +42,9 @@ export const highPriority = { src: "src/assets/image-docs/p-high-priority.webp",
 export const highPriorityView = { src: "src/assets/image-docs/p-high-priority-view.webp", alt: "highPriorityView"}
 export const pFires = { src: "src/assets/image-docs/p-fires.webp", alt: "pFires"}
 export const pFireSpecificAlerts = { src: "src/assets/image-docs/p-fire-specific-alerts.webp", alt: "pFireSpecificAlerts"}
+export const pAreas = { src: "src/assets/image-docs/p-areas.webp", alt: "pAreas"}
+export const pTeamAreas = { src: "src/assets/image-docs/p-team-areas.webp", alt: "pTeamAreas"}
+export const pAreasView = { src: "src/assets/image-docs/p-areas-view.webp", alt: "pAreasView"}
 
 
 
