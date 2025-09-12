@@ -55,4 +55,7 @@ export const Teamstwo = {src: "src/assets/images/teamstwo.png", alt: "teamstwo"}
 export const Teamsone = {src: "src/assets/images/teamsone.png", alt: "teamsone"}
 export const Forecastone = {src: "src/assets/images/forecastone.png", alt: "forecastone"}
 export const Forecasttwo = {src: "src/assets/images/forecasttwo.png", alt: "forecasttwo"}
+export const shelters = {src: "src/assets/images/shelters.png", alt: "shelters"}
+export const Terrain3d = {src: "src/assets/images/Terrain3d.png", alt: "Terrain3d"}
+export const simulation = {src: "src/assets/images/simulation.png", alt: "simulation"}
 export const DetailVideo = {src: "src/assets/videos/Detailfire.gif", alt: "detailfire"}

@@ -1,11 +1,12 @@
 import React from "react";
+import { Map, Building2, Mountain } from "lucide-react";
 
 export default function SectionCard({
   icon: Icon,
   title,
   description,
   mediaPosition = "right",
-  isMain,
+  imageSrc, 
 }) {
   const content = (
     <div className="space-y-4">
@@ -19,19 +20,30 @@ export default function SectionCard({
 
   const mediaComponent = (
     <div
-      className={`w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 ${
-        isMain ? "order-2 lg:order-1" : ""
-      }`}
+      className={`w-full h-80 rounded-lg flex items-center justify-center`}
     >
-      [Image placeholder: Section Media Example]
+      {imageSrc ? (
+        <img
+          src={imageSrc}
+          alt={title}
+          className="w-full h-full object-cover rounded-lg"
+        />
+      ) : (
+        <div className="w-full h-full bg-gray-200 text-gray-500 flex items-center justify-center rounded-lg">
+          {/* Este es el "placeholder" por defecto si no se pasa ninguna imagen */}
+          Image Placeholder
+        </div>
+      )}
     </div>
   );
 
   return (
     <section className="mb-16">
       <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        {/* Renderiza el componente de medios a la izquierda si el prop es "left" */}
         {mediaPosition === "left" && mediaComponent}
         {content}
+        {/* Renderiza el componente de medios a la derecha si el prop es "right" (o por defecto) */}
         {mediaPosition === "right" && mediaComponent}
       </div>
     </section>
