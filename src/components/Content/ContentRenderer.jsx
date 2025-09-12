@@ -7,6 +7,7 @@ import Forecast from "./Forecast";
 import HowItWorks from "./HowItWorks";
 import GlobalCoverage from "./MonitoringAreas";
 import HighPriority from "./HighPriority";
+import Interactive3DTerrain from "./Interactive3DTerrain";
 import Predictions from "./Predictions";
 import Teams from "./Teams";
 import RAWS from "./RAWS";
@@ -18,6 +19,7 @@ const routeComponents = {
   "/high-priority": HighPriority,
   "/all-fires": AllFires,
   "/detailfire": Detailfire,
+  "/terrain-3D": Interactive3DTerrain,
   "/globalCoverage": GlobalCoverage,
   "/predictions": Predictions,
   "/teams": Teams,
