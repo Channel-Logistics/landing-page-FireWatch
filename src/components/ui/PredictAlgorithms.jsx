@@ -4,8 +4,6 @@ export default function PredictAlgoritgms({
   headline = "Predictive propagation",
   highlight = "algorithms",
   subtitle = "FireWatch runs advanced simulations that forecast how fires will spread. These predictive models account for terrain, weather, and vegetation to improve preparedness.",
-  videoSrc = "/media/firewatch-demo.mp4",
-  posterSrc = "/images/firewatch-poster.jpg",
 }) {
   return (
     <section className="w-full bg-gray-100">
@@ -37,12 +35,11 @@ export default function PredictAlgoritgms({
               <div className="relative aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
                 <video
                   className="h-full w-full object-cover"
-                  src={videoSimulation?.src || videoSrc}
+                  src={videoSimulation?.src}
                   autoPlay
                   muted
                   loop
                   playsInline
-                  poster={posterSrc}
                   preload="metadata"
                 />
               </div>
