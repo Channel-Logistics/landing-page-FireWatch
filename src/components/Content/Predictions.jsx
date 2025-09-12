@@ -1,6 +1,6 @@
 import React from 'react';
 import { Globe, BarChart2, MapPin, Thermometer, Wind, Droplet, Sun, Zap } from 'lucide-react';
-import {Prediction, Prediction2} from ".."
+import {Prediction, Predictiontwo} from ".."
 
 export default function Predictions() {
   return (
@@ -74,8 +74,8 @@ export default function Predictions() {
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Key Weather Factors We Monitor</h2>
           <div className="w-full h-60 bg-gray-50 rounded-b-xs flex items-center justify-center text-gray-500 mb-8 overflow-hidden">
             <img
-              src={Prediction2.src}
-              alt={Prediction2.alt}
+              src={Predictiontwo.src}
+              alt={Predictiontwo.alt}
               className="w-full h-full object-contain rounded-lg"
             />
           </div>

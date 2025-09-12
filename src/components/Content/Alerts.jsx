@@ -1,5 +1,5 @@
 import { Flame, Activity, MapPin, BarChart2, Thermometer, Eye } from 'lucide-react';
-import {Alert1} from ".."
+import {Alertone} from ".."
 export default function Alerts() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
@@ -20,8 +20,8 @@ export default function Alerts() {
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
             <div className="w-full lg:w-1/2 h-70 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
               <img
-                src={Alert1.src}
-                alt={Alert1.alt}
+                src={Alertone.src}
+                alt={Alertone.alt}
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
