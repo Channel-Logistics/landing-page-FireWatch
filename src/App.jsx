@@ -1,16 +1,16 @@
 import { useRef } from 'react'
-import Header from './components/layout/Header'
+import Header from './components/Layout/Header'
 import ElegantCarousel from './components/ui/Carrousel'
 import Hero from './components/ui/Hero'
 import SingleShowcase from './components/ui/DownloadApp'
-import Footer from './components/layout/Footer'
+import Footer from './components/Layout/Footer'
 //import TrustedBy from './components/ui/TrustedBy'
 import CrossPlatform from './components/ui/CrossPlatform'
 import InfoMap from './components/ui/InfoMap'
 import PredictAlgoritgms from './components/ui/PredictAlgorithms'
 import GeneralMetrics from './components/ui/GeneralMetrics'
 import ScrollProgressBar from './components/ui/ScrollProgressBar'
-import Section from './components/layout/Section';
+import Section from './components/Layout/Section';
 
 
 function App() {

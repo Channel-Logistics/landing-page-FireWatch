@@ -37,41 +37,39 @@ export default function Hero() {
           <div className="w-full md:w-2xl md:h-full flex justify-center">
             <div className="flex justify-center items-center w-full h-auto mt-10">
               <div className="relative w-[20rem] sm:w-[26rem] md:w-[28rem] lg:w-[30rem] aspect-square">
-                <div className="absolute w-16 sm:w-20 md:w-24 lg:w-28 top-[-6%] left-[-12%]">
-                  <img
-                    src={satellites.src}
-                    alt="Satélites"
-                    className="w-full h-auto"
-                  />
-                </div>
-
-                <div className="absolute w-16 sm:w-20 md:w-24 lg:w-28 top-[-22%] left-[33%]">
-                  <img
-                    src={satellite.src}
-                    alt="Satélite"
-                    className="w-full h-auto"
-                  />
-                </div>
-
-                <div className="absolute w-16 sm:w-20 md:w-24 lg:w-28 top-[-6%] right-[-12%]">
-                  <img
-                    src={satellites.src}
-                    alt="Satélites"
-                    className="w-full h-auto"
-                  />
+                <div className="absolute inset-0 rounded-full pointer-events-none z-0">
+                  <div className="absolute inset-0 rounded-full bg-blue-600 opacity-20 blur-[100px] scale-110"></div>
                 </div>
 
                 <video
                   src={VideoFireWatch.src}
-                  type="video/mp4"
                   autoPlay
                   muted
                   loop
                   playsInline
-                  className="w-full h-full object-cover bg-transparent [clip-path:circle(50%_at_50%_50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
+                  className="w-full h-full object-cover rounded-full z-10 relative [clip-path:circle(50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
                   style={{
                     WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
                   }}
+                />
+
+                <div className="absolute w-[44rem] h-[24rem] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[30deg] pointer-events-none z-20">
+                  <div className="w-full h-full rounded-full border-[1.5px] border-white/30"></div>
+                </div>
+
+                <div className="absolute w-[46rem] h-[26rem] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-45deg] pointer-events-none z-20">
+                  <div className="w-full h-full rounded-full border-[1.5px] border-white/30"></div>
+                </div>
+
+                <img
+                  src={satellite.src}
+                  alt="Satélite"
+                  className="absolute w-20 top-[0%] left-[0%] z-30"
+                />
+                <img
+                  src={satellites.src}
+                  alt="Satélites"
+                  className="absolute w-20 bottom-[0%] right-[0%] z-30"
                 />
               </div>
             </div>
