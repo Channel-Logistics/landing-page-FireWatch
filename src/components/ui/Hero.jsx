@@ -43,6 +43,7 @@ export default function Hero() {
 
                 <video
                   src={VideoFireWatch.src}
+                  type="video/mp4"
                   autoPlay
                   muted
                   loop
