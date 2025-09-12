@@ -30,7 +30,6 @@ export default function SectionCard({
         />
       ) : (
         <div className="w-full h-full bg-gray-200 text-gray-500 flex items-center justify-center rounded-lg">
-          {/* Este es el "placeholder" por defecto si no se pasa ninguna imagen */}
           Image Placeholder
         </div>
       )}
