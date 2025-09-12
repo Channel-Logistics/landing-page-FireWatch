@@ -25,12 +25,6 @@ export const sidebarSections = [
     ]
   },
   {
-    id: 'terrain-3D',
-    title: 'Terrain-3D',
-    icon: Package,
-    items: [{ id: 'terrain-3D', title: 'Terrain-3D' }]
-  },
-  {
     id: 'globalCoverage',
     title: 'Monitorig Areas',
     icon: Globe,
