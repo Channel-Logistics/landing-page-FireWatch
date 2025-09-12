@@ -56,7 +56,7 @@ export const sidebarSections = [
   },
   {
     id: 'raws',
-    title: 'RAWS',
+    title: 'Raws',
     icon: Wifi,
     items: [{ id: 'raws', title: 'RAWS' }]
   }

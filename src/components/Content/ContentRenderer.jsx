@@ -9,7 +9,7 @@ import GlobalCoverage from "./MonitoringAreas";
 import HighPriority from "./HighPriority";
 import Predictions from "./Predictions";
 import Teams from "./Teams";
-import RAWS from "./RAWS";
+import Raws from "./Raws";
 import MainContent from "../pages/MainContent";
 
 const routeComponents = {
@@ -23,7 +23,7 @@ const routeComponents = {
   "/teams": Teams,
   "/alerts": Alerts,
   "/forecast": Forecast,
-  "/raws": RAWS,
+  "/raws": Raws,
 };
 
 export default function ContentRenderer() {
