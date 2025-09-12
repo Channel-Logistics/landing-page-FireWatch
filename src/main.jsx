@@ -17,8 +17,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="how-it-works" element={<ContentRenderer />} />
           <Route path="high-priority" element={<ContentRenderer />} />
           <Route path="all-fires" element={<ContentRenderer />} />
-          <Route path="detailFire" element={<ContentRenderer />} />
-          <Route path="globalCoverage" element={<ContentRenderer />} />
+          <Route path="detail-fire" element={<ContentRenderer />} />
+          <Route path="monitoring-areas" element={<ContentRenderer />} />
           <Route path="predictions" element={<ContentRenderer />} />
           <Route path="teams" element={<ContentRenderer />} />
           <Route path="alerts" element={<ContentRenderer />} />
