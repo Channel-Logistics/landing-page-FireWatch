@@ -4,30 +4,32 @@ import FeatureCard from "./FeatureCard";
 import DataSourceCard from "./DataSourceCard";
 import TechCard from "./TechCard";
 import ImagePlaceholder from "./ImagePlaceholder";
+import { howItWorks } from "..";
 
-export default function WhatIsFireWatch() {
+export default function HowItWorks() {
   return (
-    <div className="space-y-8">
-      <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-gray-900 leading-tight">
-          What is FireWatch?
-        </h1>
-        <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-          FireWatch is a comprehensive real-time wildfire monitoring system that
-          provides instant updates on active fires worldwide, combining
-          satellite technology, artificial intelligence and predictive
-          analytics.
-        </p>
+    <div className="bg-gray-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <header className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900">
+            How it works?
+          </h1>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            FireWatch is a comprehensive real-time wildfire monitoring system
+            that provides instant updates on active fires worldwide, combining
+            satellite technology, artificial intelligence and predictive
+            analytics.
+          </p>
+        </header>
       </div>
 
-      <ImagePlaceholder
-        icon={<Flame className="w-12 h-12" />}
-        gradientFrom="from-orange-100"
-        gradientTo="to-red-100"
-        iconBgColor="bg-orange-200"
-        iconColor="text-orange-600"
-        height="h-64 md:h-80"
-      />
+      <div className="mb-10 md:mb-14">
+        <ImagePlaceholder
+          height="h-80 md:h-[28rem]"
+          imageSrc={howItWorks.src}
+          imageAlt={howItWorks.alt}
+        />
+      </div>
 
       <div className="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 p-6 rounded-r-lg shadow-sm">
         <div className="flex items-start space-x-4">
@@ -46,7 +48,7 @@ export default function WhatIsFireWatch() {
         </div>
       </div>
 
-      <section className="space-y-6">
+      <section className="space-y-6 mt-10 md:mt-14">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Key Features
@@ -104,22 +106,22 @@ export default function WhatIsFireWatch() {
           </div>
           <div className="w-full md:w-[calc(50%-1rem)]">
             <FeatureCard
-                icon={<Bell className="h-8 w-8" />}
-                title="Custom Alerts"
-                description="Receive instant notifications when fires are detected in your monitored areas. Configure specific alerts by location, intensity and threat type to stay informed and prepared."
-                features={[
-                  "Email and SMS notifications",
-                  "Geographic zone alerts",
-                  "Custom threshold configuration",
-                ]}
-                iconBgColor="bg-red-100"
-                iconColor="text-red-600"
+              icon={<Bell className="h-8 w-8" />}
+              title="Custom Alerts"
+              description="Receive instant notifications when fires are detected in your monitored areas. Configure specific alerts by location, intensity and threat type to stay informed and prepared."
+              features={[
+                "Email and SMS notifications",
+                "Geographic zone alerts",
+                "Custom threshold configuration",
+              ]}
+              iconBgColor="bg-red-100"
+              iconColor="text-red-600"
             />
           </div>
         </div>
       </section>
 
-      <section className="space-y-6">
+      <section className="space-y-6 mt-10 md:mt-14">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Trusted Data Sources
@@ -177,7 +179,7 @@ export default function WhatIsFireWatch() {
         </div>
       </section>
 
-      <section className="space-y-6">
+      <section className="space-y-6 mt-10 md:mt-14">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Advanced Technology
