@@ -1,6 +1,4 @@
-import { LogoSpaceEyes } from ".."
-import { VideoFireWatch } from "..";
-import { sateliteCenter, satelliteLeft, satelliteRight } from ".."
+import { satellite, satellites, VideoFireWatch, LogoSpaceEyes } from ".."
 
 export default function Hero() {
   return (
@@ -19,7 +17,7 @@ export default function Hero() {
             />
 
             <h1
-              className="text-4xl sm:text-1xl md:text-[2rem] lg:text-[3.5rem] font-normal-mt-1 sm:-mt-1 leading-[0.9] bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 bg-clip-text text-transparent "
+              className="text-4xl sm:text-xl md:text-[2rem] lg:text-[3.5rem] font-normal mt-1 sm:mt-1 leading-[0.9] bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 bg-clip-text text-transparent "
               style={{
                 backgroundSize: "200% 200%",
                 animation: "fireAnimation 3s ease-in-out infinite",
@@ -37,39 +35,31 @@ export default function Hero() {
 
 
           <div className="w-full md:w-2xl md:h-full flex justify-center">
-            <div className="w-full flex justify-center">
-              <div className="relative w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] h-[20rem] sm:h-[26rem] md:h-[26rem] lg:h-[28rem] mt-10">
-                <img
-                  src={satelliteLeft.src}
-                  alt={satelliteLeft.alt}
-                  aria-hidden="true"
-                  className="absolute pointer-events-none select-none w-12 sm:w-14 md:w-16 lg:w-20 -translate-y-6 sm:-translate-y-8 -left-12 sm:-left-16 md:-left-20 lg:-left-28 top-1/3 sm:top-2/5 float"
-                />
+            <div className="flex justify-center items-center w-full h-auto mt-10">
+              <div className="relative w-[20rem] sm:w-[26rem] md:w-[28rem] lg:w-[30rem] aspect-square">
+                <div className="absolute w-16 sm:w-20 md:w-24 lg:w-28 top-[-6%] left-[-12%]">
+                  <img
+                    src={satellites.src}
+                    alt="Satélites"
+                    className="w-full h-auto"
+                  />
+                </div>
 
-                <img
-                  src={sateliteCenter.src}
-                  alt={sateliteCenter.alt}
-                  aria-hidden="true"
-                  className="absolute pointer-events-none select-none w-12 sm:w-14 md:w-16 lg:w-20 
-             -translate-y-6 sm:-translate-y-8"
-                  style={{
-                    left: '50%',
-                    top: '-6%',                 
-                    transform: 'translateX(-50%) rotate(-10deg)',
-                  }}
-                />
+                <div className="absolute w-16 sm:w-20 md:w-24 lg:w-28 top-[-22%] left-[33%]">
+                  <img
+                    src={satellite.src}
+                    alt="Satélite"
+                    className="w-full h-auto"
+                  />
+                </div>
 
-                <img
-                  src={satelliteRight.src}
-                  alt={satelliteRight.alt}
-                  aria-hidden="true"
-                  className="absolute pointer-events-none select-none w-12 sm:w-14 md:w-16 lg:w-20 float"
-                  style={{
-                    right: '-15%',
-                    top: '25%',
-                  }}
-                />
-
+                <div className="absolute w-16 sm:w-20 md:w-24 lg:w-28 top-[-6%] right-[-12%]">
+                  <img
+                    src={satellites.src}
+                    alt="Satélites"
+                    className="w-full h-auto"
+                  />
+                </div>
 
                 <video
                   src={VideoFireWatch.src}
@@ -78,7 +68,7 @@ export default function Hero() {
                   muted
                   loop
                   playsInline
-                  className=" mt-10 aspect-square object-cover bg-transparent w-[20rem] sm:w-[26rem] md:w-[26rem] lg:w-[28rem] [clip-path:circle(50%_at_50%_50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
+                  className="w-full h-full object-cover bg-transparent [clip-path:circle(50%_at_50%_50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
                   style={{
                     WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
                   }}
@@ -86,7 +76,6 @@ export default function Hero() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
