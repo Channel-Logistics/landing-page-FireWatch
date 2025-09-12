@@ -51,7 +51,7 @@ const Header = () => {
             <div className="hidden md:flex flex-1 justify-center">
               <nav className="flex space-x-6">
                 <Link
-                  to="/what-is-firewatch"
+                  to="/docs"
                   className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
                 >
                   <Globe className="w-4 h-4 mr-3" />
@@ -115,7 +115,7 @@ const Header = () => {
           <div id="mobile-menu" className="md:hidden pb-3">
             <div className="px-0 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-none mt-2 border-t border-gray-200">
               <Link
-                to="/what-is-firewatch"
+                to="/docs"
                 className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

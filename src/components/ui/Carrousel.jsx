@@ -83,7 +83,7 @@ export default function CustomCarousel() {
                   <StyleTextCarousel
                     label="WHAT IS FIREWATCH?"
                     title="AI-powered fire monitoring platform with real-time alerts and updates."
-                    link="/what-is-firewatch"
+                    link="/docs"
                     linkText="Read the Docs"
                   />
                 )}
