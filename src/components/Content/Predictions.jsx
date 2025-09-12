@@ -1,5 +1,6 @@
 import React from 'react';
 import { Globe, BarChart2, MapPin, Thermometer, Wind, Droplet, Sun, Zap } from 'lucide-react';
+import {Prediction, Predictiontwo} from ".."
 
 export default function Predictions() {
   return (
@@ -18,9 +19,13 @@ export default function Predictions() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How It Works</h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
-              [Image placeholder: Diagram of the AI analysis process]
-            </div>
+          <div className="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
+            <img
+              src={Prediction.src} 
+              alt={Prediction.alt} 
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
             <div className="space-y-8">
               <div className="flex items-start">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -67,8 +72,12 @@ export default function Predictions() {
         {/* Key Weather Factors Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Key Weather Factors We Monitor</h2>
-          <div className="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-8">
-            [Image placeholder: A map with different risk zones based on weather factors]
+          <div className="w-full h-60 bg-gray-50 rounded-b-xs flex items-center justify-center text-gray-500 mb-8 overflow-hidden">
+            <img
+              src={Predictiontwo.src}
+              alt={Predictiontwo.alt}
+              className="w-full h-full object-contain rounded-lg"
+            />
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto text-center">
             <div className="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
