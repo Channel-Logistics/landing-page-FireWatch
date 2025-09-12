@@ -44,7 +44,7 @@ function App() {
         <Section id="algorithms" className="items-stretch"><PredictAlgoritgms /></Section>
         <Section id="metrics" className="items-stretch"><GeneralMetrics /></Section>
 
-      
+
         <div className="snap-start">
           <Footer />
         </div>

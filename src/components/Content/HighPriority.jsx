@@ -1,4 +1,3 @@
-import React from "react";
 import { MapPin, Clock, Shield } from "lucide-react";
 import { highPriority, highPriorityView } from "..";
 
@@ -6,7 +5,6 @@ export default function HighPriority() {
   return (
     <div className="bg-gray-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto space-y-16">
-        {/* Header */}
         <header className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">High Priority</h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
@@ -15,7 +13,6 @@ export default function HighPriority() {
           </p>
         </header>
 
-        {/* Visual Guide Section */}
         <section>
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
             Visual Guide: Step-by-Step Interface
@@ -49,7 +46,6 @@ export default function HighPriority() {
           </div>
         </section>
 
-        {/* How it Works Section */}
         <section>
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
             How it Works
@@ -84,7 +80,6 @@ export default function HighPriority() {
           </div>
         </section>
 
-        {/* Key Features Section */}
         <section>
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
             Key Features
@@ -174,7 +169,6 @@ export default function HighPriority() {
           </div>
         </section>
 
-        {/* Current Data Example Section */}
         <section className="bg-white p-8 rounded-lg">
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-4">
             Current Data Example
@@ -202,7 +196,6 @@ export default function HighPriority() {
           </div>
         </section>
 
-        {/* Usage Instructions Section */}
         <section className="bg-green-50 p-8 rounded-lg">
           <h2 className="text-3xl font-semibold text-green-900 text-center mb-8">
             How to Use High Priority

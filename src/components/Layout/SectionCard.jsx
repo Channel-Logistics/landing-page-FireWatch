@@ -1,5 +1,3 @@
-import React from "react";
-import { Map, Building2, Mountain } from "lucide-react";
 
 export default function SectionCard({
   icon: Icon,

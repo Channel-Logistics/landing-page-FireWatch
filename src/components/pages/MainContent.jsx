@@ -1,24 +1,21 @@
-import React from 'react';
-import { Flame, MapPin, Newspaper, Zap, Satellite, Layers, BookOpen, Apple, Cloud, Feather, Wrench, Palette, Code, Users, Link, Github, Bot, Handshake, Compass, Dribbble, Package, Network, Globe } from 'lucide-react';
-import {LogoSpaceEyes, imageDownload} from ".."
+import { Flame, MapPin, Newspaper, Zap, Satellite, Layers, BookOpen, Apple, Cloud, Feather, Palette, Code, Github, Package, Network } from 'lucide-react';
+import { LogoSpaceEyes, imageDownload } from ".."
 
 
 const MainContent = () => {
   return (
     <main className="bg-white text-gray-800 min-h-screen">
-      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-100 py-20 sm:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-grid-gray-200 opacity-20"></div>
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            
-            {/* Left Content */}
+
             <div className="text-left space-y-8 max-w-2xl">
               <div className="space-y-6">
                 <div className="inline-block">
-                  <img 
-                    src={LogoSpaceEyes.src} 
-                    alt={LogoSpaceEyes.alt} 
+                  <img
+                    src={LogoSpaceEyes.src}
+                    alt={LogoSpaceEyes.alt}
                     className="h-16 sm:h-18 lg:h-20 w-auto filter drop-shadow-sm"
                   />
                 </div>
@@ -26,30 +23,29 @@ const MainContent = () => {
                   FireWatch
                 </h1>
               </div>
-              
+
               <p className="text-xl sm:text-2xl text-gray-600 leading-relaxed font-light">
                 Global Fire Monitoring and Control, A shield against the advance of fire worldwide
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
                 <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-2xl text-white bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300 focus:ring-opacity-50">
-                  <MapPin className="w-6 h-6 mr-3 transition-transform group-hover:scale-110" /> 
+                  <MapPin className="w-6 h-6 mr-3 transition-transform group-hover:scale-110" />
                   View Live Map
                 </button>
                 <button className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-2xl border-2 border-gray-300 text-gray-700 bg-white hover:bg-gray-50 hover:border-gray-400 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-gray-200 focus:ring-opacity-50">
-                  <BookOpen className="w-6 h-6 mr-3 transition-transform group-hover:scale-110" /> 
+                  <BookOpen className="w-6 h-6 mr-3 transition-transform group-hover:scale-110" />
                   Documentation
                 </button>
               </div>
             </div>
-            
-            {/* Right Content */}
+
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-orange-200 to-red-200 rounded-3xl opacity-20 blur-2xl"></div>
-                <img 
-                  src={imageDownload.src} 
-                  alt={imageDownload.alt} 
+                <img
+                  src={imageDownload.src}
+                  alt={imageDownload.alt}
                   className="relative w-96 h-auto max-w-full drop-shadow-2xl transform hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -58,11 +54,9 @@ const MainContent = () => {
         </div>
       </section>
 
-      {/* Key Tools Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          
-          {/* Section Header */}
+
           <div className="text-center mb-20">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
               Key Tools
@@ -72,7 +66,6 @@ const MainContent = () => {
             </p>
           </div>
 
-          {/* Map Visualization */}
           <div className="mb-24">
             <div className="flex items-center justify-center mb-16">
               <div className="flex items-center space-x-4 bg-gradient-to-r from-orange-50 to-red-50 px-8 py-4 rounded-2xl border border-orange-200">
@@ -82,10 +75,9 @@ const MainContent = () => {
                 <h3 className="text-3xl font-bold text-gray-800">Map Visualization</h3>
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              
-              {/* FireWatch Card */}
+
               <div className="group relative bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative">
@@ -109,7 +101,6 @@ const MainContent = () => {
                 </div>
               </div>
 
-              {/* Mobile SDKs Card */}
               <div className="group relative bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative">
@@ -136,7 +127,6 @@ const MainContent = () => {
                 </div>
               </div>
 
-              {/* Data Analysis Card */}
               <div className="group relative bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative">
@@ -162,7 +152,6 @@ const MainContent = () => {
             </div>
           </div>
 
-          {/* Data & Access APIs */}
           <div className="mb-24">
             <div className="flex items-center justify-center mb-16">
               <div className="flex items-center space-x-4 bg-gradient-to-r from-blue-50 to-indigo-50 px-8 py-4 rounded-2xl border border-blue-200">
@@ -172,7 +161,7 @@ const MainContent = () => {
                 <h3 className="text-3xl font-bold text-gray-800">Data & Access APIs</h3>
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { name: "FireTile Service", desc: "Generate fire data tilesets for your applications", icon: Layers, color: "orange" },
@@ -196,14 +185,13 @@ const MainContent = () => {
         </div>
       </section>
 
-      {/* Resources Section */}
       <section className="bg-gradient-to-br from-gray-50 to-gray-100 py-24">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 tracking-tight">Resources</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Everything you need to build amazing fire monitoring applications</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
@@ -256,7 +244,6 @@ const MainContent = () => {
         </div>
       </section>
 
-      {/* Emergency Alert Section */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="relative bg-gradient-to-r from-red-50 via-orange-50 to-yellow-50 border-2 border-red-200 rounded-3xl p-10 shadow-lg overflow-hidden">
@@ -268,7 +255,7 @@ const MainContent = () => {
               <div>
                 <h3 className="text-3xl font-bold text-red-800 mb-4">Emergency Alert</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  In case of imminent fire danger, contact your local emergency services immediately. 
+                  In case of imminent fire danger, contact your local emergency services immediately.
                   FireWatch is a monitoring tool and should not replace official emergency protocols.
                 </p>
               </div>

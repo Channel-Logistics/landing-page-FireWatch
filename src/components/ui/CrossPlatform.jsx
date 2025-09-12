@@ -6,11 +6,11 @@ import { androidImage, iosImage, laptopImage, multiplatformImage } from "..";
 export default function CrossPlatform({
   headline = "Cross-platform compatibility ",
   subtitle =
-    "Access FireWatch seamlessly from desktop, tablet, or mobile devices. Its cross-platform design ensures reliable wildfire monitoring anytime, anywhere.",
+  "Access FireWatch seamlessly from desktop, tablet, or mobile devices. Its cross-platform design ensures reliable wildfire monitoring anytime, anywhere.",
 }) {
   return (
     <section className="w-full bg-gray-100">
-      
+
       <div
         className="
           mx-auto max-w-7xl px-4
@@ -22,7 +22,7 @@ export default function CrossPlatform({
         "
       >
         <div className="w-full grid grid-cols-1 md:grid-cols-12 items-center gap-6 md:gap-10">
-          
+
           <div className="md:col-span-6 text-center md:text-left flex flex-col items-center md:items-start">
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
               <span className="text-orange-500">{headline}</span>
@@ -31,7 +31,7 @@ export default function CrossPlatform({
               {subtitle}
             </p>
 
-            
+
             <div className="md:hidden mt-6">
               <img
                 src={multiplatformImage.src}
@@ -41,7 +41,7 @@ export default function CrossPlatform({
               />
             </div>
 
-            
+
             <div className="mt-6 md:mt-10 flex flex-wrap justify-center md:justify-start items-center gap-4 md:gap-5">
               <motion.img
                 src={appleImage.src}
@@ -62,7 +62,7 @@ export default function CrossPlatform({
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.05 }}
               />
 
-              
+
               <span className="hidden md:block h-10 w-px bg-gray-300 mx-1" />
 
               <motion.a
@@ -87,7 +87,7 @@ export default function CrossPlatform({
             </div>
           </div>
 
-          
+
           <div className="hidden md:block md:col-span-6">
             <div className="relative w-full max-w-2xl xl:max-w-[980px] aspect-[16/10] mx-auto">
               <div className="pointer-events-none absolute inset-8 rounded-[2rem] bg-gradient-to-tr from-orange-500/10 via-sky-500/10 to-emerald-500/10 blur-2xl" />

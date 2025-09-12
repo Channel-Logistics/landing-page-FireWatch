@@ -1,12 +1,10 @@
-import React from "react";
 import { Cloud, Thermometer, Wind, Droplet, MapPin, Search } from "lucide-react";
-import {Forecastone, Forecasttwo} from ".."
+import { Forecastone, Forecasttwo } from ".."
 
 export default function Forecast() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
         <header className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
             Weather Forecast
@@ -17,7 +15,6 @@ export default function Forecast() {
           </p>
         </header>
 
-        {/* Key Weather Parameters Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Key Weather Parameters</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -54,7 +51,6 @@ export default function Forecast() {
 
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
-        {/* Forecast and Analytics Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Your 7-Day Forecast</h2>
           <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto mb-12">
@@ -63,13 +59,12 @@ export default function Forecast() {
             for fire risk based on key weather parameters.
           </p>
           <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
-            {/* Daily Breakdown */}
             <div className="p-8 bg-gray-100 rounded-2xl shadow-md">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Daily Breakdown</h3>
               <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-4 overflow-hidden">
                 <img
-                  src={Forecastone.src} 
-                  alt={Forecastone.alt} 
+                  src={Forecastone.src}
+                  alt={Forecastone.alt}
                   className="w-full h-full object-contain rounded-lg"
                 />
               </div>
@@ -78,13 +73,12 @@ export default function Forecast() {
               </p>
             </div>
 
-            {/* Visual Analytics */}
             <div className="p-8 bg-gray-100 rounded-2xl shadow-md">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Visual Analytics</h3>
               <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-4 overflow-hidden">
                 <img
-                  src={Forecasttwo.src} 
-                  alt={Forecasttwo.alt} 
+                  src={Forecasttwo.src}
+                  alt={Forecasttwo.alt}
                   className="w-full h-full object-contain rounded-lg"
                 />
               </div>
@@ -97,11 +91,9 @@ export default function Forecast() {
 
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
-        {/* How to Get Your Forecast Section */}
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How to Get Your Forecast</h2>
           <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
-            {/* Option 1: Current Location */}
             <div className="p-8 bg-blue-50 rounded-2xl shadow-md">
               <div className="flex items-center mb-4">
                 <MapPin className="h-8 w-8 text-blue-600 mr-3" />
@@ -112,7 +104,6 @@ export default function Forecast() {
               </p>
             </div>
 
-            {/* Option 2: Search by Location */}
             <div className="p-8 bg-green-50 rounded-2xl shadow-md">
               <div className="flex items-center mb-4">
                 <Search className="h-8 w-8 text-green-600 mr-3" />

@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function ImagePlaceholder({ imageSrc, imageAlt = "", height = "h-48" }) {
     return (

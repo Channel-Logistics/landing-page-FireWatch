@@ -1,10 +1,9 @@
-import { Flame, Activity, MapPin, BarChart2, Thermometer, Eye } from 'lucide-react';
-import {Alertone} from ".."
+import { Flame, Activity } from 'lucide-react';
+import { Alertone } from ".."
 export default function Alerts() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
         <header className="text-center mb-12">
           <h1 className="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">Alerts & Notifications</h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
@@ -14,7 +13,6 @@ export default function Alerts() {
         </header>
 
 
-        {/* How Alerts Work Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How Our Alerts Work</h2>
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
@@ -50,7 +48,6 @@ export default function Alerts() {
 
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
-        {/* Configuration Guide */}
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How to Configure Your Alerts</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">

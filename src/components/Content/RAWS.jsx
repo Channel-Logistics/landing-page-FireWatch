@@ -1,4 +1,3 @@
-import React from 'react';
 import { Globe, BarChart2, Cloud, Wifi, Thermometer, Wind, Activity } from 'lucide-react';
 import { pRawsLocation, pRaws } from '../index';
 
@@ -6,7 +5,6 @@ export default function Raws() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Remote Automated Weather Stations (RAWS)</h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">

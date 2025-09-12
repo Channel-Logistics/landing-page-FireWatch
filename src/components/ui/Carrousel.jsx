@@ -28,7 +28,7 @@ export default function CustomCarousel() {
         zIndex: 10,
       };
     }
-    
+
     return { opacity: 0, pointerEvents: "none" };
   };
 
@@ -48,10 +48,10 @@ export default function CustomCarousel() {
   }, []);
 
   return (
-    
+
     <section className="w-full max-w-[100vw] overflow-x-hidden">
       <div className="relative w-full mx-auto my-8 h-[32rem] mb-2.5">
-    
+
         <div className="relative w-full h-full flex items-center justify-center overflow-hidden mb-2">
           {slides.map((slide, index) => {
             const position = getPosition(index);

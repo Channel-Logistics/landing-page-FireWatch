@@ -1,5 +1,4 @@
-import React from 'react';
-import { MapPin, Edit, Bell, DollarSign, Calendar, Shield } from 'lucide-react';
+import { MapPin, Edit, Bell } from 'lucide-react';
 import { pAreas, pTeamAreas, pAreasView } from '..';
 
 export default function MonitoringAreas() {

@@ -1,4 +1,4 @@
-import {  FolderGit2, Mail, Globe, AlertTriangle } from 'lucide-react';
+import { FolderGit2, Mail, Globe, AlertTriangle } from 'lucide-react';
 import { LogoSpaceEyesWhite } from '..';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ const Footer = () => {
                   className="w-full h-auto object-contain"
                 />
               </div>
-              <div className="h-7 border-l border-gray-300 mx-4"  />
+              <div className="h-7 border-l border-gray-300 mx-4" />
               <div className="ml-0">
                 <span className="text-orange-500 text-xl font-bold">FireWatch</span>
                 <span className="text-xs text-gray-400 block">Global Fire Monitor</span>
@@ -50,7 +50,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="GitHub"
-                
+
               >
                 <FolderGit2 className="w-5 h-5" />
               </a>

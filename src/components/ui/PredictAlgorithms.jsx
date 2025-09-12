@@ -17,8 +17,8 @@ export default function PredictAlgoritgms({
         "
       >
         <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 place-items-center md:place-items-stretch">
-          
-          
+
+
           <div className="md:col-span-5 flex flex-col items-center md:items-start md:mt-25 text-center md:text-left ">
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
               {headline}
@@ -29,7 +29,7 @@ export default function PredictAlgoritgms({
             </p>
           </div>
 
-          
+
           <div className="md:col-span-7 w-full flex justify-center">
             <div className="relative w-full max-w-md sm:max-w-lg md:max-w-3xl xl:max-w-[980px] mx-auto">
               <div className="relative aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
@@ -43,7 +43,7 @@ export default function PredictAlgoritgms({
                   preload="metadata"
                 />
               </div>
-              
+
               <div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-orange-500/20 via-sky-500/20 to-emerald-500/20 rounded-full" />
             </div>
           </div>

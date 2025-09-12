@@ -1,13 +1,10 @@
-import React from 'react';
-import { Users, Bell, MapPin, Clock, ArrowRight } from 'lucide-react';
-// Asegúrate de que las rutas de tus imágenes sean correctas
-import {Teamsone, Teamstwo} from ".."
+import { Users, Bell, MapPin } from 'lucide-react';
+import { Teamsone, Teamstwo } from ".."
 
 export default function Teams() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header Section */}
         <header className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
             Team Collaboration Features
@@ -18,9 +15,7 @@ export default function Teams() {
           </p>
         </header>
 
-        {/* Main Content: Features and Images */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Features */}
           <div className="space-y-8">
             <h2 className="text-3xl font-bold text-gray-900">Key Features for Teams</h2>
             <div className="space-y-6">
@@ -62,27 +57,25 @@ export default function Teams() {
               </div>
             </div>
           </div>
-          
-          {/* Images */}
+
           <div className="space-y-6">
             <div className="w-full h-50 rounded-2xl flex items-center justify-center text-gray-500 overflow-hidden">
               <img
-              src={Teamsone.src} 
-              alt={Teamsone.alt} 
+                src={Teamsone.src}
+                alt={Teamsone.alt}
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
             <div className="w-full h-50  rounded-2xl flex items-center justify-center text-gray-500 overflow-hidden">
               <img
-              src={Teamstwo.src} 
-              alt={Teamstwo.alt} 
+                src={Teamstwo.src}
+                alt={Teamstwo.alt}
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
           </div>
         </div>
 
-        {/* How to Get Started Section */}
         <div className="bg-gray-100 rounded-2xl shadow-xl p-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How to Get Started</h2>
           <div className="grid md:grid-cols-3 gap-8">

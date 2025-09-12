@@ -1,12 +1,10 @@
-import React from "react";
-import { Bell, Search, Filter, Clock } from "lucide-react";
+import { Bell, Search, Clock } from "lucide-react";
 import { pFires, pFireSpecificAlerts } from "..";
 
 export default function AllFires() {
   return (
     <div className="bg-gray-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto space-y-16">
-        {/* Header */}
         <header className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">All Fires</h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
@@ -15,7 +13,6 @@ export default function AllFires() {
           </p>
         </header>
 
-        {/* Visual Guide Section */}
         <section>
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
             Visual Guide: Complete Interface Overview
@@ -49,7 +46,6 @@ export default function AllFires() {
           </div>
         </section>
 
-        {/* How it Works Section */}
         <section>
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
             How it Works
@@ -84,7 +80,6 @@ export default function AllFires() {
           </div>
         </section>
 
-        {/* Key Features Section */}
         <section>
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
             Key Features
@@ -186,7 +181,6 @@ export default function AllFires() {
           </div>
         </section>
 
-        {/* Fire Status Categories Section */}
         <section>
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
             Fire Status Categories
@@ -242,7 +236,6 @@ export default function AllFires() {
           </div>
         </section>
 
-        {/* Current Fire Data Examples Section */}
         <section className="bg-white p-8 rounded-lg">
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-4">
             Current Fire Data Examples
@@ -294,11 +287,10 @@ export default function AllFires() {
                     {fire.name}
                   </h4>
                   <span
-                    className={`px-3 py-1 rounded text-sm font-medium ${
-                      fire.status === "Active"
+                    className={`px-3 py-1 rounded text-sm font-medium ${fire.status === "Active"
                         ? "bg-red-100 text-red-800"
                         : "bg-green-100 text-green-800"
-                    }`}
+                      }`}
                   >
                     {fire.status}
                   </span>
@@ -322,7 +314,6 @@ export default function AllFires() {
           </div>
         </section>
 
-        {/* Usage Instructions Section */}
         <section className="bg-green-50 p-8 rounded-lg">
           <h2 className="text-3xl font-semibold text-green-900 text-center mb-8">
             How to Use All Fires
