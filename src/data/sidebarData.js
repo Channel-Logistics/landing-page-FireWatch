@@ -1,4 +1,4 @@
-import { Globe, AlertTriangle, Flame, BarChart2, Users, Bell, Cloud, Wifi, Package } from 'lucide-react';
+import { Globe, AlertTriangle, Flame, BarChart2, Users, Bell, Cloud, Wifi } from 'lucide-react';
 
 export const sidebarSections = [
   {

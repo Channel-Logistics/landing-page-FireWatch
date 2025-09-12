@@ -6,7 +6,7 @@ export default function InfoMap({
   subtitle = "Daily updated WFPI maps highlight areas at higher wildfire risk across the U.S. By combining multiple real-time variables, they give a clear, large-scale view of potential fire outbreaks.",
 }) {
   return (
-    
+
     <section className="w-full h-full">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:py-16">
         <div className="flex flex-col md:flex-row items-center gap-10">

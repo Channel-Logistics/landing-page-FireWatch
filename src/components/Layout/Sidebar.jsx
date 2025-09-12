@@ -15,7 +15,7 @@ const Sidebar = ({
   const location = useLocation();
   const activeSection = location.pathname === "/" ? "introduction" : location.pathname.substring(1);
 
-  
+
   const closeBtnRef = useRef(null);
   const prevFocusRef = useRef(null);
 
@@ -39,7 +39,7 @@ const Sidebar = ({
 
   const handleSectionClick = () => {
     onSectionChange?.();
-    if (mobile) onClose?.(); 
+    if (mobile) onClose?.();
   };
 
   const toggleSection = (sectionId) => {
@@ -61,11 +61,10 @@ const Sidebar = ({
           <div key={section.id}>
             <button
               onClick={() => toggleSection(section.id)}
-              className={`flex items-center justify-between w-full px-4 py-3 rounded-lg font-medium transition-colors duration-200 ${
-                isSectionActive
+              className={`flex items-center justify-between w-full px-4 py-3 rounded-lg font-medium transition-colors duration-200 ${isSectionActive
                   ? "bg-orange-500 text-white shadow-lg"
                   : "text-gray-600 hover:bg-gray-200 hover:text-gray-800"
-              }`}
+                }`}
             >
               <div className="flex items-center">
                 <section.icon className="w-5 h-5 mr-4" />
@@ -87,11 +86,10 @@ const Sidebar = ({
                       key={item.id}
                       to={itemPath}
                       onClick={handleSectionClick}
-                      className={`block w-full text-left px-3 py-2 text-sm rounded-lg transition-all duration-200 ${
-                        activeSection === item.id
+                      className={`block w-full text-left px-3 py-2 text-sm rounded-lg transition-all duration-200 ${activeSection === item.id
                           ? "bg-orange-100 text-orange-700 font-medium"
                           : "text-gray-600 hover:bg-gray-100 hover:text-gray-800"
-                      }`}
+                        }`}
                     >
                       {item.title}
                     </Link>
@@ -105,21 +103,21 @@ const Sidebar = ({
     </nav>
   );
 
-  
+
   if (mobile) {
     const sidePos = side === "right" ? "right-0" : "left-0";
     const slideClosed = side === "right" ? "translate-x-full" : "-translate-x-full";
 
     return (
       <>
-        
+
         <div
           className={`fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm transition-opacity duration-300 lg:hidden
             ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
           onClick={() => onClose?.()}
           aria-hidden="true"
         />
-        
+
         <div
           className={`fixed inset-y-0 ${sidePos} z-[70] ${widthClass} bg-white shadow-2xl lg:hidden
             transform transition-transform duration-300 ease-out
@@ -146,7 +144,7 @@ const Sidebar = ({
     );
   }
 
-  
+
   return (
     <aside className="w-64 h-full bg-gray-50 border-r border-gray-200 flex flex-col min-h-screen shadow-md">
       {MenuContent}

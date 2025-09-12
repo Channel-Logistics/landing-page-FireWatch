@@ -1,4 +1,4 @@
-import {logos} from "..";
+import { logos } from "..";
 
 export default function TrustedBy() {
     return (

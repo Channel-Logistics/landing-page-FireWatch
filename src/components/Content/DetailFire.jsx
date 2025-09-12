@@ -1,14 +1,12 @@
-import React from "react";
-import { Map, Building2, Mountain, Building2 as InfrastructureIcon } from "lucide-react";
+import { Map, Building2, Mountain } from "lucide-react";
 import SectionCard from "../Layout/SectionCard";
 import InteractiveCard from "../Layout/InteractiveCard";
-import {simulation, Terrain3d, shelters} from "..";
+import { simulation, Terrain3d, shelters } from "..";
 
 export default function DetailFire() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Sección de encabezado */}
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">AI Fire Spread Simulation</h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
@@ -17,11 +15,9 @@ export default function DetailFire() {
           </p>
         </header>
 
-        {/* Sección de simulación IA */}
         <InteractiveCard />
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
-        
-        {/* Primera sección: imagen a la derecha (por defecto) */}
+
         <SectionCard
           icon={Building2}
           title="Protecting Critical Infrastructure"
@@ -32,7 +28,6 @@ export default function DetailFire() {
 
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
-        {/* Segunda sección: imagen a la izquierda */}
         <SectionCard
           icon={Mountain}
           title="3D Terrain Elevation"
@@ -44,13 +39,12 @@ export default function DetailFire() {
 
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
-        {/* Tercera sección: imagen a la derecha (por defecto) */}
         <SectionCard
           icon={Map}
           title="Nearby Shelters"
           description="In an emergency, the platform displays available **Nearby Shelters** like schools and community centers. Each location includes distance and navigation options to help ensure a safe and efficient evacuation."
           imageSrc={shelters.src}
-          alt={shelters.alt} 
+          alt={shelters.alt}
         />
       </div>
     </div>

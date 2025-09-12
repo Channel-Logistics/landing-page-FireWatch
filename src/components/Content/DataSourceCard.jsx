@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function DataSourceCard({ icon, title, subtitle, description, iconBgColor, iconColor }) {
   return (

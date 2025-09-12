@@ -1,4 +1,3 @@
-import React from "react";
 import { Globe, Flame, BarChart2, Bell, Activity, Shield, Satellite, Thermometer } from "lucide-react";
 import FeatureCard from "./FeatureCard";
 import DataSourceCard from "./DataSourceCard";

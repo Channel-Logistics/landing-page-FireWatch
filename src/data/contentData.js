@@ -31,5 +31,5 @@ export const contentData = {
     coordinates: '55.02106, -101.35400',
     containment: '0%'
   }
-  
+
 };

@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function FeatureCard({ icon, title, description, features, iconBgColor, iconColor }) {
   return (

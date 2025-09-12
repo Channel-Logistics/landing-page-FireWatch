@@ -1,12 +1,10 @@
-import React from "react";
-import { Map, Building2, Mountain } from "lucide-react";
 
 export default function SectionCard({
   icon: Icon,
   title,
   description,
-  mediaPosition = "right"|| "left",
-  imageSrc, 
+  mediaPosition = "right" || "left",
+  imageSrc,
 }) {
   const content = (
     <div className="space-y-4">

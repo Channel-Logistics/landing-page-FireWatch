@@ -6,7 +6,6 @@ export default function GeneralMetrics({
   subtitle = " Each region is assigned a global risk score calculated from environmental and terrain data. This prioritization makes it easier to focus resources where fire risk is greatest.",
 }) {
   return (
-
     <section className="w-full h-full ">
 
       <div className="mx-auto max-w-7xl px-4 py-10 sm:py-16">

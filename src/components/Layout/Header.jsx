@@ -163,7 +163,7 @@ const Header = () => {
                 >
                   Log In
                 </a>
-                <a  
+                <a
                   href="https://firewatch.space-eyes.com/"
                   target="_blank"
                   rel="noopener noreferrer"

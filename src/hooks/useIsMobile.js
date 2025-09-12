@@ -7,7 +7,7 @@ export function useIsMobile(bp = "md") {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const max = BREAKPOINTS[bp] - 0.02; 
+    const max = BREAKPOINTS[bp] - 0.02;
     const mql = window.matchMedia(`(max-width: ${max}px)`);
 
     const onChange = (e) => setIsMobile(e.matches);
