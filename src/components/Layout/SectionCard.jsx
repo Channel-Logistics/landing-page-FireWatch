@@ -43,7 +43,6 @@ export default function SectionCard({
         {/* Renderiza el componente de medios a la izquierda si el prop es "left" */}
         {mediaPosition === "left" && mediaComponent}
         {content}
-        {/* Renderiza el componente de medios a la derecha si el prop es "right" (o por defecto) */}
         {mediaPosition === "right" && mediaComponent}
       </div>
     </section>
