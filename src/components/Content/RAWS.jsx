@@ -1,7 +1,8 @@
 import React from 'react';
 import { Globe, BarChart2, Cloud, Wifi, Thermometer, Wind, Activity } from 'lucide-react';
+import { pRawsLocation, pRaws } from '../index';
 
-export default function RAWS() {
+export default function Raws() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -13,7 +14,6 @@ export default function RAWS() {
           </p>
         </header>
 
-        {/* RAWS Network Overview */}
         <section className="mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Our Station Network</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
@@ -42,24 +42,30 @@ export default function RAWS() {
         </section>
 
         <hr className="my-16 border-t-2 border-gray-200" />
-
-        {/* How to View Station Data */}
         <section className="mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">How to View Station Data</h2>
           <div className="flex flex-col lg:flex-row items-start gap-12 max-w-6xl mx-auto">
             <div className="w-full lg:w-1/2">
-              <h3 className="text-xl font-medium text-gray-800 mb-4">Initial View</h3>
-              <div className="w-full h-64 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-gray-500">
-                [Image placeholder: List of sample stations with location and basic data]
+              <h3 className="text-xl text-center font-medium text-gray-800 mb-4">Initial View</h3>
+              <div className="w-full h-64 rounded-lg mb-4 overflow-hidden">
+                <img
+                  src={pRaws.src}
+                  alt={pRaws.alt}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <p className="text-gray-600 leading-relaxed">
                 On the main RAWS page, you will see a list of nearby or featured weather stations. Each entry provides a quick summary, including the station's location, current temperature, and wind data.
               </p>
             </div>
             <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-              <h3 className="text-xl font-medium text-gray-800 mb-4">Detailed View</h3>
-              <div className="w-full h-64 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-gray-500">
-                [Image placeholder: Detailed station view with graphs and data]
+              <h3 className="text-xl text-center font-medium text-gray-800 mb-4">Detailed View</h3>
+              <div className="w-full h-64 rounded-lg mb-4 overflow-hidden">
+                <img
+                  src={pRawsLocation.src}
+                  alt={pRawsLocation.alt}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <p className="text-gray-600 leading-relaxed">
                 By clicking "View" on any station, you can access a detailed page. This view includes advanced weather information like **wind speed and direction** trends over time, and **air temperature** graphs. These visualizations help you understand how conditions have changed.
@@ -70,7 +76,6 @@ export default function RAWS() {
 
         <hr className="my-16 border-t-2 border-gray-200" />
 
-        {/* Data Parameters */}
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Understanding the Data</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -104,7 +109,6 @@ export default function RAWS() {
             </div>
           </div>
         </section>
-
       </div>
     </div>
   );

@@ -45,6 +45,8 @@ export const pFireSpecificAlerts = { src: "src/assets/image-docs/p-fire-specific
 export const pAreas = { src: "src/assets/image-docs/p-areas.webp", alt: "pAreas"}
 export const pTeamAreas = { src: "src/assets/image-docs/p-team-areas.webp", alt: "pTeamAreas"}
 export const pAreasView = { src: "src/assets/image-docs/p-areas-view.webp", alt: "pAreasView"}
+export const pRawsLocation = { src: "src/assets/image-docs/p-raws-location.webp", alt: "pRawsLocation"}
+export const pRaws = { src: "src/assets/image-docs/p-raws.webp", alt: "pRaws"}
 
 
 
