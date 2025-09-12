@@ -12,7 +12,7 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900">
-            How is works?
+            How it works?
           </h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             FireWatch is a comprehensive real-time wildfire monitoring system
