@@ -3,8 +3,9 @@ export default function SectionCard({
   icon: Icon,
   title,
   description,
-  mediaPosition = "right" || "left",
+  mediaPosition = "right",
   imageSrc,
+  videoSrc,
 }) {
   const content = (
     <div className="space-y-4">
@@ -17,10 +18,21 @@ export default function SectionCard({
   );
 
   const mediaComponent = (
-    <div
-      className={`w-full h-80 rounded-lg flex items-center justify-center`}
-    >
-      {imageSrc ? (
+    <div className="w-full h-80 rounded-lg flex items-center justify-center">
+      {videoSrc ? (
+        <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
+          <video
+            className="h-full w-full object-cover"
+            src={videoSrc}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+          />
+          <div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-orange-500/20 via-sky-500/20 to-emerald-500/20 rounded-full" />
+        </div>
+      ) : imageSrc ? (
         <img
           src={imageSrc}
           alt={title}
@@ -37,9 +49,25 @@ export default function SectionCard({
   return (
     <section className="mb-16">
       <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-        {mediaPosition === "left" && mediaComponent}
-        {content}
-        {mediaPosition === "right" && mediaComponent}
+        {mediaPosition === "left" ? (
+          <>
+            <div className="order-1 lg:order-1">
+              {mediaComponent}
+            </div>
+            <div className="order-2 lg:order-2">
+              {content}
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="order-1 lg:order-1">
+              {content}
+            </div>
+            <div className="order-2 lg:order-2">
+              {mediaComponent}
+            </div>
+          </>
+        )}
       </div>
     </section>
   );

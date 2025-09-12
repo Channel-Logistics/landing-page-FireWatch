@@ -1,7 +1,7 @@
 import { Map, Building2, Mountain } from "lucide-react";
 import SectionCard from "../Layout/SectionCard";
 import InteractiveCard from "../Layout/InteractiveCard";
-import { simulation, Terrain3d, shelters } from "..";
+import {Terrain3d, shelters, videoSimulation} from "..";
 
 export default function DetailFire() {
   return (
@@ -22,8 +22,7 @@ export default function DetailFire() {
           icon={Building2}
           title="Protecting Critical Infrastructure"
           description="The system automatically identifies and maps critical **Nearby Infrastructure** that could be affected by a wildfire. It includes essential facilities such as schools, hospitals, and fire departments, allowing for timely preparation and a focused response."
-          imageSrc={simulation.src}
-          alt={simulation.alt}
+          videoSrc={videoSimulation.src}
         />
 
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
@@ -33,7 +32,6 @@ export default function DetailFire() {
           title="3D Terrain Elevation"
           description="The **Interactive 3D Terrain Elevation** tool provides a detailed view of the landscape. By visualizing slopes, valleys, and ridges, you can better understand how terrain influences a fire's spread."
           imageSrc={Terrain3d.src}
-          alt={Terrain3d.alt}
           mediaPosition="left"
         />
 
@@ -44,7 +42,6 @@ export default function DetailFire() {
           title="Nearby Shelters"
           description="In an emergency, the platform displays available **Nearby Shelters** like schools and community centers. Each location includes distance and navigation options to help ensure a safe and efficient evacuation."
           imageSrc={shelters.src}
-          alt={shelters.alt}
         />
       </div>
     </div>
