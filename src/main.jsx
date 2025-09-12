@@ -18,7 +18,6 @@ createRoot(document.getElementById("root")).render(
           <Route path="high-priority" element={<ContentRenderer />} />
           <Route path="all-fires" element={<ContentRenderer />} />
           <Route path="detailFire" element={<ContentRenderer />} />
-          <Route path="terrain-3D" element={<ContentRenderer />} />
           <Route path="globalCoverage" element={<ContentRenderer />} />
           <Route path="predictions" element={<ContentRenderer />} />
           <Route path="teams" element={<ContentRenderer />} />
@@ -28,7 +27,7 @@ createRoot(document.getElementById("root")).render(
 
         </Route>
 
-        
+
       </Routes>
     </BrowserRouter>
   </StrictMode>
