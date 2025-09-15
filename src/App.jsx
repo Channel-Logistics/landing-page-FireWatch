@@ -11,6 +11,7 @@ import PredictAlgoritgms from './components/ui/PredictAlgorithms'
 import GeneralMetrics from './components/ui/GeneralMetrics'
 import ScrollProgressBar from './components/ui/ScrollProgressBar'
 import Section from './components/Layout/Section';
+import PrivacyPolicy from './components/usefulLinks/PrivacyPolicy'
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <Section id="map" className="items-stretch"><InfoMap /></Section>
         <Section id="algorithms" className="items-stretch"><PredictAlgoritgms /></Section>
         <Section id="metrics" className="items-stretch"><GeneralMetrics /></Section>
+        <PrivacyPolicy />
 
 
         <div className="snap-start">
