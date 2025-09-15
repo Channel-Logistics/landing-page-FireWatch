@@ -64,6 +64,6 @@ export const DetailVideo = { src: "src/assets/videos/Detailfile.gif", alt: "deta
 export const Fireoverview = { src: "src/assets/image-docs/fireoverview.webp", alt: "fireoverview" }
 export const Statealert = { src: "src/assets/image-docs/state-alerts.webp", alt: "statealert" }
 export const Riskfire = { src: "src/assets/image-docs/Riskfire.webp", alt: "riskfire" }
-export const Twitter = { src: "src/assets/image-docs/twitter.webp", alt: "twitter" }
+export const Twitter = { src: "src/assets/image-docs/Twitter2.png", alt: "twitter" }
 export const Comments = { src: "src/assets/image-docs/comments.webp", alt: "comments" }
 export const Tablenearby = { src: "src/assets/image-docs/table-nearby.webp", alt: "tablenearby" }

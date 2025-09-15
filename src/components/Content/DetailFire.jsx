@@ -48,6 +48,7 @@ export default function DetailFire() {
           description="Real-time posts related to the fire from social media, using the fire's name to gather relevant updates, photos, and eyewitness reports. This feature activates for fires over 200 acres, providing an additional layer of on-the-ground insight that can supplement official data with public observations and evolving local narratives."
           imageSrc={Twitter.src}
           mediaPosition="left"
+          mediaHeight="h-[500px]"
         />
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
         <SectionCard
@@ -72,13 +73,7 @@ export default function DetailFire() {
           description="Our AI Fire Spread Simulation harnesses a custom-trained artificial intelligence model to accurately predict the evolving path of a wildfire in real time. By intelligently processing dynamic weather conditions—including wind speed and direction, humidity, and temperature—alongside vegetation types, terrain slope, fuel moisture, and historical fire behavior, the model generates highly detailed forecasts of potential spread patterns"
           videoSrc={videoSimulation.src}
         />
-        <div className="bg-gray-100 rounded-xl overflow-hidden max-w-xs mx-auto">
-          <img
-            src={Tablenearby.src}
-            alt={Tablenearby.alt}
-            className="w-full h-auto object-contain"
-          />
-        </div>
+
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
        <SectionCard
           icon={Map}
