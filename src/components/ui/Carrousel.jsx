@@ -81,7 +81,7 @@ export default function CustomCarousel() {
 
                 {slide.alt === "androidImage" && (
                   <StyleTextCarousel
-                    label="WHAT IS FIREWATCH?"
+                    label="HOW IT WORKS"
                     title="AI-powered fire monitoring platform with real-time alerts and updates."
                     link="/how-it-works"
                     linkText="Read the Docs"
@@ -92,7 +92,7 @@ export default function CustomCarousel() {
                   <StyleTextCarousel
                     label="MONITORING AREAS"
                     title="3D maps, live weather data, and accurate predictions to track critical zones."
-                    link="/monitoringAreas"
+                    link="/monitoring-areas"
                     linkText="Learn more"
                   />
                 )}
