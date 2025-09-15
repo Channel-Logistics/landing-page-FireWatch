@@ -17,7 +17,7 @@ export const VideoFireWatch = { src: "src/assets/videos/VideoFireWatch.mp4", alt
 export const videoSimulation = { src: "src/assets/videos/simulationVideo.mov", alt: "videoSimulation" }
 
 
-export const logos = [
+export const  logos = [
   { src: "src/assets/logos/aws-nb.png", alt: "GM" },
   { src: "src/assets/logos/aws-nb.png", alt: "CNN" },
   { src: "src/assets/logos/aws-nb.png", alt: "BMW" },

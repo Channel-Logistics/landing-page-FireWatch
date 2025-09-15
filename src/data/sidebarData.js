@@ -1,4 +1,4 @@
-import { Globe, AlertTriangle, Flame, BarChart2, Users, Bell, Cloud, Wifi } from 'lucide-react';
+import { Globe, AlertTriangle, Flame, BarChart2, Users, Bell, Cloud, Wifi, Layers } from 'lucide-react';
 
 export const sidebarSections = [
   {
@@ -59,5 +59,10 @@ export const sidebarSections = [
     title: 'Raws',
     icon: Wifi,
     items: [{ id: 'raws', title: 'RAWS' }]
+  },
+  { id: 'layers',
+    title: 'Layers',
+    icon: Layers  ,
+    items: [{ id: 'layers', title: 'Layers' }]
   }
 ];

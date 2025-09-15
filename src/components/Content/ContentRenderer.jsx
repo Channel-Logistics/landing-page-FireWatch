@@ -10,6 +10,7 @@ import Predictions from "./Predictions";
 import Teams from "./Teams";
 import Raws from "./Raws";
 import MainContent from "../pages/MainContent";
+import Layers from "./Layers";
 
 const routeComponents = {
   "/docs": MainContent,
@@ -23,6 +24,7 @@ const routeComponents = {
   "/alerts": Alerts,
   "/forecast": Forecast,
   "/raws": Raws,
+  "/layers": Layers,
 };
 
 export default function ContentRenderer() {
