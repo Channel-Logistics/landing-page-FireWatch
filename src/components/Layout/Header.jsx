@@ -8,6 +8,8 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
+  const isDocs = location.pathname === "/docs";
+
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50)
     window.addEventListener("scroll", handleScroll)
@@ -73,7 +75,10 @@ const Header = () => {
                 </Link>
                 <Link
                   to="/docs"
-                  className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
+                  className={`flex items-center px-4 py-2 text-sm font-medium transition-colors border-b-2 ${isDocs
+                      ? "text-orange-600 border-orange-600"
+                      : "text-gray-900 hover:text-orange-600 border-transparent"
+                    }`}
                 >
                   <BookOpenText className="w-4 h-4 mr-3" />
                   Docs

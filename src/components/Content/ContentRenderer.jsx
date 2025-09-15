@@ -8,7 +8,7 @@ import MonitoringAreas from "./MonitoringAreas";
 import HighPriority from "./HighPriority";
 import Predictions from "./Predictions";
 import Teams from "./Teams";
-import Raws from "./Raws";
+import Raws from "./RAWS";
 import MainContent from "../pages/MainContent";
 
 const routeComponents = {
