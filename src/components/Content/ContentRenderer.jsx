@@ -17,7 +17,7 @@ const routeComponents = {
   "/high-priority": HighPriority,
   "/all-fires": AllFires,
   "/detail-fire": DetailFire,
-  "/monitoringAreas": MonitoringAreas,
+  "/monitoring-areas": MonitoringAreas,
   "/predictions": Predictions,
   "/teams": Teams,
   "/alerts": Alerts,

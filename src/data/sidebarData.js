@@ -25,7 +25,7 @@ export const sidebarSections = [
     ]
   },
   {
-    id: 'monitoringAreas',
+    id: 'monitoring-areas',
     title: 'Monitorig Areas',
     icon: Globe,
     items: [{ id: 'monitoring-areas', title: 'Monitoring Areas' }]
