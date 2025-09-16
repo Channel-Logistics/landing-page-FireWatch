@@ -6,6 +6,7 @@ export default function SectionCard({
   mediaPosition = "right",
   imageSrc,
   videoSrc,
+  mediaHeight = "h-80",
 }) {
   const content = (
     <div className="space-y-4">
@@ -18,7 +19,7 @@ export default function SectionCard({
   );
 
   const mediaComponent = (
-    <div className="w-full h-80 rounded-lg flex items-center justify-center">
+    <div className={`w-full ${mediaHeight} rounded-lg flex items-center justify-start`}>
       {videoSrc ? (
         <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
           <video
@@ -36,7 +37,12 @@ export default function SectionCard({
         <img
           src={imageSrc}
           alt={title}
-          className="w-full h-full object-cover rounded-lg"
+          className="w-full h-full object-contain object-left rounded-lg filter-none"
+          style={{
+            imageRendering: 'high-quality',
+            imageRendering: '-webkit-optimize-contrast',
+            imageRendering: 'crisp-edges'
+          }}
         />
       ) : (
         <div className="w-full h-full bg-gray-200 text-gray-500 flex items-center justify-center rounded-lg">
