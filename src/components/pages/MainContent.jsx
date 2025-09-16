@@ -1,5 +1,5 @@
 import { Flame, MapPin, Newspaper, Zap, Satellite, Layers, BookOpen, Apple, Cloud, Feather, Palette, Code, Github, Package, Network } from 'lucide-react';
-import { LogoSpaceEyes, imageDownload } from ".."
+import { LogoSpaceEyes, prediction } from ".."
 
 
 const MainContent = () => {
@@ -44,8 +44,8 @@ const MainContent = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-orange-200 to-red-200 rounded-3xl opacity-20 blur-2xl"></div>
                 <img
-                  src={imageDownload.src}
-                  alt={imageDownload.alt}
+                  src={prediction.src}
+                  alt={prediction.alt}
                   className="relative w-96 h-auto max-w-full drop-shadow-2xl transform hover:scale-105 transition-transform duration-500"
                 />
               </div>

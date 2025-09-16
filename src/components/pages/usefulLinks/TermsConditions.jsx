@@ -16,14 +16,14 @@ export default function TermsConditions() {
         <div className="flex items-center gap-2 text-sm text-slate-600">
           <Calendar className='h-4 w-4 text-orange-600' />
           <span>
-            Última actualización: <span className='font-semibold text-slate-800'>{lastUpdated}</span>
+            Last updated: <span className='font-semibold text-slate-800'>{lastUpdated}</span>
           </span>
         </div>
       </div>
 
       <div className="mx-auto px-4 pb-10 sm:pb-16 text-start space-y-8">
         <div className="rounded-3xl border border-orange-200 bg-orange-50 p-6 sm:p-8">
-          <h2 className="text-lg font-semibold mb-3">Resumen</h2>
+          <h2 className="text-lg font-semibold mb-3">Summary</h2>
           <p className="text-slate-700 leading-relaxed">
             By accessing or using the Space-Eyes website (the “Website”), you agree to be bound by these terms and conditions (“Terms”).
             If you do not agree to these Terms, please refrain from using the Website.

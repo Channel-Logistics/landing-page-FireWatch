@@ -1,11 +1,13 @@
 export const slides = [
-  { src: "src/assets/images/foto1.png", alt: "fotoUno" },
-  { src: "src/assets/images/foto1.png", alt: "fotoDos" },
-  { src: "src/assets/videos/VideoFireWatch.mp4", alt: "VideoFireWatch" },
-  { src: "src/assets/images/android.png", alt: "androidImage" },
+  { src: "src/assets/images/Climate.webp", alt: "fotoUno" },
+  { src: "src/assets/images/FireIndicator.webp", alt: "fotoDos" },
+  { src: "src/assets/videos/video-carrousel.mov", alt: "VideoFireWatch" },
+  { src: "src/assets/images/WindAndFire.webp", alt: "androidImage" },
 ];
 
-export const imageDownload = { src: "src/assets/images/firewatch-ss.png", alt: "downloadApp" }
+export const prediction = { src: "src/assets/images/Prediction.webp", alt: "downloadApp" }
+export const infoMap = { src: "src/assets/images/infoMap.webp", alt: "downloadApp" }
+export const metrics = { src: "src/assets/images/metricsFire.webp", alt: "downloadApp" }
 
 export const LogoSpaceEyes = { src: "src/assets/logos/logo.png", alt: "SpaceEyes" }
 export const LogoSpaceEyesWhite = { src: "src/assets/logos/space-eyes-w1.png", alt: "SpaceEyes" }
@@ -70,3 +72,5 @@ export const Tablenearby = { src: "src/assets/image-docs/table-nearby.webp", alt
 export const Area = { src: "src/assets/image-docs/areas.png", alt: "area" }
 export const Polygon = { src: "src/assets/image-docs/polygon.png", alt: "polygon" }
 export const MoniAreas = { src: "src/assets/videos/monitoringAreas.gif", alt: "moniAreas" }
+
+export const mainImageDocs = { src: "src/assets/images/docsInit.webp", alt: "mainImageDocs" }
