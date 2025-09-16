@@ -48,7 +48,7 @@ const Sidebar = ({
     );
   };
 
-  const navClasses = `flex-1 space-y-1.5 p-3 pb-3 ${mobile ? "pt-3" : "pt-4 mt-6"}`;
+  const navClasses = `flex-1 space-y-1.5 p-4 pb-4 ${mobile ? "pt-3" : "pt-4 mt-6"}`;
 
   const MenuContent = (
     <nav className={navClasses}>
@@ -146,7 +146,7 @@ const Sidebar = ({
 
 
   return (
-    <aside className="w-64 h-full bg-transparent border-r border-transparent flex flex-col">
+    <aside className="w-79 h-full bg-transparent border-r border-transparent flex flex-col">
       {MenuContent}
     </aside>
   );
