@@ -24,6 +24,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="alerts" element={<ContentRenderer />} />
           <Route path="forecast" element={<ContentRenderer />} />
           <Route path="raws" element={<ContentRenderer />} />
+          <Route path="layers" element={<ContentRenderer />} />
+
 
         </Route>
 
