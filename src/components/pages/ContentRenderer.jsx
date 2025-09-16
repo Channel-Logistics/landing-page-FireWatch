@@ -12,6 +12,7 @@ import Raws from "./Raws";
 import MainContent from "./MainContent";
 import Layers from "./Layers";
 import PrivacyPolicy from "./usefulLinks/PrivacyPolicy";
+import TermsConditions from "./usefulLinks/TermsConditions";
 
 const routeComponents = {
   "/docs": MainContent,
@@ -27,6 +28,7 @@ const routeComponents = {
   "/raws": Raws,
   "/layers": Layers,
   "/privacy-policy": PrivacyPolicy,
+  "/terms-and-conditions": TermsConditions, 
 };
 
 export default function ContentRenderer() {

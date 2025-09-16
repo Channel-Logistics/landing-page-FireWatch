@@ -1,4 +1,4 @@
-import { Calendar, FileText } from 'lucide-react';
+import { Calendar, ReceiptText } from 'lucide-react';
 
 export default function TermsConditions() {
   const lastUpdated = '16/09/2025';
@@ -7,12 +7,12 @@ export default function TermsConditions() {
     <section className="w-full h-full">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:py-16 text-start flex flex-row items-center gap-6">
         <div className='border-2 bg-orange-500 border-r-4 border-orange-500 p-4 rounded-lg flex items-center gap-4'>
-          <FileText className='h-6 w-6 text-white' />
+          <ReceiptText className='h-6 w-6 text-white' />
         </div>
-        <h1 className='text-2xl sm:text-3xl font-bold'>Términos y Condiciones</h1>
+        <h1 className='text-2xl sm:text-3xl font-bold'>Terms & Conditions</h1>
       </div>
 
-      <div className="mx-auto max-w-3xl px-4 pb-6 sm:pb-8">
+      <div className="mx-auto px-4 pb-6 sm:pb-8">
         <div className="flex items-center gap-2 text-sm text-slate-600">
           <Calendar className='h-4 w-4 text-orange-600' />
           <span>
@@ -21,129 +21,127 @@ export default function TermsConditions() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-3xl px-4 pb-10 sm:pb-16 text-start space-y-8">
+      <div className="mx-auto px-4 pb-10 sm:pb-16 text-start space-y-8">
         <div className="rounded-3xl border border-orange-200 bg-orange-50 p-6 sm:p-8">
           <h2 className="text-lg font-semibold mb-3">Resumen</h2>
           <p className="text-slate-700 leading-relaxed">
-            Este documento establece los términos bajo los cuales se ofrece y utiliza la
-            plataforma FireWatch. Al acceder o utilizar nuestros servicios, aceptas estos
-            Términos y Condiciones. Si no estás de acuerdo, por favor no utilices la
-            plataforma.
+            By accessing or using the Space-Eyes website (the “Website”), you agree to be bound by these terms and conditions (“Terms”).
+            If you do not agree to these Terms, please refrain from using the Website.
           </p>
         </div>
 
         <nav className="rounded-2xl border border-slate-200 p-4 sm:p-5 bg-white">
           <h3 className="text-sm font-semibold text-slate-700 mb-2">Contenido</h3>
           <ul className="grid sm:grid-cols-2 gap-2 text-sm text-slate-600">
-            <li><a className="hover:text-orange-600" href="#introduccion">1. Introducción</a></li>
-            <li><a className="hover:text-orange-600" href="#aceptacion">2. Aceptación de los términos</a></li>
-            <li><a className="hover:text-orange-600" href="#servicio">3. Descripción del servicio</a></li>
-            <li><a className="hover:text-orange-600" href="#cuentas">4. Cuentas y seguridad</a></li>
-            <li><a className="hover:text-orange-600" href="#pagos">5. Suscripciones y pagos</a></li>
-            <li><a className="hover:text-orange-600" href="#uso-aceptable">6. Uso aceptable</a></li>
-            <li><a className="hover:text-orange-600" href="#propiedad">7. Propiedad intelectual</a></li>
-            <li><a className="hover:text-orange-600" href="#privacidad">8. Privacidad</a></li>
-            <li><a className="hover:text-orange-600" href="#responsabilidad">9. Limitación de responsabilidad</a></li>
-            <li><a className="hover:text-orange-600" href="#modificaciones">10. Modificaciones</a></li>
-            <li><a className="hover:text-orange-600" href="#contacto">11. Contacto</a></li>
+            <li><a className="hover:text-orange-600" href="#acceptance">1. Acceptance of Terms</a></li>
+            <li><a className="hover:text-orange-600" href="#accounts">2. User Accounts</a></li>
+            <li><a className="hover:text-orange-600" href="#responsibilities">3. User Responsibilities</a></li>
+            <li><a className="hover:text-orange-600" href="#minors">4. Minors</a></li>
+            <li><a className="hover:text-orange-600" href="#ip-rights">5. Intellectual Property Rights</a></li>
+            <li><a className="hover:text-orange-600" href="#privacy">6. Privacy Policy</a></li>
+            <li><a className="hover:text-orange-600" href="#third-party">7. Third-Party Links and Services</a></li>
+            <li><a className="hover:text-orange-600" href="#disputes-law">8. Dispute Resolution and Governing Law</a></li>
+            <li><a className="hover:text-orange-600" href="#liability">9. Limitation of Liability</a></li>
+            <li><a className="hover:text-orange-600" href="#changes">10. Changes to the Terms and Conditions</a></li>
+            <li><a className="hover:text-orange-600" href="#termination">11. Termination of User Access</a></li>
           </ul>
         </nav>
 
         <article className="prose prose-slate max-w-none">
-          <section id="introduccion" className="not-prose space-y-3">
-            <h3 className="text-xl font-bold">1. Introducción</h3>
+          <section id="acceptance" className="not-prose space-y-3">
+            <h3 className="text-xl font-bold">1. Acceptance of Terms</h3>
             <p className="text-slate-700">
-              FireWatch ofrece herramientas de monitoreo, análisis y alerta relacionadas con
-              incendios y condiciones ambientales. Estos términos rigen la relación entre tú y
-              nosotros respecto al uso de la plataforma y sus funcionalidades.
+              By accessing or using the Space-Eyes website (the “Website”), you agree to be bound by these terms and conditions (“Terms”).
+              If you do not agree to these Terms, please refrain from using the Website. These Terms constitute a legally binding agreement between you and Space-Eyes.
             </p>
           </section>
 
-          <section id="aceptacion" className="not-prose space-y-3 mt-8">
-            <h3 className="text-xl font-bold">2. Aceptación de los términos</h3>
-            <p className="text-slate-700">
-              Al registrarte, acceder o utilizar los servicios, declaras que has leído y
-              aceptas estos Términos y que cuentas con la capacidad legal para hacerlo.
-            </p>
-          </section>
-
-          <section id="servicio" className="not-prose space-y-3 mt-8">
-            <h3 className="text-xl font-bold">3. Descripción del servicio</h3>
-            <p className="text-slate-700">
-              Brindamos visualización de datos, alertas y reportes. Las funcionalidades
-              específicas pueden variar según el plan contratado y pueden actualizarse con el
-              tiempo para mejorar el servicio.
-            </p>
-          </section>
-
-          <section id="cuentas" className="not-prose space-y-3 mt-8">
-            <h3 className="text-xl font-bold">4. Cuentas y seguridad</h3>
+          <section id="accounts" className="not-prose space-y-3 mt-8">
+            <h3 className="text-xl font-bold">2. User Accounts</h3>
             <ul className="list-disc pl-5 text-slate-700 space-y-1">
-              <li>Eres responsable de la confidencialidad de tus credenciales.</li>
-              <li>Debes notificarnos ante cualquier acceso no autorizado.</li>
-              <li>Podemos suspender cuentas por actividad sospechosa o incumplimientos.</li>
+              <li>Users may create accounts on the Website, subject to our account creation and management guidelines.</li>
+              <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
+              <li>We reserve the right to terminate or suspend user accounts for violations of these Terms.</li>
             </ul>
           </section>
 
-          <section id="pagos" className="not-prose space-y-3 mt-8">
-            <h3 className="text-xl font-bold">5. Suscripciones y pagos</h3>
-            <p className="text-slate-700">
-              En caso de planes de pago, los cargos se realizan de manera periódica según el
-              ciclo elegido. Los impuestos aplicables y condiciones específicas se indicarán en
-              el proceso de contratación.
-            </p>
-          </section>
-
-          <section id="uso-aceptable" className="not-prose space-y-3 mt-8">
-            <h3 className="text-xl font-bold">6. Uso aceptable</h3>
+          <section id="responsibilities" className="not-prose space-y-3 mt-8">
+            <h3 className="text-xl font-bold">3. User Responsibilities</h3>
             <ul className="list-disc pl-5 text-slate-700 space-y-1">
-              <li>No realizar ingeniería inversa, extracción masiva o uso fraudulento.</li>
-              <li>No interferir con la seguridad o disponibilidad del servicio.</li>
-              <li>Respetar la legislación vigente y derechos de terceros.</li>
+              <li>Comply with all applicable laws and regulations.</li>
+              <li>Refrain from engaging in any illegal, abusive, or harassing behavior on the Website.</li>
+              <li>Not use the Website for unauthorized advertising or spamming.</li>
+              <li>Respect the intellectual property rights of Space-Eyes and third parties.</li>
             </ul>
           </section>
 
-          <section id="propiedad" className="not-prose space-y-3 mt-8">
-            <h3 className="text-xl font-bold">7. Propiedad intelectual</h3>
+          <section id="minors" className="not-prose space-y-3 mt-8">
+            <h3 className="text-xl font-bold">4. Minors</h3>
             <p className="text-slate-700">
-              El software, marca, contenidos y documentación asociados a FireWatch son
-              propiedad de sus respectivos titulares y están protegidos por leyes de propiedad
-              intelectual. No se concede ninguna licencia salvo lo expresamente indicado.
+              Space-Eyes does not knowingly collect personal information from minors under the age of 18.
+              If you are a parent or legal guardian and believe that your child has provided their information to us,
+              please contact us at <a className="text-orange-600 hover:underline" href="mailto:support@space-eyes.com">support@space-eyes.com</a> to have their information removed.
             </p>
           </section>
 
-          <section id="privacidad" className="not-prose space-y-3 mt-8">
-            <h3 className="text-xl font-bold">8. Privacidad</h3>
+          <section id="ip-rights" className="not-prose space-y-3 mt-8">
+            <h3 className="text-xl font-bold">5. Intellectual Property Rights</h3>
             <p className="text-slate-700">
-              El tratamiento de datos personales se rige por nuestra Política de Privacidad.
-              Te recomendamos revisarla para comprender cómo recopilamos, usamos y protegemos
-              tu información.
+              The content on the Website, including but not limited to text, images, logos, and trademarks,
+              is protected by copyright and other intellectual property laws. Users are not permitted to reproduce,
+              distribute, or use this content without explicit permission from Space-Eyes.
             </p>
           </section>
 
-          <section id="responsabilidad" className="not-prose space-y-3 mt-8">
-            <h3 className="text-xl font-bold">9. Limitación de responsabilidad</h3>
+          <section id="privacy" className="not-prose space-y-3 mt-8">
+            <h3 className="text-xl font-bold">6. Privacy Policy</h3>
             <p className="text-slate-700">
-              La plataforma se ofrece "tal cual" y "según disponibilidad". En la medida que
-              la ley lo permita, no nos hacemos responsables por daños indirectos, incidentales
-              o consecuentes derivados del uso o imposibilidad de uso del servicio.
+              Your use of the Website is also governed by our Privacy Policy, which outlines how we collect, use, and protect your data.
             </p>
           </section>
 
-          <section id="modificaciones" className="not-prose space-y-3 mt-8">
-            <h3 className="text-xl font-bold">10. Modificaciones</h3>
+          <section id="third-party" className="not-prose space-y-3 mt-8">
+            <h3 className="text-xl font-bold">7. Third-Party Links and Services</h3>
             <p className="text-slate-700">
-              Podemos actualizar estos Términos cuando sea necesario. Publicaremos la versión
-              revisada indicando la fecha de actualización. El uso continuado del servicio
-              implica la aceptación de los cambios.
+              The Website may contain links to third-party websites or services. Space-Eyes is not responsible for the content,
+              practices, or policies of these external sites or services. Your interactions with third parties through the Website
+              are solely at your own risk.
             </p>
           </section>
 
-          <section id="contacto" className="not-prose space-y-3 mt-8">
-            <h3 className="text-xl font-bold">11. Contacto</h3>
+          <section id="disputes-law" className="not-prose space-y-3 mt-8">
+            <h3 className="text-xl font-bold">8. Dispute Resolution and Governing Law</h3>
             <p className="text-slate-700">
-              Si tienes preguntas sobre estos Términos, contáctanos en
-              <a className="text-orange-600 hover:underline ml-1" href="mailto:contact@firewatch.app">contact@firewatch.app</a>.
+              Any disputes arising from your use of the Website shall be resolved through arbitration in Miami, Florida,
+              in accordance with the rules of the American Arbitration Association. These Terms shall be governed by and
+              construed in accordance with the laws of the State of Florida.
+            </p>
+          </section>
+
+          <section id="liability" className="not-prose space-y-3 mt-8">
+            <h3 className="text-xl font-bold">9. Limitation of Liability</h3>
+            <p className="text-slate-700">
+              The Website is provided “as is” and “as available.” Space-Eyes makes no warranties or representations regarding
+              the accuracy, reliability, or availability of the Website.
+            </p>
+            <p className="text-slate-700">
+              To the extent permitted by applicable law, Space-Eyes shall not be liable for any direct, indirect, incidental,
+              consequential, or punitive damages resulting from your use of the Website.
+            </p>
+          </section>
+
+          <section id="changes" className="not-prose space-y-3 mt-8">
+            <h3 className="text-xl font-bold">10. Changes to the Terms and Conditions</h3>
+            <p className="text-slate-700">
+              Space-Eyes reserves the right to update these Terms at any time. Any changes will be posted on the Website,
+              and your continued use of the Website constitutes acceptance of the revised Terms.
+            </p>
+          </section>
+
+          <section id="termination" className="not-prose space-y-3 mt-8">
+            <h3 className="text-xl font-bold">11. Termination of User Access</h3>
+            <p className="text-slate-700">
+              Space-Eyes reserves the right to terminate or suspend user access for violations of these Terms.
             </p>
           </section>
         </article>
@@ -151,5 +149,3 @@ export default function TermsConditions() {
     </section>
   );
 }
-
-
