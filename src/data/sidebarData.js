@@ -6,7 +6,7 @@ export const sidebarSections = [
     title: 'Overview',
     icon: Globe,
     items: [
-      { id: 'how-it-works', title: 'Who it works?' }
+      { id: 'how-it-works', title: 'How it works?' }
     ]
   },
   {
