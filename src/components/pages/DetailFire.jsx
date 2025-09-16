@@ -21,7 +21,7 @@ export default function DetailFire() {
         <SectionCard
           icon={Building2}
           title="Overview"
-          description="This dashboard provides a comprehensive view of a wildfire incident. It features a **3D AI simulation** to predict the fire's spread across the terrain and identifies **critical infrastructure** and **shelters** at risk. A summary card gives real-time fire metrics, including its status, containment percentage, and current weather conditions. In essence, it's a tool for quick, data-driven fire analysis and emergency response."
+          description="This wildfire monitoring system is a comprehensive tool that combines real-time data with predictive modeling. A main dashboard displays specific fire incident details like the status ('Active' or 'Contained'), containment percentage, total area burned, cause ('Natural' or 'Undetermined'), and the last updated date. It also shows the data source (like 'WFGS' or 'CWFIS'), geographic coordinates, and the fire's type. This is supplemented by a section for current weather conditions, including wind direction and speed, atmospheric pressure, and temperature. Additionally, the system uses a **3D AI simulation** to predict fire spread, while also identifying and mapping at-risk **critical infrastructure** and showing the location of **nearby shelters**, thus enabling informed decision-making and community safety."
           imageSrc={Fireoverview.src}
         />
 
