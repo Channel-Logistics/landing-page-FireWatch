@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import Header from './components/Layout/Header'
 import ElegantCarousel from './components/ui/Carrousel'
 import Hero from './components/ui/Hero'
-import SingleShowcase from './components/ui/DownloadApp'
+import SingleShowcase from './components/ui/SingleShowCase'
 import Footer from './components/Layout/Footer'
 //import TrustedBy from './components/ui/TrustedBy'
 import CrossPlatform from './components/ui/CrossPlatform'
@@ -43,6 +43,7 @@ function App() {
         <Section id="map" className="items-stretch"><InfoMap /></Section>
         <Section id="algorithms" className="items-stretch"><PredictAlgoritgms /></Section>
         <Section id="metrics" className="items-stretch"><GeneralMetrics /></Section>
+       
 
 
         <div className="snap-start">
