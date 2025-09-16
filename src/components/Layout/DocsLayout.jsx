@@ -85,9 +85,10 @@ export default function DocsLayout() {
           </div>
         )}
 
-
-        <aside className="hidden lg:block w-64 shrink-0 border-r bg-white">
-          <Sidebar onSectionChange={() => setIsSidebarOpen(false)} />
+        <aside className="hidden lg:block w-64 shrink-0 sticky top-16 self-start bg-gradient-to-b from-white/60 to-white/20 border-r border-gray-200">
+          <div className="max-h-[calc(100vh-4rem)] overflow-y-auto pr-1">
+            <Sidebar onSectionChange={() => setIsSidebarOpen(false)} />
+          </div>
         </aside>
 
 

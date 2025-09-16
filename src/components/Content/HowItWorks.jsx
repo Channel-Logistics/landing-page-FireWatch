@@ -7,7 +7,7 @@ import { howItWorks } from "..";
 
 export default function HowItWorks() {
   return (
-    <div className="bg-gray-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900">
@@ -46,6 +46,8 @@ export default function HowItWorks() {
           </div>
         </div>
       </div>
+
+      <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
       <section className="space-y-6 mt-10 md:mt-14">
         <div className="text-center">
@@ -120,6 +122,8 @@ export default function HowItWorks() {
         </div>
       </section>
 
+      <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
+
       <section className="space-y-6 mt-10 md:mt-14">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -177,6 +181,8 @@ export default function HowItWorks() {
           </div>
         </div>
       </section>
+
+      <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
       <section className="space-y-6 mt-10 md:mt-14">
         <div className="text-center">

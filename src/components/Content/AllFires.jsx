@@ -3,7 +3,7 @@ import { pFires, pFireSpecificAlerts } from "..";
 
 export default function AllFires() {
   return (
-    <div className="bg-gray-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto space-y-16">
         <header className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">All Fires</h1>
@@ -18,7 +18,7 @@ export default function AllFires() {
             Visual Guide: Complete Interface Overview
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
-            <div className="bg-white p-6 rounded-lg border-2 border-dashed border-gray-300">
+            <div className="p-6 rounded-lg border-2 border-dashed border-gray-300">
               <h3 className="text-lg text-center font-semibold text-gray-700 mb-6">
                 Step 1: Main Interface with Navigation
               </h3>
@@ -45,6 +45,8 @@ export default function AllFires() {
             </div>
           </div>
         </section>
+
+        <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
         <section>
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
@@ -79,6 +81,8 @@ export default function AllFires() {
             </div>
           </div>
         </section>
+
+        <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
         <section>
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
@@ -181,6 +185,8 @@ export default function AllFires() {
           </div>
         </section>
 
+        <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
+
         <section>
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
             Fire Status Categories
@@ -235,6 +241,8 @@ export default function AllFires() {
             </div>
           </div>
         </section>
+
+        <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
         <section className="bg-white p-8 rounded-lg">
           <h2 className="text-3xl font-semibold text-gray-900 text-center mb-4">
@@ -313,6 +321,8 @@ export default function AllFires() {
             ))}
           </div>
         </section>
+
+        <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
         <section className="bg-green-50 p-8 rounded-lg">
           <h2 className="text-3xl font-semibold text-green-900 text-center mb-8">
