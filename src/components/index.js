@@ -67,3 +67,6 @@ export const Riskfire = { src: "src/assets/image-docs/Riskfire.webp", alt: "risk
 export const Twitter = { src: "src/assets/image-docs/Twitter2.png", alt: "twitter" }
 export const Comments = { src: "src/assets/image-docs/comments.webp", alt: "comments" }
 export const Tablenearby = { src: "src/assets/image-docs/table-nearby.webp", alt: "tablenearby" }
+export const Area = { src: "src/assets/image-docs/areas.png", alt: "area" }
+export const Polygon = { src: "src/assets/image-docs/polygon.png", alt: "polygon" }
+export const MoniAreas = { src: "src/assets/videos/monitoringAreas.gif", alt: "moniAreas" }
