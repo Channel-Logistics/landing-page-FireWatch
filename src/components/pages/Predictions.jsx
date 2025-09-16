@@ -3,7 +3,7 @@ import { Prediction, Predictiontwo } from ".."
 
 export default function Predictions() {
   return (
-    <div className="bg-gray-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Wildfire Prediction System</h1>
@@ -68,7 +68,7 @@ export default function Predictions() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Key Weather Factors We Monitor</h2>
-          <div className="w-full h-60 bg-gray-50 rounded-b-xs flex items-center justify-center text-gray-500 mb-8 overflow-hidden">
+          <div className="w-full h-60 bg-white rounded-b-xs flex items-center justify-center text-gray-500 mb-8 overflow-hidden">
             <img
               src={Predictiontwo.src}
               alt={Predictiontwo.alt}

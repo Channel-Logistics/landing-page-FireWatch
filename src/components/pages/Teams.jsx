@@ -76,6 +76,8 @@ export default function Teams() {
           </div>
         </div>
 
+        <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
+
         <div className="bg-gray-100 rounded-2xl shadow-xl p-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How to Get Started</h2>
           <div className="grid md:grid-cols-3 gap-8">
