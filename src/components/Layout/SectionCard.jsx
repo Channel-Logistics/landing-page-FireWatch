@@ -37,12 +37,7 @@ export default function SectionCard({
         <img
           src={imageSrc}
           alt={title}
-          className="w-full h-full object-contain object-left rounded-lg filter-none"
-          style={{
-            imageRendering: 'high-quality',
-            imageRendering: '-webkit-optimize-contrast',
-            imageRendering: 'crisp-edges'
-          }}
+          className="w-full h-full object-contain object-left rounded-lg"
         />
       ) : (
         <div className="w-full h-full bg-gray-200 text-gray-500 flex items-center justify-center rounded-lg">
