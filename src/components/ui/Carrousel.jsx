@@ -43,7 +43,7 @@ export default function CustomCarousel() {
   useEffect(() => {
     const id = setInterval(() => {
       setCurrentIndex((p) => (p + 1) % slides.length);
-    }, 3000);
+    }, 6000);
     return () => clearInterval(id);
   }, []);
 

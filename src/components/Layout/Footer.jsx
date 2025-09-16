@@ -90,10 +90,10 @@ const Footer = () => {
               <div className='sm: mx-1'>
                 <h3 className="text-lg font-semibold text-gray-200 mb-4">Useful Links</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About us</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-                  <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+                  <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">About us</Link></li>
+                  <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
+                  <li><Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
+                  <li><Link to="/terms-and-conditions" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</Link></li>
                 </ul>
               </div>
             </div>
