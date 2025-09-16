@@ -9,8 +9,9 @@ import HighPriority from "./HighPriority";
 import Predictions from "./Predictions";
 import Teams from "./Teams";
 import Raws from "./Raws";
-import MainContent from "../pages/MainContent";
+import MainContent from "./MainContent";
 import Layers from "./Layers";
+import PrivacyPolicy from "./usefulLinks/PrivacyPolicy";
 
 const routeComponents = {
   "/docs": MainContent,
@@ -25,6 +26,7 @@ const routeComponents = {
   "/forecast": Forecast,
   "/raws": Raws,
   "/layers": Layers,
+  "/privacy-policy": PrivacyPolicy,
 };
 
 export default function ContentRenderer() {

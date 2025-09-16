@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ContentRenderer from "./components/Content/ContentRenderer.jsx";
+import ContentRenderer from "./components/pages/ContentRenderer.jsx";
 import DocsLayout from "./components/Layout/DocsLayout.jsx";
 
 createRoot(document.getElementById("root")).render(
@@ -25,6 +25,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="forecast" element={<ContentRenderer />} />
           <Route path="raws" element={<ContentRenderer />} />
           <Route path="layers" element={<ContentRenderer />} />
+          <Route path="privacy-policy" element={<ContentRenderer />} />
 
 
         </Route>
