@@ -44,6 +44,7 @@ export default function CrossPlatform({
 
             <div className="mt-6 md:mt-10 flex flex-wrap justify-center md:justify-start items-center gap-4 md:gap-5">
               <motion.img
+                onClick={() => window.open("https://apps.apple.com/co/app/firewatch-ai-space-monitoring/id6498717343", "_blank", "noopener,noreferrer")}
                 src={appleImage.src}
                 alt={appleImage.alt}
                 className="w-[128px] h-[42px] object-contain cursor-pointer"
