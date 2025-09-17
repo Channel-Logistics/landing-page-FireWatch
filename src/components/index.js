@@ -74,3 +74,6 @@ export const Polygon = { src: "src/assets/image-docs/polygon.png", alt: "polygon
 export const MoniAreas = { src: "src/assets/videos/monitoringAreas.gif", alt: "moniAreas" }
 
 export const mainImageDocs = { src: "src/assets/images/docsInit.webp", alt: "mainImageDocs" }
+export const Indexmap = { src: "src/assets/images/indexmap.png", alt: "indexmap" }
+export const Predict = { src: "src/assets/images/predict.png", alt: "predict" }
+export const Risk = { src: "src/assets/images/risk.png", alt: "risk" }
