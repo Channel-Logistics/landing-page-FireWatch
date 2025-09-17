@@ -48,13 +48,13 @@ export const pAreas = { src: "src/assets/image-docs/p-areas.webp", alt: "pAreas"
 export const pTeamAreas = { src: "src/assets/image-docs/p-team-areas.webp", alt: "pTeamAreas" }
 export const pAreasView = { src: "src/assets/image-docs/p-areas-view.webp", alt: "pAreasView" }
 export const pRawsLocation = { src: "src/assets/image-docs/p-raws-location.webp", alt: "pRawsLocation" }
-export const pRaws = { src: "src/assets/image-docs/p-raws.webp", alt: "pRaws" }
+export const pRaws = { src: "src/assets/image-docs/raws.webp", alt: "pRaws" }
 
 
 
-export const Prediction = { src: "src/assets/images/predictionone.png", alt: "predictionone" }
+export const Prediction = { src: "src/assets/image-docs/predictweb.webp", alt: "predictionone" }
 export const Predictiontwo = { src: "src/assets/images/predictiontwo.png", alt: "predictiontwo" }
-export const Alertone = { src: "src/assets/images/alertone.png", alt: "alertone" }
+export const Alertone = { src: "src/assets/image-docs/alerts.webp", alt: "alertone" }
 export const Teamstwo = { src: "src/assets/images/teamstwo.png", alt: "teamstwo" }
 export const Teamsone = { src: "src/assets/images/teamsone.png", alt: "teamsone" }
 export const Forecastone = { src: "src/assets/images/forecastone.png", alt: "forecastone" }
@@ -65,7 +65,7 @@ export const simulation = { src: "src/assets/images/simulation.png", alt: "simul
 export const DetailVideo = { src: "src/assets/videos/Detailfile.gif", alt: "detailfire" }
 export const Fireoverview = { src: "src/assets/image-docs/fireoverview.webp", alt: "fireoverview" }
 export const Statealert = { src: "src/assets/image-docs/state-alerts.webp", alt: "statealert" }
-export const Riskfire = { src: "src/assets/image-docs/Riskfire.webp", alt: "riskfire" }
+export const Riskfire = { src: "src/assets/image-docs/riskweb.webp", alt: "riskfire" }
 export const Twitter = { src: "src/assets/image-docs/Twitter2.png", alt: "twitter" }
 export const Comments = { src: "src/assets/image-docs/comments.webp", alt: "comments" }
 export const Tablenearby = { src: "src/assets/image-docs/table-nearby.webp", alt: "tablenearby" }
@@ -74,3 +74,6 @@ export const Polygon = { src: "src/assets/image-docs/polygon.png", alt: "polygon
 export const MoniAreas = { src: "src/assets/videos/monitoringAreas.gif", alt: "moniAreas" }
 
 export const mainImageDocs = { src: "src/assets/images/docsInit.webp", alt: "mainImageDocs" }
+export const Indexmap = { src: "src/assets/images/indexmap.webp", alt: "indexmap" }
+export const Predict = { src: "src/assets/images/predict.webp", alt: "predict" }
+export const Risk = { src: "src/assets/images/risk.webp", alt: "risk" }

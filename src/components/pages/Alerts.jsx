@@ -16,11 +16,11 @@ export default function Alerts() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How Our Alerts Work</h2>
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
-            <div className="w-full lg:w-1/2 h-70 bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
+            <div className="w-full lg:w-1/2 h-96 md:h-[28rem] lg:h-[32rem] overflow-hidden flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
               <img
                 src={Alertone.src}
                 alt={Alertone.alt}
-                className="w-full h-full object-contain rounded-lg"
+                className="w-full h-full object-contain rounded-2xl"
               />
             </div>
             <div className="w-full lg:w-1/2 space-y-8">

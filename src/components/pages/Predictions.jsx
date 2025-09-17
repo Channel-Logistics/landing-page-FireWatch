@@ -16,7 +16,7 @@ export default function Predictions() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How It Works</h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
+            <div className="w-full h-96 md:h-[28rem] lg:h-[32rem] bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
               <img
                 src={Prediction.src}
                 alt={Prediction.alt}
@@ -68,13 +68,6 @@ export default function Predictions() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Key Weather Factors We Monitor</h2>
-          <div className="w-full h-60 bg-white rounded-b-xs flex items-center justify-center text-gray-500 mb-8 overflow-hidden">
-            <img
-              src={Predictiontwo.src}
-              alt={Predictiontwo.alt}
-              className="w-full h-full object-contain rounded-lg"
-            />
-          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto text-center">
             <div className="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
               <Thermometer className="h-10 w-10 text-red-500 mx-auto mb-4" />
