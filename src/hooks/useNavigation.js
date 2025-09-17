@@ -6,9 +6,9 @@ export const useNavigation = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  
+
   const activeSection = location.pathname === '/' ? 'introduction' : location.pathname.substring(1);
-  
+
   const setActiveSection = (section) => {
     if (section === 'introduction') {
       navigate('/');
@@ -29,7 +29,6 @@ export const useNavigation = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (isMobileMenuOpen && !event.target.closest('.mobile-menu')) {
@@ -41,7 +40,6 @@ export const useNavigation = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isMobileMenuOpen]);
 
-  // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen || isSidebarOpen) {
       document.body.style.overflow = 'hidden';

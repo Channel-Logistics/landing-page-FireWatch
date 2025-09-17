@@ -1,68 +1,77 @@
-import { Globe, AlertTriangle, Flame, BarChart2, Users, Bell, Cloud, Wifi, Package } from 'lucide-react';
+import { ChartNoAxesGantt } from 'lucide-react';
+import sidebarHighPriorityIcon2 from "../assets/icons/sidebar-high-priority-icon-2.webp";
+import sidebarAreasIcon from "../assets/icons/sidebar-areas-icon.webp"
+import predictionIconStroke from "../assets/icons/prediction-icon-stroke.webp"
+import flameIconStroke from "../assets/icons/flame-icon-stroke.webp"
+import sidebarTeamIcon from "../assets/icons/sidebar-team-icon.webp"
+import sidebarRawsIcon from "../assets/icons/sidebar-raws-icon.webp"
+import sidebarCloudIcon from "../assets/icons/sidebar-cloud-icon.webp"
+import sidebarBellIcon from "../assets/icons/sidebar-bell-icon.webp"
+import layers from "../assets/icons/layers.webp"
 
 export const sidebarSections = [
   {
     id: 'overview',
     title: 'Overview',
-    icon: Globe,
+    icon: ChartNoAxesGantt,
     items: [
-      { id: 'what-is-firewatch', title: 'What is FireWatch?' }
+      { id: 'how-it-works', title: 'How it works?' }
     ]
   },
   {
     id: 'high-priority',
     title: 'High Priority',
-    icon: AlertTriangle,
+    icon: sidebarHighPriorityIcon2,
     items: [{ id: 'high-priority', title: 'High Priority' }]
   },
   {
     id: 'fires',
     title: 'Fires',
-    icon: Flame,
+    icon: flameIconStroke,
     items: [
-      { id: 'all-fires', title: 'All Fires' }
+      { id: 'all-fires', title: 'All Fires' },
+      { id: 'detail-fire', title: 'Details Fire' }
     ]
   },
   {
-    id: 'terrain-3D',
-    title: 'Terrain-3D',
-    icon: Package,
-    items: [{ id: 'terrain-3D', title: 'Terrain-3D' }]
-  },
-  {
-    id: 'globalCoverage',
+    id: 'monitoring-areas',
     title: 'Monitorig Areas',
-    icon: Globe,
-    items: [{ id: 'globalCoverage', title: 'Monitoring Areas' }]
+    icon: sidebarAreasIcon,
+    items: [{ id: 'monitoring-areas', title: 'Monitoring Areas' }]
   },
   {
     id: 'predictions',
     title: 'Predictions',
-    icon: BarChart2,
+    icon: predictionIconStroke,
     items: [{ id: 'predictions', title: 'Predictions' }]
   },
   {
     id: 'teams',
     title: 'Teams',
-    icon: Users,
+    icon: sidebarTeamIcon,
     items: [{ id: 'teams', title: 'Teams' }]
   },
   {
     id: 'alerts',
     title: 'Alerts',
-    icon: Bell,
+    icon: sidebarBellIcon,
     items: [{ id: 'alerts', title: 'Alerts' }]
   },
   {
     id: 'forecast',
     title: 'Forecast',
-    icon: Cloud,
+    icon: sidebarCloudIcon,
     items: [{ id: 'forecast', title: 'Forecast' }]
   },
   {
     id: 'raws',
-    title: 'RAWS',
-    icon: Wifi,
-    items: [{ id: 'raws', title: 'RAWS' }]
+    title: 'Raws',
+    icon: sidebarRawsIcon,
+    items: [{ id: 'raws', title: 'Raws' }]
+  },
+  { id: 'layers',
+    title: 'Layers',
+    icon: layers  ,
+    items: [{ id: 'layers', title: 'Layers' }]
   }
 ];
