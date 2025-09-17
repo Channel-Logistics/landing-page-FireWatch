@@ -1,4 +1,4 @@
-import { Globe, BarChart2, Thermometer, Wind, Droplet, Sun, Zap } from 'lucide-react';
+import { Globe, BarChart2, Thermometer, Wind, Droplet, Sun, Zap, ArrowRight } from 'lucide-react';
 import { Prediction, Predictiontwo } from ".."
 
 export default function Predictions() {
@@ -84,52 +84,21 @@ export default function Predictions() {
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-              <Droplet className="h-10 w-10 text-purple-500 mx-auto mb-4" />
-              <h3 className="font-bold text-lg text-gray-800">Humidity</h3>
+              <BarChart2 className="h-10 w-10 text-purple-500 mx-auto mb-4" />
+              <h3 className="font-bold text-lg text-gray-800">Pressure</h3>
               <p className="text-sm text-gray-600 mt-2">
-                Low humidity makes vegetation more flammable. Levels below 30% are critical.
+                Atmospheric pressure affects wind patterns and fire behavior. Low pressure systems can create unstable conditions that accelerate fire spread.
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-sm border border-gray-200">
-              <Sun className="h-10 w-10 text-yellow-500 mx-auto mb-4" />
-              <h3 className="font-bold text-lg text-gray-800">Drought Index</h3>
+              <ArrowRight className="h-10 w-10 text-yellow-500 mx-auto mb-4" />
+              <h3 className="font-bold text-lg text-gray-800">Wind Direction</h3>
               <p className="text-sm text-gray-600 mt-2">
-                We analyze long-term drought conditions, a primary indicator of elevated fire risk.
+                Wind direction determines how fires spread and which areas are at immediate risk. Shifting winds can quickly change fire behavior and evacuation needs.
               </p>
             </div>
           </div>
         </section>
-
-        <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
-
-        <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">What You Should Do</h2>
-          <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto mb-8">
-            Our system provides you with the information you need to take action.
-            Here are three key steps to stay safe and prepared.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
-            <div className="p-6 bg-gray-100 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">Stay Informed</h3>
-              <p className="text-gray-600">
-                Check your personalized risk score daily during fire season and subscribe to alerts for your area.
-              </p>
-            </div>
-            <div className="p-6 bg-gray-100 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">Prepare Your Home</h3>
-              <p className="text-gray-600">
-                Create a defensible space around your property by clearing brush and flammable materials.
-              </p>
-            </div>
-            <div className="p-6 bg-gray-100 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">Have a Plan</h3>
-              <p className="text-gray-600">
-                Review evacuation routes and have an emergency kit ready for your family and pets.
-              </p>
-            </div>
-          </div>
-        </section>
-
       </div>
     </div>
   );
