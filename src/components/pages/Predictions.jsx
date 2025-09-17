@@ -16,7 +16,7 @@ export default function Predictions() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How It Works</h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="w-full h-96 md:h-[28rem] lg:h-[32rem] bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
+            <div className="w-full h-96 md:h-[28rem] lg:h-[30rem] bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
               <img
                 src={Prediction.src}
                 alt={Prediction.alt}
