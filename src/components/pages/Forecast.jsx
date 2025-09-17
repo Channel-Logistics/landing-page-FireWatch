@@ -1,4 +1,4 @@
-import { Cloud, Thermometer, Wind, Droplet, MapPin, Search } from "lucide-react";
+import { Cloud, Thermometer, Wind, Droplet, MapPin, Search, Snowflake, ThermometerSnowflake, CloudHail, ArrowUpRight } from "lucide-react";
 import { Forecastone, Forecasttwo } from ".."
 
 export default function Forecast() {
@@ -14,41 +14,89 @@ export default function Forecast() {
             crucial for understanding fire conditions and predicting fire behavior.
           </p>
         </header>
-
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Key Weather Parameters</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Key Weather Parameters
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {/* Temperatura Max */}
             <div className="p-6 bg-gray-100 rounded-lg shadow-sm text-center">
               <Thermometer className="h-12 w-12 text-red-500 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Temperature</h3>
+              <h3 className="text-xl font-semibold mb-2">Temperature Max</h3>
               <p className="text-gray-600">
-                Live temperature readings and forecasts that significantly affect fuel dryness and fire conditions.
+                Live temperature readings and forecasts that significantly affect fuel
+                dryness and fire conditions.
               </p>
             </div>
+
+            {/* Temperatura Min */}
+            <div className="p-6 bg-gray-100 rounded-lg shadow-sm text-center">
+              <ThermometerSnowflake className="h-12 w-12 text-blue-500 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Temperature Min</h3>
+              <p className="text-gray-600">
+                Forecasts for minimum temperatures, which are useful for understanding
+                overnight conditions and frost probability.
+              </p>
+            </div>
+
+            {/* Wind Speed & Direction */}
             <div className="p-6 bg-gray-100 rounded-lg shadow-sm text-center">
               <Wind className="h-12 w-12 text-blue-500 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Wind Speed & Direction</h3>
               <p className="text-gray-600">
-                Analysis of wind speed, direction, and gust patterns—critical for understanding fire spread.
+                Analysis of wind speed, direction, and gust patterns—critical for
+                understanding fire spread.
               </p>
             </div>
+
+            {/* Relative Humidity */}
             <div className="p-6 bg-gray-100 rounded-lg shadow-sm text-center">
               <Droplet className="h-12 w-12 text-purple-500 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Relative Humidity</h3>
               <p className="text-gray-600">
-                Measurements of moisture in the air. Low humidity is a key factor in fire ignition and spread.
+                Measurements of moisture in the air. Low humidity is a key factor in
+                fire ignition and spread.
               </p>
             </div>
+
+            {/* Atmospheric Pressure */}
             <div className="p-6 bg-gray-100 rounded-lg shadow-sm text-center">
               <Cloud className="h-12 w-12 text-gray-500 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Atmospheric Pressure</h3>
               <p className="text-gray-600">
-                Tracking of high and low-pressure systems which often dictate hot, dry, or windy conditions.
+                Tracking of high and low-pressure systems which often dictate hot, dry,
+                or windy conditions.
+              </p>
+            </div>
+
+            {/* South-West (esto parece ser un marcador de dirección, no un parámetro) */}
+            <div className="p-6 bg-gray-100 rounded-lg shadow-sm text-center">
+              <Snowflake className="h-12 w-12 text-blue-300 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Freezing Level</h3>
+              <p className="text-gray-600">
+                The altitude where the air temperature drops below freezing. Important
+                for forecasting snow or ice.
+              </p>
+            </div>
+
+            {/* Precipitation */}
+            <div className="p-6 bg-gray-100 rounded-lg shadow-sm text-center">
+              <CloudHail className="h-12 w-12 text-gray-500 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Precipitation</h3>
+              <p className="text-gray-600">
+                Forecast of rain, snow, or hail. Crucial for wildfire prevention and
+                water resource management.
+              </p>
+            </div>
+            <div className="p-6 bg-gray-100 rounded-lg shadow-sm text-center">
+              <ArrowUpRight className="h-12 w-12 text-yellow-600 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Direction Wind</h3>
+              <p className="text-gray-600">
+                This parameter indicates the compass direction from which the wind is blowing. By tracking wind direction, we can predict the potential path of a fire, allowing for better strategic planning and resource allocation.
               </p>
             </div>
           </div>
         </section>
-
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
         <section className="mb-16">
