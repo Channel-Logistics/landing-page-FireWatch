@@ -67,7 +67,11 @@ const Sidebar = ({
                 }`}
             >
               <div className="flex items-center">
-                <section.icon className="w-4 h-4 mr-3" />
+                {typeof section.icon === "string" ? (
+                  <img src={section.icon} alt="icon" className="w-4 h-4 mr-3 object-contain" />
+                ) : (
+                  <section.icon className="w-4 h-4 mr-3" />
+                )}
                 <span className="truncate">{section.title}</span>
               </div>
               {expandedSections.includes(section.id) ? (
