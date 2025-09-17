@@ -27,6 +27,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="layers" element={<ContentRenderer />} />
           <Route path="privacy-policy" element={<ContentRenderer />} />
           <Route path="terms-and-conditions" element={<ContentRenderer />} />
+          <Route path="contact-us" element={<ContentRenderer />} />
 
 
         </Route>
