@@ -67,7 +67,7 @@ export const sidebarSections = [
     id: 'raws',
     title: 'Raws',
     icon: sidebarRawsIcon,
-    items: [{ id: 'raws', title: 'RAWS' }]
+    items: [{ id: 'raws', title: 'Raws' }]
   },
   { id: 'layers',
     title: 'Layers',

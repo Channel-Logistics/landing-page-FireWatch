@@ -12,56 +12,98 @@ export default function MonitoringAreas() {
           </p>
         </header>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-gray-900 text-center mb-8">
+        <section className="py-8">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-16">
             Visual Guide: Step-by-Step Interface
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Card 1 */}
-            <div className="bg-white p-4 rounded-lg border-2 border-dashed border-gray-300 flex flex-col">
-              <div className="bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center h-60 md:h-72">
-                <img
-                  src={MoniAreas.src}
-                  alt={MoniAreas.alt}
-                  className="max-h-full max-w-full object-contain"
-                />
-              </div>
-              <h3 className="text-base text-center font-semibold text-gray-700 mt-4 mb-2">Step 1: Create New Area</h3>
-              <p className="text-gray-600 text-sm text-center">
-                Receive fire data and alerts for a specific Monitoring Area by defining custom bounds.
-              </p>
-            </div>
 
-            {/* Card 2 */}
-            <div className="bg-white p-4 rounded-lg border-2 border-dashed border-gray-300 flex flex-col">
-              <div className="bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center h-60 md:h-72">
-                <img
-                  src={Area.src}
-                  alt={Area.alt}
-                  className="max-h-full max-w-full object-contain"
-                />
+          <section className="mb-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div className="order-1 lg:order-1">
+                <div className="space-y-4">
+                  <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+                    <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                      1
+                    </div>
+                    Create New Area
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed">
+                    Receive fire data and alerts for a specific Monitoring Area by defining custom bounds.
+                    This step allows you to establish the initial monitoring zone for your fire detection system.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-base text-center font-semibold text-gray-700 mt-4 mb-2">Step 2: Team Areas Management</h3>
-              <p className="text-gray-600 text-sm text-center">
-                Create Monitoring Areas by drawing custom polygons using points on the map.
-              </p>
+              <div className="order-2 lg:order-2 hover:shadow-xl transition-shadow duration-300 h-full">
+                <div className="w-full h-full rounded-lg flex items-center justify-center bg-gray-50">
+                  <img
+                    src={MoniAreas.src}
+                    alt={MoniAreas.alt}
+                    className="w-full h-full object-contain rounded-lg"
+                  />
+                </div>
+              </div>
             </div>
+          </section>
 
-            {/* Card 3 */}
-            <div className="bg-white p-4 rounded-lg border-2 border-dashed border-gray-300 flex flex-col">
-              <div className="bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center h-60 md:h-72">
-                <img
-                  src={Polygon.src}
-                  alt={Polygon.alt}
-                  className="max-h-full max-w-full object-contain"
-                />
+          <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
+
+          <section className="mb-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div className="order-1 lg:order-1">
+                <div className="w-85 h-full rounded-lg flex items-center justify-center bg-gray-50 hover:shadow-xl transition-shadow duration-300">
+                  <img
+                    src={Area.src}
+                    alt={Area.alt}
+                    className="w-full h-full object-contain rounded-lg"
+                  />
+                </div>
               </div>
-              <h3 className="text-base text-center font-semibold text-gray-700 mt-4 mb-2">Step 3: Areas List and Management</h3>
-              <p className="text-gray-600 text-sm text-center">
-                Create an area by entering an address and selecting a custom radius to monitor proximity.
-              </p>
+              <div className="order-2 lg:order-2">
+                <div className="space-y-4">
+                  <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+                    <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                      2
+                    </div>
+                    Team Areas Management
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed">
+                    Create Monitoring Areas by drawing custom polygons using points on the map.
+                    This feature enables you to define irregular monitoring zones that match your specific geographical needs and boundaries.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
+          </section>
+
+          <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
+
+          <section className="mb-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div className="order-1 lg:order-1">
+                <div className="space-y-4">
+                  <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
+                    <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
+                      3
+                    </div>
+                    Areas List and Management
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed">
+                    Create an area by entering an address and selecting a custom radius to monitor proximity.
+                    This final step allows you to manage all your monitoring areas from a centralized interface with easy access to view and modify settings.
+                  </p>
+                </div>
+              </div>
+              <div className="order-2 lg:order-2 hover:shadow-xl transition-shadow duration-300 h-full border-radius">
+                <div className="w-full h-full rounded-lg flex items-center justify-center bg-gray-50">
+                  <img
+                    src={Polygon.src}
+                    alt={Polygon.alt}
+                    className="w-full h-full object-contain rounded-lg"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
 
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
