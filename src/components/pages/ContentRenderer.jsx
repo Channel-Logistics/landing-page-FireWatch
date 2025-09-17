@@ -15,6 +15,7 @@ import Layers from "./Layers";
 import PrivacyPolicy from "./usefulLinks/PrivacyPolicy";
 import TermsConditions from "./usefulLinks/TermsConditions";
 import ContactUs from "./usefulLinks/ContactUs";
+import AboutUs from "./usefulLinks/AboutUs";
 
 const routeComponents = {
   "/docs": MainContent,
@@ -32,6 +33,7 @@ const routeComponents = {
   "/privacy-policy": PrivacyPolicy,
   "/terms-and-conditions": TermsConditions, 
   "/contact-us": ContactUs,
+  "/about-us": AboutUs,
 };
 
 export default function ContentRenderer() {

@@ -28,6 +28,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="privacy-policy" element={<ContentRenderer />} />
           <Route path="terms-and-conditions" element={<ContentRenderer />} />
           <Route path="contact-us" element={<ContentRenderer />} />
+          <Route path="about-us" element={<ContentRenderer />} />
 
 
         </Route>
