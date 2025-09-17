@@ -1,5 +1,5 @@
 import { Flame, MapPin, Newspaper, Zap, Satellite, Layers, BookOpen, Apple, Cloud, Feather, Palette, Code, Github, Package, Network } from 'lucide-react';
-import { LogoSpaceEyes, prediction } from ".."
+import { LogoSpaceEyes, mainImageDocs } from ".."
 
 
 const MainContent = () => {
