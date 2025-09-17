@@ -1,7 +1,7 @@
 
 export default function FeatureCard({ icon, title, description, features, iconBgColor, iconColor }) {
   return (
-    <div className="flex flex-col h-full bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+    <div className="flex flex-col h-full bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 items-center justify-center">
       <div className="flex items-center space-x-4 mb-4">
         <div className={`p-3 ${iconBgColor} rounded-lg`}>
           <div className={`h-8 w-8 ${iconColor}`}>{icon}</div>

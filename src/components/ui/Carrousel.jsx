@@ -60,13 +60,13 @@ export default function CustomCarousel() {
             return (
               <div
                 key={index}
-                className="absolute h-[32rem] w-[min(99vw,1200px)] transition-all duration-700 ease-in-out"
+                className="absolute h-[32rem] w-[min(99vw,1200px)] transition-all duration-700 ease-in-out bg-gray-50 hover:shadow-xl"
                 style={style}
               >
                 {isVideo ? (
                   <video
                     src={slide.src}
-                    className="w-full h-full object-cover rounded-xl shadow-2xl"
+                    className="w-full h-full object-cover rounded-xl shadow-2xl bg-gray-50"
                     autoPlay
                     muted
                     loop
@@ -75,7 +75,7 @@ export default function CustomCarousel() {
                   <img
                     src={slide.src}
                     alt={slide.alt}
-                    className="w-full h-full object-cover rounded-xl shadow-2xl"
+                    className="w-full h-full object-cover rounded-xl shadow-2xl bg-gray-50"
                   />
                 )}
 

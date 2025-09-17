@@ -22,7 +22,7 @@ export default function InfoMap({
 
                     <div className="md:col-span-7 w-full flex justify-center">
                         <div className="relative w-full max-w-md sm:max-w-lg md:max-w-3xl xl:max-w-[980px] mx-auto">
-                            <div className="relative aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
+                            <div className="relative aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 bg-gray-50 hover:shadow-xl transition-shadow duration-300">
                                 <img
                                     className="h-full w-full object-cover"
                                     src={infoMap?.src}

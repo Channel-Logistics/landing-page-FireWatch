@@ -1,7 +1,7 @@
 import { Map, Building2, Mountain, AlertCircle } from "lucide-react";
 import SectionCard from "../Layout/SectionCard";
 import InteractiveCard from "../Layout/InteractiveCard";
-import {Terrain3d, shelters, videoSimulation, Fireoverview, Statealert, Riskfire, Twitter,Comments, Tablenearby} from "..";
+import { Terrain3d, shelters, videoSimulation, Fireoverview, Statealert, Riskfire, Twitter,Comments } from "..";
 
 export default function DetailFire() {
   return (
@@ -21,7 +21,7 @@ export default function DetailFire() {
         <SectionCard
           icon={Building2}
           title="Overview"
-          description="This wildfire monitoring system is a comprehensive tool that combines real-time data with predictive modeling. A main dashboard displays specific fire incident details like the status ('Active' or 'Contained'), containment percentage, total area burned, cause ('Natural' or 'Undetermined'), and the last updated date. It also shows the data source (for example, incident feeds), geographic coordinates, and the fire's type. This is supplemented by a section for current weather conditions, including wind direction and speed, atmospheric pressure, and temperature. Additionally, the system uses a **3D AI simulation** to predict fire spread, while also identifying and mapping at-risk **critical infrastructure** and showing the location of **nearby shelters**, thus enabling informed decision-making and community safety."
+          description="This wildfire monitoring system is a comprehensive tool that combines real-time data with predictive modeling. A main dashboard displays specific fire incident details like the status ('Active' or 'Contained'), containment percentage, total area burned, cause ('Natural' or 'Undetermined'), and the last updated date. It also shows the data source (like 'WFGS' or 'CWFIS'), geographic coordinates, and the fire's type. This is supplemented by a section for current weather conditions, including wind direction and speed, atmospheric pressure, and temperature. Additionally, the system uses a **3D AI simulation** to predict fire spread, while also identifying and mapping at-risk **critical infrastructure** and showing the location of **nearby shelters**, thus enabling informed decision-making and community safety."
           imageSrc={Fireoverview.src}
         />
 
@@ -29,8 +29,8 @@ export default function DetailFire() {
 
         <SectionCard
           icon={AlertCircle}
-          title="Official Alerts"
-          description="Fire-related emergency warnings issued by official agencies in the affected region. These alerts, such as Red Flag Warnings and Fire Weather Watches, provide critical, time-sensitive information about hazardous conditions that may increase wildfire risk, including lightning, dry fuels, and strong winds."
+          title="State Alerts"
+          description="Fire-related emergency warnings issued by the U.S. state where the fire is located. These alerts, such as Red Flag Warnings and Fire Weather Watches, are sourced directly from government agencies and provide critical, time-sensitive information about hazardous conditions that may increase wildfire risk, including lightning, dry fuels, and high winds."
           imageSrc={Statealert.src}
           mediaPosition="left"
         />
