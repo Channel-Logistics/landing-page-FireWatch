@@ -1,4 +1,4 @@
-import { prediction } from "../index";
+import { prediction, Risk } from "../index";
 
 export default function SingleShowCase({
     headline = "Smart maps that ",
@@ -29,6 +29,17 @@ export default function SingleShowCase({
                                     alt="Image Download"
                                 />
 
+                            </div>
+
+                            {/* Mobile Mockup - Positioned as overlay on the left, no background */}
+                            <div className="absolute -bottom-14 -left-8 md:-bottom-20 md:-left-12 lg:-bottom-24 lg:-left-16">
+                                <div className="relative w-24 md:w-28 lg:w-32 xl:w-36">
+                                    <img
+                                        className="w-full h-auto object-contain drop-shadow-2xl"
+                                        src={Risk?.src}
+                                        alt={Risk.alt}
+                                    />
+                                </div>
                             </div>
 
                             <div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-orange-500/20 via-sky-500/20 to-emerald-500/20 rounded-full" />
