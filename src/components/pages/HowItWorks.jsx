@@ -135,8 +135,8 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-6">
-          <div className="w-full md:w-[calc(50%-1rem)]">
+        <div className="flex flex-wrap gap-6 items-stretch">
+          <div className="flex w-full md:w-[calc(50%-1rem)]">
             <DataSourceCard
               icon={<Flame className="h-6 w-6" />}
               title="Incident Feeds"
@@ -147,10 +147,10 @@ export default function HowItWorks() {
             />
           </div>
 
-          <div className="w-full md:w-[calc(50%-1rem)]">
+          <div className="flex w-full md:w-[calc(50%-1rem)]">
             <DataSourceCard
               icon={<Thermometer className="h-6 w-6" />}
-              title="RAWS"
+              title="Raws"
               subtitle="Remote Automated Weather Stations"
               description="Real-time weather monitoring for fire conditions, including temperature, humidity, wind speed and precipitation."
               iconBgColor="bg-blue-100"
@@ -158,7 +158,7 @@ export default function HowItWorks() {
             />
           </div>
 
-          <div className="w-full md:w-[calc(50%-1rem)]">
+          <div className="flex w-full md:w-[calc(50%-1rem)]">
             <DataSourceCard
               icon={<Satellite className="h-6 w-6" />}
               title="Satellite Imagery"
@@ -169,7 +169,7 @@ export default function HowItWorks() {
             />
           </div>
 
-          <div className="w-full md:w-[calc(50%-1rem)]">
+          <div className="flex w-full md:w-[calc(50%-1rem)]">
             <DataSourceCard
               icon={<Activity className="h-6 w-6" />}
               title="Ground Sensors"
