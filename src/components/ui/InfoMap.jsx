@@ -26,7 +26,7 @@ export default function InfoMap({
                                 <img
                                     className="h-full w-full object-cover"
                                     src={infoMap?.src}
-                                    alt="Info Map"
+                                    alt={infoMap.alt}
                                 />
 
                             </div>

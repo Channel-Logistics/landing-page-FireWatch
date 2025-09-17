@@ -50,7 +50,7 @@ export default function PredictAlgoritgms({
                   <img
                     className="w-full h-auto object-contain drop-shadow-2xl"
                     src={androidImage?.src}
-                    alt="androidImage Mobile"
+                    alt={androidImage.alt}
                   />
                 </div>
               </div>

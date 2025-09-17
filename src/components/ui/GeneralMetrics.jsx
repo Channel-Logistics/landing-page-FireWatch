@@ -36,7 +36,7 @@ export default function GeneralMetrics({
                                     <img
                                         className="w-full h-auto object-contain drop-shadow-2xl"
                                         src={Risk?.src}
-                                        alt="Risk Mobile"
+                                        alt={Risk.alt}
                                     />
                                 </div>
                             </div>
