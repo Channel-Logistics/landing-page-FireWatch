@@ -1,8 +1,7 @@
 
 import { FileUser, Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useForm } from "react-hook-form";
-import { useSendEmail } from "../../../hooks/useMail";
-import { html } from "motion/react-client";
+import { useSendEmail } from "../../../hooks/useMail"
 import { buildContactHtml } from "../../../utils/emailTemplates/contactHtml";
 
 export default function ContactUs() {

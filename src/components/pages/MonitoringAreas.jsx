@@ -113,7 +113,7 @@ export default function MonitoringAreas() {
             How it Works
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-5 rounded-lg shadow-md text-center">
+            <div className="bg-gray-50 p-5 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 items-center justify-center">
               <MapPin className="h-10 w-10 text-blue-500 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-3">Address & Radius</h3>
               <p className="text-gray-600">
@@ -121,7 +121,7 @@ export default function MonitoringAreas() {
               </p>
             </div>
 
-            <div className="bg-white p-5 rounded-lg shadow-md text-center">
+            <div className="bg-gray-50 p-5 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 items-center justify-center">
               <Edit className="h-10 w-10 text-green-500 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-3">Draw Polygon</h3>
               <p className="text-gray-600">
@@ -129,7 +129,7 @@ export default function MonitoringAreas() {
               </p>
             </div>
 
-            <div className="bg-white p-5 rounded-lg shadow-md text-center">
+            <div className="bg-gray-50 p-5 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow duration-300 items-center justify-center">
               <Bell className="h-10 w-10 text-orange-500 mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-3">Real-Time Alerts</h3>
               <p className="text-gray-600">

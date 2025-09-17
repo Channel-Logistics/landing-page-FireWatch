@@ -1,7 +1,7 @@
 
 export default function DataSourceCard({ icon, title, subtitle, description, iconBgColor, iconColor }) {
   return (
-    <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
+    <div className="bg-gray-50 p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300 h-full flex flex-col items-center justify-center">
       <div className="flex items-center space-x-3 mb-4">
         <div className={`p-2 ${iconBgColor} rounded-lg`}>
           <div className={`h-6 w-6 ${iconColor}`}>{icon}</div>

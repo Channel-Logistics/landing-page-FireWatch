@@ -3,11 +3,11 @@ import { DetailVideo } from ".."
 export default function InteractiveCard() {
   return (
     <section className="mb-16">
-      <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-        <div className="w-full h-80 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 order-2 lg:order-1">
-          <div className="relative w-full h-full aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
+      <div className="flex flex-col lg:flex-row gap-12 items-center max-w-6xl mx-auto">
+        <div className="w-full bg-gray-50 rounded-lg flex items-center justify-center text-gray-500 order-2 lg:order-1 hover:shadow-xl transition-shadow duration-300">
+          <div className="relative w-full h-full md:h-[20rem] aspect-video overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
             <img
-              className="h-full w-full object-cover"
+              className="w-full h-full object-center"
               src={DetailVideo.src}
               autoPlay
               muted

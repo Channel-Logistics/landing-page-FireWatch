@@ -19,7 +19,7 @@ export default function SectionCard({
   );
 
   const mediaComponent = (
-    <div className={`w-full ${mediaHeight} rounded-lg flex items-center justify-start`}>
+    <div className={`w-full ${mediaHeight} rounded-lg flex items-center justify-center bg-white hover:shadow-xl transition-shadow duration-300`}>
       {videoSrc ? (
         <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
           <video
@@ -40,7 +40,7 @@ export default function SectionCard({
           className="w-full h-full object-contain object-left rounded-lg"
         />
       ) : (
-        <div className="w-full h-full bg-gray-200 text-gray-500 flex items-center justify-center rounded-lg">
+        <div className="w-full h-full bg-gray-50 text-gray-500 flex items-center justify-center rounded-lg hover:shadow-xl transition-shadow duration-300">
           Image Placeholder
         </div>
       )}
