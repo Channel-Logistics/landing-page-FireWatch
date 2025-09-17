@@ -139,9 +139,9 @@ export default function HowItWorks() {
           <div className="w-full md:w-[calc(50%-1rem)]">
             <DataSourceCard
               icon={<Flame className="h-6 w-6" />}
-              title="CWFIS"
-              subtitle="Canadian Wildfire Information System"
-              description="Main source of Canadian wildfire data, providing detailed information on active fires, fire history and risk conditions."
+              title="Incident Feeds"
+              subtitle="Global Wildfire Reporting Systems"
+              description="A set of open and commercial sources that report active fires, historical activity, and risk conditions worldwide."
               iconBgColor="bg-red-100"
               iconColor="text-red-600"
             />
