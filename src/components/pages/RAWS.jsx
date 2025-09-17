@@ -45,7 +45,7 @@ export default function Raws() {
           <div className="flex flex-col lg:flex-row items-start gap-12 max-w-6xl mx-auto">
             <div className="w-full lg:w-1/2">
               <h3 className="text-xl text-center font-medium text-gray-800 mb-4">Initial View</h3>
-              <div className="w-full h-64 rounded-lg mb-4 overflow-hidden">
+              <div className="w-full h-72 md:h-80 lg:h-96 rounded-lg mb-4 overflow-hidden">
                 <img
                   src={pRaws.src}
                   alt={pRaws.alt}
@@ -58,7 +58,7 @@ export default function Raws() {
             </div>
             <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
               <h3 className="text-xl text-center font-medium text-gray-800 mb-4">Detailed View</h3>
-              <div className="w-full h-64 rounded-lg mb-4 overflow-hidden">
+              <div className="w-full h-72 md:h-80 lg:h-96 rounded-lg mb-4 overflow-hidden">
                 <img
                   src={pRawsLocation.src}
                   alt={pRawsLocation.alt}
