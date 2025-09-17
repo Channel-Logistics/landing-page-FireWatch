@@ -1,5 +1,5 @@
 import { Globe, BarChart2, Thermometer, Wind, Droplet, Sun, Zap, ArrowRight } from 'lucide-react';
-import { Prediction, Predictiontwo } from ".."
+import { Prediction } from ".."
 
 export default function Predictions() {
   return (
@@ -15,15 +15,15 @@ export default function Predictions() {
 
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">How It Works</h2>
-          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="w-full h-96 md:h-[28rem] lg:h-[30rem] bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
+          <div className="flex flex-col lg:flex-row gap-12 items-center max-w-6xl mx-auto">
+            <div className="flex flex-1 w-full bg-gray-200 rounded-lg items-center justify-center text-gray-500 mb-8 lg:mb-0 p-0">
               <img
                 src={Prediction.src}
                 alt={Prediction.alt}
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-auto object-contain rounded-lg"
               />
             </div>
-            <div className="space-y-8">
+            <div className="space-y-8 flex-1 w-full">
               <div className="flex items-start">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                   <Globe className="h-6 w-6 text-blue-600" />
