@@ -114,8 +114,8 @@ export default function AllFires() {
                     Multiple Data Sources
                   </h3>
                   <p className="text-gray-600">
-                    Information aggregated from CWFIS and other reliable wildfire
-                    monitoring systems for accuracy.
+                    Information aggregated from multiple reliable wildfire
+                    monitoring systems for greater accuracy.
                   </p>
                 </div>
               </div>
@@ -239,86 +239,6 @@ export default function AllFires() {
                 <strong>Status:</strong> Various containment percentages
               </div>
             </div>
-          </div>
-        </section>
-
-        <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
-
-        <section className="bg-white p-8 rounded-lg">
-          <h2 className="text-3xl font-semibold text-gray-900 text-center mb-4">
-            Current Fire Data Examples
-          </h2>
-          <p className="text-gray-600 text-center mb-8">
-            Below are examples of fires currently being monitored in the system:
-          </p>
-          <div className="space-y-6">
-            {[
-              {
-                name: "We017",
-                source: "CWFIS",
-                status: "Contained",
-                lastUpdated: "20 hrs 54 mins ago",
-                location: "55.01330, -101.35400",
-                containment: "100%",
-              },
-              {
-                name: "Ea061",
-                source: "CWFIS",
-                status: "Contained",
-                lastUpdated: "20 hrs 54 mins ago",
-                location: "50.39970, -95.62080",
-                containment: "100%",
-              },
-              {
-                name: "25Lx-Muskeg",
-                source: "CWFIS",
-                status: "Active",
-                lastUpdated: "20 hrs 54 mins ago",
-                location: "55.29460, -107.57100",
-                containment: "0%",
-              },
-              {
-                name: "G90216",
-                source: "CWFIS",
-                status: "Active",
-                lastUpdated: "20 hrs 54 mins ago",
-                location: "Coordinates not available",
-                containment: "0%",
-              },
-            ].map((fire, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 p-6 rounded-lg border border-gray-200"
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <h4 className="font-semibold text-gray-900 text-lg">
-                    {fire.name}
-                  </h4>
-                  <span
-                    className={`px-3 py-1 rounded text-sm font-medium ${fire.status === "Active"
-                        ? "bg-red-100 text-red-800"
-                        : "bg-green-100 text-green-800"
-                      }`}
-                  >
-                    {fire.status}
-                  </span>
-                </div>
-                <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
-                  <div>
-                    <strong>Source:</strong> {fire.source}
-                  </div>
-                  <div>
-                    <strong>Last Updated:</strong> {fire.lastUpdated}
-                  </div>
-                  <div>
-                    <strong>Location:</strong> {fire.location}
-                  </div>
-                  <div>
-                    <strong>Containment:</strong> {fire.containment}
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </section>
 

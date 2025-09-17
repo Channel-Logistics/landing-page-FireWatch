@@ -14,7 +14,7 @@ export default function Raws() {
 
         <section className="mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Our Station Network</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
+          <div className="flex flex-col md:flex-row gap-8 max-w-4xl mx-auto text-center">
             <div className="p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
               <Wifi className="h-12 w-12 text-green-600 mx-auto mb-3" />
               <h3 className="text-2xl font-bold text-gray-900">24/7 Monitoring</h3>
@@ -45,7 +45,7 @@ export default function Raws() {
           <div className="flex flex-col lg:flex-row items-start gap-12 max-w-6xl mx-auto">
             <div className="w-full lg:w-1/2">
               <h3 className="text-xl text-center font-medium text-gray-800 mb-4">Initial View</h3>
-              <div className="w-full h-64 rounded-lg mb-4 overflow-hidden">
+              <div className="w-full h-72 md:h-80 lg:h-96 rounded-lg mb-4 overflow-hidden">
                 <img
                   src={pRaws.src}
                   alt={pRaws.alt}
@@ -58,7 +58,7 @@ export default function Raws() {
             </div>
             <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
               <h3 className="text-xl text-center font-medium text-gray-800 mb-4">Detailed View</h3>
-              <div className="w-full h-64 rounded-lg mb-4 overflow-hidden">
+              <div className="w-full h-72 md:h-80 lg:h-96 rounded-lg mb-4 overflow-hidden">
                 <img
                   src={pRawsLocation.src}
                   alt={pRawsLocation.alt}
@@ -76,7 +76,7 @@ export default function Raws() {
 
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Understanding the Data</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="flex flex-col sm:flex-row gap-6 w-fit mx-auto">
             <div className="p-4 bg-gray-50 rounded-lg text-center">
               <Thermometer className="h-10 w-10 text-red-500 mx-auto mb-2" />
               <h3 className="text-lg font-semibold text-gray-800">Air Temperature</h3>
@@ -89,20 +89,6 @@ export default function Raws() {
               <h3 className="text-lg font-semibold text-gray-800">Wind Data</h3>
               <p className="text-sm text-gray-600 mt-1">
                 Real-time wind speed and direction, key factors in fire behavior.
-              </p>
-            </div>
-            <div className="p-4 bg-gray-50 rounded-lg text-center">
-              <Activity className="h-10 w-10 text-green-500 mx-auto mb-2" />
-              <h3 className="text-lg font-semibold text-gray-800">Humidity</h3>
-              <p className="text-sm text-gray-600 mt-1">
-                Relative humidity levels that affect fire ignition and spread.
-              </p>
-            </div>
-            <div className="p-4 bg-gray-50 rounded-lg text-center">
-              <Cloud className="h-10 w-10 text-gray-500 mx-auto mb-2" />
-              <h3 className="text-lg font-semibold text-gray-800">Precipitation</h3>
-              <p className="text-sm text-gray-600 mt-1">
-                Rainfall measurements that indicate fuel moisture levels.
               </p>
             </div>
           </div>

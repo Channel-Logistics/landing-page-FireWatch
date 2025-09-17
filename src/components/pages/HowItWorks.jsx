@@ -135,22 +135,22 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-6">
-          <div className="w-full md:w-[calc(50%-1rem)]">
+        <div className="flex flex-wrap gap-6 items-stretch">
+          <div className="flex w-full md:w-[calc(50%-1rem)]">
             <DataSourceCard
               icon={<Flame className="h-6 w-6" />}
-              title="CWFIS"
-              subtitle="Canadian Wildfire Information System"
-              description="Main source of Canadian wildfire data, providing detailed information on active fires, fire history and risk conditions."
+              title="Incident Feeds"
+              subtitle="Global Wildfire Reporting Systems"
+              description="A set of open and commercial sources that report active fires, historical activity, and risk conditions worldwide."
               iconBgColor="bg-red-100"
               iconColor="text-red-600"
             />
           </div>
 
-          <div className="w-full md:w-[calc(50%-1rem)]">
+          <div className="flex w-full md:w-[calc(50%-1rem)]">
             <DataSourceCard
               icon={<Thermometer className="h-6 w-6" />}
-              title="RAWS"
+              title="Raws"
               subtitle="Remote Automated Weather Stations"
               description="Real-time weather monitoring for fire conditions, including temperature, humidity, wind speed and precipitation."
               iconBgColor="bg-blue-100"
@@ -158,7 +158,7 @@ export default function HowItWorks() {
             />
           </div>
 
-          <div className="w-full md:w-[calc(50%-1rem)]">
+          <div className="flex w-full md:w-[calc(50%-1rem)]">
             <DataSourceCard
               icon={<Satellite className="h-6 w-6" />}
               title="Satellite Imagery"
@@ -169,7 +169,7 @@ export default function HowItWorks() {
             />
           </div>
 
-          <div className="w-full md:w-[calc(50%-1rem)]">
+          <div className="flex w-full md:w-[calc(50%-1rem)]">
             <DataSourceCard
               icon={<Activity className="h-6 w-6" />}
               title="Ground Sensors"

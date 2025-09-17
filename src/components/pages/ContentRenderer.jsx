@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Alerts from "./Alerts";
 import AllFires from "./AllFires";
 import DetailFire from "./DetailFire";
@@ -37,5 +38,10 @@ export default function ContentRenderer() {
   const location = useLocation();
   const currentPath = location.pathname;
   const Component = routeComponents[currentPath] || MainContent;
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, [currentPath]);
+
   return <Component />;
 }

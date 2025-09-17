@@ -175,35 +175,6 @@ export default function HighPriority() {
 
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
-        <section className="bg-white p-8 rounded-lg">
-          <h2 className="text-3xl font-semibold text-gray-900 text-center mb-4">
-            Current Data Example
-          </h2>
-          <p className="text-gray-600 text-center mb-8">
-            Below are some of the fires currently being monitored:
-          </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { location: "Tionesta, Pennsylvania", fire: "Old Dump" },
-              { location: "La Verkin, Utah", fire: "Lac-317957" },
-              { location: "Los Angeles, California", fire: "Cty N Wheat" },
-              { location: "Wisconsin Dells, Wisconsin", fire: "WASHINGTON" },
-              { location: "Palm Desert, California", fire: "View" },
-              { location: "Hesperia, California", fire: "Swift Complex" },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 p-6 rounded-lg border border-gray-200"
-              >
-                <h4 className="font-semibold text-gray-900 mb-2">{item.fire}</h4>
-                <p className="text-sm text-gray-600">{item.location}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
-
         <section className="bg-green-50 p-8 rounded-lg">
           <h2 className="text-3xl font-semibold text-green-900 text-center mb-8">
             How to Use High Priority
