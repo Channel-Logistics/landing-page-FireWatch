@@ -25,7 +25,6 @@ export default function SingleShowCase({
                             <div className="relative aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 hover:shadow-xl transition-shadow duration-300">
                                 <img
                                     className="h-full w-full rounded-2xl"
-                                    className="h-full w-full rounded-2xl"
                                     src={prediction?.src}
                                     alt="Image Download"
                                 />
