@@ -77,3 +77,4 @@ export const mainImageDocs = { src: "src/assets/images/docsInit.webp", alt: "mai
 export const Indexmap = { src: "src/assets/images/indexMapSimulation.webp", alt: "indexmap" }
 export const Predict = { src: "src/assets/images/predict.webp", alt: "predict" }
 export const Risk = { src: "src/assets/images/risk.webp", alt: "risk" }
+export const Simulationp = { src: "src/assets/images/simulationp.webp", alt: "simulationp" }
