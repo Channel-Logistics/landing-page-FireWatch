@@ -11,7 +11,7 @@ export default function FeatureCard({ icon, title, description, features, iconBg
 
       <p className="text-gray-700 leading-relaxed mb-4 flex-1">{description}</p>
 
-      <ul className="space-y-2 text-sm text-gray-600">
+      <ul className="space-y-2 text-sm text-gray-600 self-start text-left">
         {features.map((feature, index) => (
           <li key={index}>• {feature}</li>
         ))}
