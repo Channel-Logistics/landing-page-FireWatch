@@ -52,8 +52,8 @@ export default function MonitoringAreas() {
               <div className="order-1 lg:order-1">
                 <div className="w-85 h-full rounded-lg flex items-center justify-center bg-gray-50 hover:shadow-xl transition-shadow duration-300">
                   <img
-                    src={Area.src}
-                    alt={Area.alt}
+                    src={Polygon.src}
+                    alt={Polygon.alt}
                     className="w-full h-full object-contain rounded-lg"
                   />
                 </div>
@@ -64,42 +64,12 @@ export default function MonitoringAreas() {
                     <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
                       2
                     </div>
-                    Team Areas Management
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed">
-                    Create Monitoring Areas by drawing custom polygons using points on the map.
-                    This feature enables you to define irregular monitoring zones that match your specific geographical needs and boundaries.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
-
-          <section className="mb-16">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div className="order-1 lg:order-1">
-                <div className="space-y-4">
-                  <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
-                    <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                      3
-                    </div>
                     Areas List and Management
                   </h2>
                   <p className="text-gray-600 leading-relaxed">
-                    Create an area by entering an address and selecting a custom radius to monitor proximity.
-                    This final step allows you to manage all your monitoring areas from a centralized interface with easy access to view and modify settings.
+                  Create an area by entering an address and selecting a custom radius to monitor proximity.
+                  This final step allows you to manage all your monitoring areas from a centralized interface with easy access to view and modify settings.
                   </p>
-                </div>
-              </div>
-              <div className="order-2 lg:order-2 hover:shadow-xl transition-shadow duration-300 h-full border-radius">
-                <div className="w-full h-full rounded-lg flex items-center justify-center bg-gray-50">
-                  <img
-                    src={Polygon.src}
-                    alt={Polygon.alt}
-                    className="w-full h-full object-contain rounded-lg"
-                  />
                 </div>
               </div>
             </div>

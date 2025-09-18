@@ -17,7 +17,7 @@ import ContactUs from "./usefulLinks/ContactUs";
 import AboutUs from "./usefulLinks/AboutUs";
 
 const routeComponents = {
-  "/how-it-works": HowItWorks,
+  "/docs": HowItWorks,
   "/high-priority": HighPriority,
   "/all-fires": AllFires,
   "/detail-fire": DetailFire,
@@ -29,15 +29,15 @@ const routeComponents = {
   "/raws": Raws,
   "/layers": Layers,
   "/privacy-policy": PrivacyPolicy,
-  "/terms-and-conditions": TermsConditions, 
+  "/terms-and-conditions": TermsConditions,
   "/contact-us": ContactUs,
-  "/about-us": AboutUs,
+  "/about-us": AboutUs
 };
 
 export default function ContentRenderer() {
   const location = useLocation();
   const currentPath = location.pathname;
-  const Component = routeComponents[currentPath] || MainContent;
+  const Component = routeComponents[currentPath];
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });

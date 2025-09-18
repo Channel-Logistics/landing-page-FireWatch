@@ -15,7 +15,7 @@ export const sidebarSections = [
     title: 'Overview',
     icon: ChartNoAxesGantt,
     items: [
-      { id: 'how-it-works', title: 'How it works?' }
+      { id: 'docs', title: 'How it works?' }
     ]
   },
   {
