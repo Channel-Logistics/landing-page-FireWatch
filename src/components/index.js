@@ -28,7 +28,7 @@ export const  logos = [
   { src: "src/assets/logos/aws-nb.png", alt: "The Weather Channel" }
 ];
 
-export const androidImage = { src: "src/assets/images/android.png", alt: "androidImage" }
+export const androidImage = { src: "src/assets/images/android.webp", alt: "androidImage" }
 export const iosImage = { src: "src/assets/images/iphone.png", alt: "iosImage" }
 export const laptopImage = { src: "src/assets/images/laptop.png", alt: "laptopImage" }
 export const multiplatformImage = { src: "src/assets/images/multiplatform.png", alt: "multiplatformImage" }
