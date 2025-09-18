@@ -50,9 +50,9 @@ export default function CustomCarousel() {
   return (
 
     <section className="w-full max-w-[100vw] overflow-x-hidden">
-      <div className="relative w-full mx-auto my-8 h-[32rem] mb-2.5">
+      <div className="relative w-full mx-auto my-0 h-[32rem] mb-2.5">
 
-        <div className="relative w-full h-full flex items-center justify-center overflow-hidden mb-2">
+        <div className="relative w-full h-full flex items-center justify-center overflow-hidden mb-1">
           {slides.map((slide, index) => {
             const position = getPosition(index);
             const style = getImageStyle(position);
@@ -60,7 +60,8 @@ export default function CustomCarousel() {
             return (
               <div
                 key={index}
-                className="absolute h-[32rem] w-[min(99vw,1200px)] transition-all duration-700 ease-in-out bg-gray-50 hover:shadow-xl"
+                className="absolute h-[32rem] w-[min(90vw,1000px)] transition-all duration-700 ease-in-out
+             bg-gray-50  flex items-center justify-center rounded-xl "
                 style={style}
               >
                 {isVideo ? (
@@ -75,7 +76,7 @@ export default function CustomCarousel() {
                   <img
                     src={slide.src}
                     alt={slide.alt}
-                    className="w-full h-full object-cover rounded-xl shadow-2xl bg-gray-50"
+                    className="w-full h-full object-cover rounded-xl  bg-gray-50"
                   />
                 )}
 

@@ -23,7 +23,7 @@ export default function InteractiveCard() {
             Understanding Fire Behavior
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Our **AI Fire Spread Simulation** analyzes key factors like weather conditions, terrain elevation, vegetation types, and fuel moisture to generate detailed forecasts of potential fire spread patterns. This provides emergency teams and communities with an accurate prediction of a fire's path.
+            Our <strong>AI Fire Spread Simulation</strong> analyzes key factors like weather conditions, terrain elevation, vegetation types, and fuel moisture to generate detailed forecasts of potential fire spread patterns. This provides emergency teams and communities with an accurate prediction of a fire's path.
           </p>
         </div>
       </div>

@@ -32,7 +32,7 @@ export default function CrossPlatform({
             </p>
 
 
-            <div className="md:hidden mt-6 bg-gray-50 p-4 rounded-xl hover:shadow-xl transition-shadow duration-300">
+            <div className="md:hidden mt-6">
               <img
                 src={multiplatformImage.src}
                 alt={multiplatformImage.alt}
@@ -54,6 +54,7 @@ export default function CrossPlatform({
                 transition={{ duration: 0.7, ease: 'easeOut' }}
               />
               <motion.img
+                onClick={() => window.open("https://play.google.com/store/apps/details?id=com.nativefirewatch&pcampaignid=web_share&pli=1", "_blank", "noopener,noreferrer")}
                 src={googleImage.src}
                 alt={googleImage.alt}
                 className="w-[128px] h-[42px] object-contain cursor-pointer"
@@ -89,7 +90,7 @@ export default function CrossPlatform({
           </div>
 
 
-          <div className="hidden md:block md:col-span-6 bg-gray-50 p-6 rounded-xl hover:shadow-xl transition-shadow duration-300">
+          <div className="hidden md:block md:col-span-6 p-6 rounded-xl">
             <div className="relative w-full max-w-2xl xl:max-w-[980px] aspect-[16/10] mx-auto">
               <div className="pointer-events-none absolute inset-8 rounded-[2rem] bg-gradient-to-tr from-orange-500/10 via-sky-500/10 to-emerald-500/10 blur-2xl" />
               <motion.img

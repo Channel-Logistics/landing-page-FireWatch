@@ -39,13 +39,11 @@ export default function Forecast() {
               </p>
             </div>
 
-            {/* Wind Speed & Direction */}
             <div className="p-6 bg-gray-100 rounded-lg shadow-sm text-center">
               <Wind className="h-12 w-12 text-blue-500 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Wind Speed & Direction</h3>
+              <h3 className="text-xl font-semibold mb-2">Wind Speed</h3>
               <p className="text-gray-600">
-                Analysis of wind speed, direction, and gust patterns—critical for
-                understanding fire spread.
+                This parameter tracks the wind speed in miles per hour (mph). The velocity of the wind is a primary factor influencing the behavior and speed of a fire.
               </p>
             </div>
 

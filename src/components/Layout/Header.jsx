@@ -20,8 +20,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-hidden
         ${isScrolled
-          ? "bg-white/95 supports-[backdrop-filter]:bg-white/85 backdrop-blur-md shadow-lg border-b border-gray-300"
-          : "bg-white/80 supports-[backdrop-filter]:bg-white/65 backdrop-blur-md shadow-md border-b border-gray-200"
+            ? "bg-white/95 supports-[backdrop-filter]:bg-white/85 backdrop-blur-md shadow-lg border-b border-gray-300"
+            : "bg-white/80 supports-[backdrop-filter]:bg-white/65 backdrop-blur-md shadow-md border-b border-gray-200"
         }`}
     >
 
@@ -53,32 +53,11 @@ const Header = () => {
             <div className="hidden md:flex flex-1 justify-center">
               <nav className="flex space-x-6">
                 <Link
-                  to="/how-it-works"
-                  className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
-                >
-                  <Globe className="w-4 h-4 mr-3" />
-                  Overview
-                </Link>
-                <Link
-                  to="/all-fires"
-                  className=" flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
-                >
-                  <FlameKindling className="w-4 h-4 mr-3" />
-                  Fires
-                </Link>
-                <Link
-                  to="/alerts"
-                  className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
-                >
-                  <AlertTriangle className="w-4 h-4 mr-3" />
-                  Alerts
-                </Link>
-                <Link
                   to="/docs"
                   className={`flex items-center px-4 py-2 text-sm font-medium transition-colors border-b-2 ${isDocs
                       ? "text-orange-600 border-orange-600"
                       : "text-gray-900 hover:text-orange-600 border-transparent"
-                    }`}
+                  }`}
                 >
                   <BookOpenText className="w-4 h-4 mr-3" />
                   Docs
@@ -117,39 +96,18 @@ const Header = () => {
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-menu"
             >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
 
-
         {isMobileMenuOpen && (
           <div id="mobile-menu" className="md:hidden pb-3">
             <div className="px-0 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-none mt-2 border-t border-gray-200">
-              <Link
-                to="/how-it-works"
-                className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <Globe className="w-4 h-4 mr-3" />
-                Overview
-              </Link>
-              <Link
-                to="/all-fires"
-                className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <FlameKindling className="w-4 h-4 mr-3" />
-                Fires
-              </Link>
-              <Link
-                to="/alerts"
-                className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <AlertTriangle className="w-4 h-4 mr-3" />
-                Alerts
-              </Link>
               <Link
                 to="/docs"
                 className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"
@@ -183,7 +141,7 @@ const Header = () => {
         )}
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

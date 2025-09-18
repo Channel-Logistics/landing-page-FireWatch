@@ -45,16 +45,6 @@ const Footer = () => {
 
             <div className="flex space-x-4">
               <a
-                href="https://github.com/space-eyes"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors"
-                aria-label="GitHub"
-
-              >
-                <FolderGit2 className="w-5 h-5" />
-              </a>
-              <a
                 href="https://space-eyes.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,7 +54,7 @@ const Footer = () => {
                 <Globe className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@firewatch.io"
+                href="mailto:support@space-eyes.com"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="Email"
               >
@@ -79,9 +69,7 @@ const Footer = () => {
               <div>
                 <h3 className="text-lg font-semibold text-gray-200 mb-4">Documentation</h3>
                 <ul className="space-y-2">
-                  <li><Link to="/how-it-works" className="text-gray-400 hover:text-white transition-colors">Overview</Link></li>
-                  <li><Link to="/all-fires" className="text-gray-400 hover:text-white transition-colors">Resources</Link></li>
-                  <li><Link to="#" className="text-gray-400 hover:text-white transition-colors">API</Link></li>
+                  <li><Link to="/docs" className="text-gray-400 hover:text-white transition-colors">Overview</Link></li>
                 </ul>
               </div>
 

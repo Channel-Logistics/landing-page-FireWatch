@@ -21,7 +21,7 @@ export default function DetailFire() {
         <SectionCard
           icon={Building2}
           title="Overview"
-          description="This wildfire monitoring system is a comprehensive tool that combines real-time data with predictive modeling. A main dashboard displays specific fire incident details like the status ('Active' or 'Contained'), containment percentage, total area burned, cause ('Natural' or 'Undetermined'), and the last updated date. It also shows the data source (like 'WFGS' or 'CWFIS'), geographic coordinates, and the fire's type. This is supplemented by a section for current weather conditions, including wind direction and speed, atmospheric pressure, and temperature. Additionally, the system uses a **3D AI simulation** to predict fire spread, while also identifying and mapping at-risk **critical infrastructure** and showing the location of **nearby shelters**, thus enabling informed decision-making and community safety."
+          description="This system centralizes crucial wildfire information. A main panel provides key details about a fire's status, size, and origin, along with reference data such as its location and the last update time. Below that, a dedicated section displays current weather conditions for the fire's area. This information includes wind direction and speed, atmospheric pressure, and temperature—all essential parameters for understanding fire behavior."
           imageSrc={Fireoverview.src}
         />
 
@@ -30,7 +30,8 @@ export default function DetailFire() {
         <SectionCard
           icon={AlertCircle}
           title="State Alerts"
-          description="Fire-related emergency warnings issued by the U.S. state where the fire is located. These alerts, such as Red Flag Warnings and Fire Weather Watches, are sourced directly from government agencies and provide critical, time-sensitive information about hazardous conditions that may increase wildfire risk, including lightning, dry fuels, and high winds."
+          description="Fire-related emergency warnings issued by the regional or national authorities where the fire is located. These alerts, such as Red Flag Warnings and Fire Weather Watches, are sourced directly from official agencies and provide critical, time-sensitive information about hazardous conditions that may increase wildfire risk, including lightning, dry fuels, and high winds.
+"
           imageSrc={Statealert.src}
           mediaPosition="left"
         />
@@ -61,7 +62,7 @@ export default function DetailFire() {
         <SectionCard
           icon={Mountain}
           title="3D Terrain Elevation"
-          description="The **Interactive 3D Terrain Elevation** tool provides a detailed view of the landscape. By visualizing slopes, valleys, and ridges, you can better understand how terrain influences a fire's spread."
+          description="The Interactive 3D Terrain Elevation tool provides a detailed view of the landscape. By visualizing slopes, valleys, and ridges, you can better understand how terrain influences a fire's spread."
           imageSrc={Terrain3d.src}
           mediaPosition="left"
         />
@@ -75,10 +76,10 @@ export default function DetailFire() {
         />
 
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
-       <SectionCard
+        <SectionCard
           icon={Map}
           title="Nearby Shelters"
-          description="In an emergency, the platform displays available **Nearby Shelters** like schools and community centers. Each location includes distance and navigation options to help ensure a safe and efficient evacuation."
+          description="In an emergency, the platform displays available Nearby Shelters like schools and community centers. Each location includes distance and navigation options to help ensure a safe and efficient evacuation."
           imageSrc={shelters.src}
           mediaPosition="left"
         />
