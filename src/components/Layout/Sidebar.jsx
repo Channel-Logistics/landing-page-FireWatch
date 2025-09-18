@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ChevronDown, ChevronRight, X } from "lucide-react";
 import { sidebarSections } from "../../data/sidebarData";
 
@@ -11,8 +11,9 @@ const Sidebar = ({
   side = "left",
   widthClass,
 }) => {
-  const [expandedSections, setExpandedSections] = useState(["overview", "fires"]);
+  const [expandedSections, setExpandedSections] = useState([]);
   const location = useLocation();
+  const navigate = useNavigate();
   const activeSection = location.pathname === "/" ? "introduction" : location.pathname.substring(1);
 
 
@@ -48,6 +49,21 @@ const Sidebar = ({
     );
   };
 
+  const handleSectionHeaderClick = (section) => {
+    if (section.id === "fires") {
+      toggleSection(section.id);
+    } else {
+      if (section.items && section.items.length > 0) {
+        const firstItem = section.items[0];
+        const itemPath = firstItem.id === "introduction" ? "/" : `/${firstItem.id}`;
+        navigate(itemPath);
+        handleSectionClick();
+      } else {
+        toggleSection(section.id);
+      }
+    }
+  };
+
   const navClasses = `flex-1 space-y-1.5 p-4 pb-4 ${mobile ? "pt-3" : "pt-4 mt-6"}`;
 
   const MenuContent = (
@@ -60,7 +76,7 @@ const Sidebar = ({
         return (
           <div key={section.id}>
             <button
-              onClick={() => toggleSection(section.id)}
+              onClick={() => handleSectionHeaderClick(section)}
               className={`flex items-center justify-between w-full px-3 py-2 rounded-lg font-medium text-lg transition-colors duration-200 ${isSectionActive
                   ? "bg-orange-500 text-white shadow-lg"
                   : "text-gray-600 hover:bg-gray-200 hover:text-gray-800"
@@ -74,10 +90,12 @@ const Sidebar = ({
                 )}
                 <span className="truncate">{section.title}</span>
               </div>
-              {expandedSections.includes(section.id) ? (
-                <ChevronDown className="w-3 h-3 text-gray-400" />
-              ) : (
-                <ChevronRight className="w-3 h-3 text-gray-400" />
+              {section.id === "fires" && (
+                expandedSections.includes(section.id) ? (
+                  <ChevronDown className="w-3 h-3 text-gray-400" />
+                ) : (
+                  <ChevronRight className="w-3 h-3 text-gray-400" />
+                )
               )}
             </button>
 
