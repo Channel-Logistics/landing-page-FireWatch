@@ -89,7 +89,7 @@ export default function CrossPlatform({
           </div>
 
 
-          <div className="hidden md:block md:col-span-6 bg-gray-50 p-6 rounded-xl hover:shadow-xl transition-shadow duration-300">
+          <div className="hidden md:block md:col-span-6 p-6 rounded-xl">
             <div className="relative w-full max-w-2xl xl:max-w-[980px] aspect-[16/10] mx-auto">
               <div className="pointer-events-none absolute inset-8 rounded-[2rem] bg-gradient-to-tr from-orange-500/10 via-sky-500/10 to-emerald-500/10 blur-2xl" />
               <motion.img
