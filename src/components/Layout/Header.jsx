@@ -53,27 +53,6 @@ const Header = () => {
             <div className="hidden md:flex flex-1 justify-center">
               <nav className="flex space-x-6">
                 <Link
-                  to="/how-it-works"
-                  className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
-                >
-                  <Globe className="w-4 h-4 mr-3" />
-                  Overview
-                </Link>
-                <Link
-                  to="/all-fires"
-                  className=" flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
-                >
-                  <FlameKindling className="w-4 h-4 mr-3" />
-                  Fires
-                </Link>
-                <Link
-                  to="/alerts"
-                  className="flex items-center text-gray-900 hover:text-orange-600 px-4 py-2 text-sm font-medium transition-colors"
-                >
-                  <AlertTriangle className="w-4 h-4 mr-3" />
-                  Alerts
-                </Link>
-                <Link
                   to="/docs"
                   className={`flex items-center px-4 py-2 text-sm font-medium transition-colors border-b-2 ${isDocs
                       ? "text-orange-600 border-orange-600"

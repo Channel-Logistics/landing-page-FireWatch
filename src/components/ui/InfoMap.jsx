@@ -31,7 +31,7 @@ export default function InfoMap({
 
                             </div>
 
-						{/* Mobile Mockup - Positioned as overlay on the left, no background */}
+						
 						<div className="absolute -bottom-8 -left-8 md:-bottom-12 md:-left-12 lg:-bottom-16 lg:-left-16">
 							<div className="relative w-24 md:w-28 lg:w-32 xl:w-36">
 								<img
