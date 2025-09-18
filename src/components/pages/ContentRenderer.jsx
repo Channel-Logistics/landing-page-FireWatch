@@ -10,7 +10,6 @@ import HighPriority from "./HighPriority";
 import Predictions from "./Predictions";
 import Teams from "./Teams";
 import Raws from "./Raws";
-import MainContent from "./MainContent";
 import Layers from "./Layers";
 import PrivacyPolicy from "./usefulLinks/PrivacyPolicy";
 import TermsConditions from "./usefulLinks/TermsConditions";
@@ -18,7 +17,6 @@ import ContactUs from "./usefulLinks/ContactUs";
 import AboutUs from "./usefulLinks/AboutUs";
 
 const routeComponents = {
-  "/docs": MainContent,
   "/how-it-works": HowItWorks,
   "/high-priority": HighPriority,
   "/all-fires": AllFires,

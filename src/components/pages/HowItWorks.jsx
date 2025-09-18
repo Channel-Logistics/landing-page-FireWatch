@@ -2,8 +2,6 @@ import { Globe, Flame, BarChart2, Bell, Activity, Shield, Satellite, Thermometer
 import FeatureCard from "./FeatureCard";
 import DataSourceCard from "./DataSourceCard";
 import TechCard from "./TechCard";
-import ImagePlaceholder from "./ImagePlaceholder";
-import { howItWorks } from "..";
 
 export default function HowItWorks() {
   return (
@@ -21,34 +19,7 @@ export default function HowItWorks() {
           </p>
         </header>
       </div>
-
-      <div className="mb-10 md:mb-14">
-        <ImagePlaceholder
-          height="h-80 md:h-[28rem]"
-          imageSrc={howItWorks.src}
-          imageAlt={howItWorks.alt}
-        />
-      </div>
-
-      <div className="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 p-6 rounded-r-lg shadow-sm">
-        <div className="flex items-start space-x-4">
-          <Shield className="flex-shrink-0 h-6 w-6 text-orange-500 mt-1" />
-          <div>
-            <h3 className="text-lg font-semibold text-orange-800 mb-2">
-              Your Global Shield Against Wildfires
-            </h3>
-            <p className="text-orange-700 leading-relaxed">
-              FireWatch serves as your protective barrier against wildfire
-              spread worldwide, offering advanced monitoring, prediction, and
-              response tools for emergency teams and forest authorities. Stay
-              informed and stay safe.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
-
       <section className="space-y-6 mt-10 md:mt-14">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
