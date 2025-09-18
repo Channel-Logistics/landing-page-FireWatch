@@ -97,15 +97,6 @@ export default function CustomCarousel() {
                     linkText="Learn more"
                   />
                 )}
-
-                {slide.alt === "fotoUno" && (
-                  <StyleTextCarousel
-                    label="FIREWATCH PRODUCT"
-                    title="All-in-one solution: predictions, automated reports, integration, and local alerts."
-                    link="https://firewatch.space-eyes.com/"
-                    linkText="Explore FireWatch"
-                  />
-                )}
               </div>
             );
           })}
