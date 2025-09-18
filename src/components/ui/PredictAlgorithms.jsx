@@ -1,4 +1,4 @@
-import { videoSimulation, androidImage} from "../index";
+import { videoSimulation, Simulationp } from "../index";
 
 export default function PredictAlgoritgms({
   headline = "Predictive propagation",
@@ -32,9 +32,9 @@ export default function PredictAlgoritgms({
 
           <div className="md:col-span-7 w-full flex justify-center">
             <div className="relative w-full max-w-md sm:max-w-lg md:max-w-3xl xl:max-w-[980px] mx-auto">
-              <div className="relative aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
+              <div className="relative aspect-video md:aspect-auto rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 hover:shadow-xl transition-shadow duration-300">
                 <video
-                  className="h-full w-full object-cover"
+                  className="h-full w-full rounded-2xl"
                   src={videoSimulation?.src}
                   autoPlay
                   muted
@@ -44,13 +44,13 @@ export default function PredictAlgoritgms({
                 />
               </div>
 
-              {/* Mobile Mockup - Positioned as overlay on the right, no background */}
-              <div className="absolute -bottom-8 -right-16 md:-bottom-12 md:-right-24 lg:-bottom-16 lg:-right-28">
-                <div className="relative w-32 md:w-40 lg:w-48 xl:w-56">
+
+              <div className="absolute -bottom-8 -right-10 md:-bottom-12 md:-right-16 lg:-bottom-16 lg:-right-14">
+                <div className="relative w-24 md:w-32 lg:w-40 xl:w-40">
                   <img
                     className="w-full h-auto object-contain drop-shadow-2xl"
-                    src={androidImage?.src}
-                    alt={androidImage.alt}
+                    src={Simulationp?.src}
+                    alt={Simulationp.alt}
                   />
                 </div>
               </div>
