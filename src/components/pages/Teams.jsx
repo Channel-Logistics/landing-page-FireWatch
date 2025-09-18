@@ -1,5 +1,4 @@
 import { Users, Bell, MapPin } from 'lucide-react';
-import { Teamsone, Teamstwo } from ".."
 
 export default function Teams() {
   return (
@@ -15,63 +14,40 @@ export default function Teams() {
           </p>
         </header>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div className="space-y-8">
+        <div className="text-center mb-16">
+          <div className="max-w-6xl mx-auto space-y-8">
             <h2 className="text-3xl font-bold text-gray-900">Key Features for Teams</h2>
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="bg-blue-100 p-3 rounded-lg mr-4 flex-shrink-0">
+            <div className="flex flex-col md:flex-row gap-8 items-stretch">
+              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex-1 min-h-[280px] flex flex-col">
+                <div className="bg-blue-100 p-3 rounded-lg w-fit mx-auto mb-4">
                   <Users className="h-6 w-6 text-blue-600" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Shared Monitoring</h3>
-                  <p className="text-gray-600 mt-1">
-                    Seamlessly share monitored areas among your team members. This ensures everyone is
-                    focused on the same critical locations, improving collective situational awareness.
-                  </p>
-                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Shared Monitoring</h3>
+                <p className="text-gray-600 flex-grow">
+                  Seamlessly share monitored areas among your team members. This ensures everyone is
+                  focused on the same critical locations, improving collective situational awareness.
+                </p>
               </div>
-              <div className="flex items-start">
-                <div className="bg-orange-100 p-3 rounded-lg mr-4 flex-shrink-0">
+              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex-1 min-h-[280px] flex flex-col">
+                <div className="bg-orange-100 p-3 rounded-lg w-fit mx-auto mb-4">
                   <Bell className="h-6 w-6 text-orange-600" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Synchronized Alerts</h3>
-                  <p className="text-gray-600 mt-1">
-                    Receive synchronized notifications. When a fire risk is detected, every team member
-                    is notified instantly, enabling a swift and coordinated response.
-                  </p>
-                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Synchronized Alerts</h3>
+                <p className="text-gray-600 flex-grow">
+                  Receive synchronized notifications. When a fire risk is detected, every team member
+                  is notified instantly, enabling a swift and coordinated response.
+                </p>
               </div>
-              <div className="flex items-start">
-                <div className="bg-green-100 p-3 rounded-lg mr-4 flex-shrink-0">
+              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition-shadow duration-300 flex-1 min-h-[280px] flex flex-col">
+                <div className="bg-green-100 p-3 rounded-lg w-fit mx-auto mb-4">
                   <MapPin className="h-6 w-6 text-green-600" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Focused Collaboration</h3>
-                  <p className="text-gray-600 mt-1">
-                    Streamline communication and efforts by focusing on the same high-priority alerts
-                    and areas as a group.
-                  </p>
-                </div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">Focused Collaboration</h3>
+                <p className="text-gray-600 flex-grow">
+                  Streamline communication and efforts by focusing on the same high-priority alerts
+                  and areas as a group.
+                </p>
               </div>
-            </div>
-          </div>
-
-          <div className="space-y-6">
-            <div className="w-full h-50 rounded-2xl flex items-center justify-center text-gray-500 overflow-hidden">
-              <img
-                src={Teamsone.src}
-                alt={Teamsone.alt}
-                className="w-full h-full object-contain rounded-lg"
-              />
-            </div>
-            <div className="w-full h-50  rounded-2xl flex items-center justify-center text-gray-500 overflow-hidden">
-              <img
-                src={Teamstwo.src}
-                alt={Teamstwo.alt}
-                className="w-full h-full object-contain rounded-lg"
-              />
             </div>
           </div>
         </div>
