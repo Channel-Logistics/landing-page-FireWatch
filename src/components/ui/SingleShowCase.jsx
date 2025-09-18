@@ -1,4 +1,4 @@
-import { prediction, Risk } from "../index";
+import { prediction, predictionMobile } from "../index";
 
 export default function SingleShowCase({
     headline = "Smart maps that ",
@@ -7,7 +7,7 @@ export default function SingleShowCase({
     subtitle = "FireWatch delivers interactive 3D maps enriched with satellite imagery and live climate layers. These maps help predict, detect, and track wildfires as they evolve in real time.",
 }) {
     return (
-        <section className="w-full">
+        <section className="w-full  bg-gray-100">
             <div
                 className="
                     mx-auto max-w-7xl px-4
@@ -25,6 +25,7 @@ export default function SingleShowCase({
                             <div className="relative aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 hover:shadow-xl transition-shadow duration-300">
                                 <img
                                     className="h-full w-full rounded-2xl"
+                                    className="h-full w-full rounded-2xl"
                                     src={prediction?.src}
                                     alt="Image Download"
                                 />
@@ -32,12 +33,12 @@ export default function SingleShowCase({
                             </div>
 
                             
-                            <div className="absolute -bottom-14 -left-4 md:-bottom-20 md:-left-8 lg:-bottom-24 lg:-left-4">
+                            <div className="absolute -bottom-14 -left-8 md:-bottom-20 md:-left-12 lg:-bottom-24 lg:-left-16">
                                 <div className="relative w-24 md:w-28 lg:w-32 xl:w-36">
                                     <img
                                         className="w-full h-auto object-contain drop-shadow-2xl"
-                                        src={Risk?.src}
-                                        alt={Risk.alt}
+                                        src={predictionMobile?.src}
+                                        alt={predictionMobile.alt}
                                     />
                                 </div>
                             </div>

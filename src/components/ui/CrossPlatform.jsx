@@ -9,7 +9,7 @@ export default function CrossPlatform({
   "Access FireWatch seamlessly from desktop, tablet, or mobile devices. Its cross-platform design ensures reliable wildfire monitoring anytime, anywhere.",
 }) {
   return (
-    <section className="w-full bg-gray-100">
+    <section className="w-full">
 
       <div
         className="
