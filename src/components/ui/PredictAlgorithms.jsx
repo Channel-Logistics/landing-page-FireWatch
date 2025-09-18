@@ -1,4 +1,4 @@
-import { videoSimulation, androidImage } from "../index";
+import { videoSimulation, Simulationp } from "../index";
 
 export default function PredictAlgoritgms({
   headline = "Predictive propagation",
@@ -46,11 +46,11 @@ export default function PredictAlgoritgms({
 
 
               <div className="absolute -bottom-8 -right-10 md:-bottom-12 md:-right-16 lg:-bottom-16 lg:-right-14">
-                <div className="relative w-32 md:w-40 lg:w-48 xl:w-56">
+                <div className="relative w-24 md:w-32 lg:w-40 xl:w-40">
                   <img
                     className="w-full h-auto object-contain drop-shadow-2xl"
-                    src={androidImage?.src}
-                    alt={androidImage.alt}
+                    src={Simulationp?.src}
+                    alt={Simulationp.alt}
                   />
                 </div>
               </div>
