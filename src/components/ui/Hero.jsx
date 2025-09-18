@@ -69,7 +69,7 @@ export default function Hero() {
                 <img
                   src={satellites.src}
                   alt="Satélites"
-                  className="absolute w-20 bottom-[0%] right-[0%] z-30"
+                  className="absolute w-20 top-[0%] right-[0%] z-30"
                 />
               </div>
             </div>
