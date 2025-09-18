@@ -38,12 +38,12 @@ function App() {
         </Section>
 
 
-        <Section id="showcase" className="items-stretch"><SingleShowcase /></Section>
         <Section id="cross-platform" className="items-stretch"><CrossPlatform /></Section>
+        <Section id="showcase" className="items-stretch"><SingleShowcase /></Section>
         <Section id="map" className="items-stretch"><InfoMap /></Section>
         <Section id="algorithms" className="items-stretch"><PredictAlgoritgms /></Section>
         <Section id="metrics" className="items-stretch"><GeneralMetrics /></Section>
-       
+
 
 
         <div className="snap-start">
