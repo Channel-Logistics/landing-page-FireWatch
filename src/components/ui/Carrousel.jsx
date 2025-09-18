@@ -60,7 +60,8 @@ export default function CustomCarousel() {
             return (
               <div
                 key={index}
-                className="absolute h-[32rem] w-[min(99vw,1200px)] transition-all duration-700 ease-in-out bg-gray-50 hover:shadow-xl"
+                className="absolute h-[32rem] w-[min(90vw,1000px)] transition-all duration-700 ease-in-out
+             bg-gray-50 hover:shadow-xl flex items-center justify-center overflow-visible rounded-xl shadow-2xl"
                 style={style}
               >
                 {isVideo ? (
