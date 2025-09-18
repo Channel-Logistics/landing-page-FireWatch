@@ -54,6 +54,7 @@ export default function CrossPlatform({
                 transition={{ duration: 0.7, ease: 'easeOut' }}
               />
               <motion.img
+                onClick={() => window.open("https://play.google.com/store/apps/details?id=com.nativefirewatch&pcampaignid=web_share&pli=1", "_blank", "noopener,noreferrer")}
                 src={googleImage.src}
                 alt={googleImage.alt}
                 className="w-[128px] h-[42px] object-contain cursor-pointer"
