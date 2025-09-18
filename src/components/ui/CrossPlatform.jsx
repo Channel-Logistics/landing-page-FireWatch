@@ -32,7 +32,7 @@ export default function CrossPlatform({
             </p>
 
 
-            <div className="md:hidden mt-6 bg-gray-50 p-4 rounded-xl hover:shadow-xl transition-shadow duration-300">
+            <div className="md:hidden mt-6">
               <img
                 src={multiplatformImage.src}
                 alt={multiplatformImage.alt}

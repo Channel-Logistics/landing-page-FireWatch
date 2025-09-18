@@ -11,10 +11,8 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-
         <Route element={<DocsLayout />}>
           <Route path="docs" element={<ContentRenderer />} />
-          <Route path="how-it-works" element={<ContentRenderer />} />
           <Route path="high-priority" element={<ContentRenderer />} />
           <Route path="all-fires" element={<ContentRenderer />} />
           <Route path="detail-fire" element={<ContentRenderer />} />
@@ -29,11 +27,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="terms-and-conditions" element={<ContentRenderer />} />
           <Route path="contact-us" element={<ContentRenderer />} />
           <Route path="about-us" element={<ContentRenderer />} />
-
-
         </Route>
-
-
       </Routes>
     </BrowserRouter>
   </StrictMode>
