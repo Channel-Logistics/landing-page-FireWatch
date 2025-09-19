@@ -15,6 +15,7 @@ export default defineConfig({
           vendor: ['react', 'react-dom']
         }
       }
-    }
+    },
+    chunkSizeWarningLimit: 900
   }
 })
