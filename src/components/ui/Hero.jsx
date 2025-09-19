@@ -37,7 +37,7 @@ export default function Hero() {
             <div className="flex justify-center items-center w-full h-auto mt-10">
               <div className="relative w-[20rem] sm:w-[26rem] md:w-[28rem] lg:w-[30rem] aspect-square">
                 <div className="absolute inset-0 rounded-full pointer-events-none z-0">
-                  <div className="absolute inset-0 rounded-full bg-blue-600 opacity-20 blur-[100px] scale-110"></div>
+                  <div className="absolute inset-0 rounded-full opacity-20 blur-[100px] scale-110"></div>
                 </div>
 
                 <video
@@ -47,7 +47,7 @@ export default function Hero() {
                   muted
                   loop
                   playsInline
-                  className="w-full h-full object-cover rounded-full z-10 relative [clip-path:circle(50%)] [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
+                  className="w-full h-full object-cover rounded-full z-10 relative [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
                   style={{
                     WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
                   }}
