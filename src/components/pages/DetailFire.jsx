@@ -1,6 +1,6 @@
 import { Map, Building2, Mountain, AlertCircle } from "lucide-react";
-import SectionCard from "../Layout/SectionCard";
-import InteractiveCard from "../Layout/InteractiveCard";
+import SectionCard from "../layout/SectionCard";
+import InteractiveCard from "../layout/InteractiveCard";
 import { Terrain3d, shelters, videoSimulation, Fireoverview, Statealert, Riskfire, Twitter,Comments } from "..";
 
 export default function DetailFire() {
