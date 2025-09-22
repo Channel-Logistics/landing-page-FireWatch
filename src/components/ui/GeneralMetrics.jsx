@@ -30,14 +30,15 @@ export default function GeneralMetrics({
 
                             </div>
 
-                            
-                            <div className="absolute -bottom-14 -left-4 md:-bottom-20 md:-left-8 lg:-bottom-24 lg:-left-4">
-                                <div className="relative w-24 md:w-28 lg:w-32 xl:w-36">
-                                    <img
-                                        className="w-full h-auto object-contain drop-shadow-2xl"
-                                        src={Risk?.src}
-                                        alt={Risk.alt}
-                                    />
+                            <div className="relative">
+                                <div className="absolute -bottom-14 -left-12 md:-bottom-20 md:-left-16 lg:-bottom-24 lg:-left-20 xl:-bottom-28 xl:-left-24 mx-auto"> {/* Ajusta los valores de 'left' y añade mx-auto si aplica */}
+                                    <div className="relative w-24 md:w-28 lg:w-32 xl:w-36">
+                                        <img
+                                            className="w-full h-auto object-contain drop-shadow-2xl"
+                                            src={Risk?.src}
+                                            alt={Risk.alt}
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-orange-500/20 via-sky-500/20 to-emerald-500/20 rounded-full" />
