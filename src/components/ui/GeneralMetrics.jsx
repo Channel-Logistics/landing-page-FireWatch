@@ -40,7 +40,6 @@ export default function GeneralMetrics({
                                     />
                                 </div>
                             </div>
-
                             <div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-orange-500/20 via-sky-500/20 to-emerald-500/20 rounded-full" />
                         </div>
                     </div>
