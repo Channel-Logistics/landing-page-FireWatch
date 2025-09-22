@@ -9,7 +9,7 @@ import MonitoringAreas from "./MonitoringAreas";
 import HighPriority from "./HighPriority";
 import Predictions from "./Predictions";
 import Teams from "./Teams";
-import Raws from "./Raws";
+import Raws from "./RAWS";
 import Layers from "./Layers";
 import PrivacyPolicy from "./usefulLinks/PrivacyPolicy";
 import TermsConditions from "./usefulLinks/TermsConditions";

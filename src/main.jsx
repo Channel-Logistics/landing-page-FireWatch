@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ContentRenderer from "./components/pages/ContentRenderer.jsx";
-import DocsLayout from "./components/Layout/DocsLayout.jsx";
+import DocsLayout from "./components/layout/DocsLayout.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

@@ -56,7 +56,7 @@ export default function CustomCarousel() {
           {slides.map((slide, index) => {
             const position = getPosition(index);
             const style = getImageStyle(position);
-            const isVideo = slide.src.endsWith(".mp4");
+            const isVideo = slide.src.endsWith(".mov");
             return (
               <div
                 key={index}

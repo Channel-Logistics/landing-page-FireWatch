@@ -8,7 +8,7 @@ export default function ContactUs() {
 
   const sendEmail = useSendEmail();
 
-  const { handleSubmit, register } = useForm({
+  const { handleSubmit, register, reset } = useForm({
     criteriaMode: 'firstError',
     mode: 'all',
     reValidateMode: 'onChange',
@@ -27,7 +27,7 @@ export default function ContactUs() {
 
     const formattedData = {
       from: data.email,
-      to: "juanpineda200205@gmail.com",
+      to: "Luis@space-eyes.com",
       subject: `New Contact Us Message from ${data.name}`,
       html: buildContactHtml(data, { accent: "#f97316" }),
       replyTo: data.email,
@@ -35,8 +35,8 @@ export default function ContactUs() {
 
     try {
       const response = await sendEmail(formattedData);
-
-      console.log("Email sent successfully:", response);
+      reset();
+      
     } catch (error) {
       console.error("Error sending email:", error);
     }

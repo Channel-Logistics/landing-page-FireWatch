@@ -1,33 +1,22 @@
 import { ChartNoAxesGantt } from 'lucide-react';
-import sidebarHighPriorityIcon2 from "../assets/icons/sidebar-high-priority-icon-2.webp";
-import sidebarAreasIcon from "../assets/icons/sidebar-areas-icon.webp"
-import predictionIconStroke from "../assets/icons/prediction-icon-stroke.webp"
-import flameIconStroke from "../assets/icons/flame-icon-stroke.webp"
-import sidebarTeamIcon from "../assets/icons/sidebar-team-icon.webp"
-import sidebarRawsIcon from "../assets/icons/sidebar-raws-icon.webp"
-import sidebarCloudIcon from "../assets/icons/sidebar-cloud-icon.webp"
-import sidebarBellIcon from "../assets/icons/sidebar-bell-icon.webp"
-import layers from "../assets/icons/layers.webp"
 
 export const sidebarSections = [
   {
     id: 'overview',
     title: 'Overview',
     icon: ChartNoAxesGantt,
-    items: [
-      { id: 'docs', title: 'How it works?' }
-    ]
+    items: [{ id: 'docs', title: 'How it works?' }]
   },
   {
     id: 'high-priority',
     title: 'High Priority',
-    icon: sidebarHighPriorityIcon2,
+    icon: "/icons/sidebar-high-priority-icon-2.webp",
     items: [{ id: 'high-priority', title: 'High Priority' }]
   },
   {
     id: 'fires',
     title: 'Fires',
-    icon: flameIconStroke,
+    icon: "/icons/flame-icon-stroke.webp",
     items: [
       { id: 'all-fires', title: 'All Fires' },
       { id: 'detail-fire', title: 'Details Fire' }
@@ -36,42 +25,43 @@ export const sidebarSections = [
   {
     id: 'monitoring-areas',
     title: 'Monitorig Areas',
-    icon: sidebarAreasIcon,
+    icon: "/icons/sidebar-areas-icon.webp",
     items: [{ id: 'monitoring-areas', title: 'Monitoring Areas' }]
   },
   {
     id: 'predictions',
     title: 'Predictions',
-    icon: predictionIconStroke,
+    icon: "/icons/prediction-icon-stroke.webp",
     items: [{ id: 'predictions', title: 'Predictions' }]
   },
   {
     id: 'teams',
     title: 'Teams',
-    icon: sidebarTeamIcon,
+    icon: "/icons/sidebar-team-icon.webp",
     items: [{ id: 'teams', title: 'Teams' }]
   },
   {
     id: 'alerts',
     title: 'Alerts',
-    icon: sidebarBellIcon,
+    icon: "/icons/sidebar-bell-icon.webp",
     items: [{ id: 'alerts', title: 'Alerts' }]
   },
   {
     id: 'forecast',
     title: 'Forecast',
-    icon: sidebarCloudIcon,
+    icon: "/icons/sidebar-cloud-icon.webp",
     items: [{ id: 'forecast', title: 'Forecast' }]
   },
   {
     id: 'raws',
     title: 'Raws',
-    icon: sidebarRawsIcon,
+    icon: "/icons/sidebar-raws-icon.webp",
     items: [{ id: 'raws', title: 'Raws' }]
   },
-  { id: 'layers',
+  {
+    id: 'layers',
     title: 'Layers',
-    icon: layers  ,
+    icon: "/icons/layers.webp",
     items: [{ id: 'layers', title: 'Layers' }]
   }
 ];
