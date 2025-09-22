@@ -31,8 +31,8 @@ export default function GeneralMetrics({
                             </div>
 
                             <div className="relative">
-                                <div className="absolute -bottom-14 -left-12 md:-bottom-20 md:-left-16 lg:-bottom-24 lg:-left-20 xl:-bottom-28 xl:-left-24 mx-auto"> {/* Ajusta los valores de 'left' y añade mx-auto si aplica */}
-                                    <div className="relative w-24 md:w-28 lg:w-32 xl:w-36">
+                                <div className="absolute -bottom-10 -left-12 md:-bottom-16 md:-left-16 lg:-bottom-20 lg:-left-20 xl:-bottom-20 xl:-left-18 mx-auto">
+                                    <div className="relative w-20 md:w-24 lg:w-28 xl:w-32">
                                         <img
                                             className="w-full h-auto object-contain drop-shadow-2xl"
                                             src={Risk?.src}
@@ -41,7 +41,7 @@ export default function GeneralMetrics({
                                     </div>
                                 </div>
                             </div>
-                            <div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-orange-500/20 via-sky-500/20 to-emerald-500/20 rounded-full" />
+                            <div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-primary/20 via-primary/20 to-primary/20 rounded-full" />
                         </div>
                     </div>
 
