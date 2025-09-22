@@ -1,13 +1,13 @@
 import { infoMap, Indexmap } from "..";
 
 export default function InfoMap({
-  headline = "Wildfire ",
-  highlight = "Potential Index maps",
-  subtitle = "Daily updated WFPI maps highlight areas at higher wildfire risk across different regions. By combining multiple real-time variables, they give a clear, large-scale view of potential fire outbreaks.",
+    headline = "Wildfire ",
+    highlight = "Potential Index maps",
+    subtitle = "Daily updated WFPI maps highlight areas at higher wildfire risk across different regions. By combining multiple real-time variables, they give a clear, large-scale view of potential fire outbreaks.",
 }) {
-  return (
+    return (
 
-    <section className="w-full">
+        <section className="w-full">
             <div
                 className="
           mx-auto max-w-7xl px-4
@@ -31,8 +31,8 @@ export default function InfoMap({
 
                             </div>
 
-						
-                            <div className="absolute -bottom-16 -left-4 md:-bottom-20 md:-left-12 lg:-bottom-24 lg:-left-16">
+
+                            <div className="absolute -bottom-8 -left-4 md:-bottom-20 md:-left-12 lg:-bottom-24 lg:-left-16">
                                 <div className="relative w-24 md:w-28 lg:w-32 xl:w-36">
                                     <img
                                         className="w-full h-auto object-contain drop-shadow-2xl"
@@ -58,5 +58,5 @@ export default function InfoMap({
                 </div>
             </div>
         </section>
-  );
+    );
 }
