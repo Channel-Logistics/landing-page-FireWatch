@@ -38,8 +38,7 @@ export default function SingleShowCase({
                                 />
 
                             </div>
-
-                            <div className="absolute -bottom-8 -right-10 md:-bottom-12 md:-right-16 lg:-bottom-16 lg:-right-14">
+                            <div className="absolute -bottom-16 -right-4 md:-bottom-20 md:-right-8 lg:-bottom-23 lg:-right-6">
                                 <div className="relative w-24 md:w-32 lg:w-40 xl:w-40">
                                     <img
                                         className="w-full h-auto object-contain drop-shadow-2xl"
