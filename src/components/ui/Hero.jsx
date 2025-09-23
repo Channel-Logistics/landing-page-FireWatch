@@ -1,6 +1,15 @@
+import { useEffect, useRef } from "react"
 import { satellite, satellites, VideoFireWatch, LogoSpaceEyes } from ".."
 
 export default function Hero() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.7;
+    }
+  }, [])
+
   return (
     <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-500" />
@@ -41,6 +50,7 @@ export default function Hero() {
                 </div>
 
                 <video
+                  ref={videoRef}
                   src={VideoFireWatch.src}
                   type="video/mp4"
                   autoPlay
