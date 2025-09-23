@@ -6,7 +6,7 @@ export default function Hero() {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.7;
+      videoRef.current.playbackRate = 0.8;
     }
   }, [])
 
@@ -51,17 +51,19 @@ export default function Hero() {
 
                 <video
                   ref={videoRef}
-                  src={VideoFireWatch.src}
-                  type="video/mp4"
                   autoPlay
                   muted
                   loop
                   playsInline
+                  preload="auto"
                   className="w-full h-full object-cover rounded-full z-10 relative [mask-image:radial-gradient(circle,black_99%,transparent_100%)]"
                   style={{
                     WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
                   }}
-                />
+                >
+                  <source src="/videos/VideoFireWatch.webm" type="video/webm" />
+                  <source src={VideoFireWatch.src} type="video/mp4" />
+                </video>
 
                 <div className="absolute w-[44rem] h-[24rem] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[30deg] pointer-events-none z-20">
                   <div className="w-full h-full rounded-full border-[1.5px] border-white/30"></div>
