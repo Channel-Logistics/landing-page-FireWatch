@@ -60,7 +60,7 @@ export default function CustomCarousel() {
 
   return (
     <>
-      <section className="w-full max-w-[100vw] overflow-x-hidden bg-gray-100 dark:bg-background">
+      <section className="w-full max-w-[100vw] overflow-x-hidden">
         <div className="relative w-full mx-auto my-0 h-[32rem] mb-2.5">
           <div className="relative w-full h-full flex items-center justify-center overflow-hidden mb-1">
             <div className="absolute inset-y-0 w-full flex items-center justify-between px-4 z-20">
