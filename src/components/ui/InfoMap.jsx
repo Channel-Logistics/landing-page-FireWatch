@@ -32,8 +32,8 @@ export default function InfoMap({
                             </div>
 
 
-                            <div className="absolute -bottom-8 -left-4 md:-bottom-20 md:-left-12 lg:-bottom-24 lg:-left-16">
-                                <div className="relative w-24 md:w-28 lg:w-32 xl:w-36">
+                            <div className="absolute -bottom-8 -left-4 md:-bottom-20 md:-left-12 lg:-bottom-25 lg:-left-20">
+                                <div className="relative w-24 md:w-32 lg:w-40 xl:w-40">
                                     <img
                                         className="w-full h-auto object-contain drop-shadow-2xl"
                                         src={Indexmap?.src}
