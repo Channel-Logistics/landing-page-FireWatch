@@ -27,7 +27,7 @@ export default function GeneralMetrics({
                                     alt="Image Download"
                                 />
                             </div>
-
+  
                             <div className="relative">
                                 <div className="absolute -bottom-7 -left-3 sm:-bottom-9 sm:-left-4 md:-bottom-16 md:-left-8 lg:-bottom-20 lg:-left-10 xl:-bottom-20 xl:-left-12">
                                     <div className="relative w-14 sm:w-18 md:w-24 lg:w-28 xl:w-32">
@@ -39,6 +39,7 @@ export default function GeneralMetrics({
                                     </div>
                                 </div>
                             </div>
+  
                             <div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-primary/20 via-primary/20 to-primary/20 rounded-full" />
                         </div>
                     </div>
