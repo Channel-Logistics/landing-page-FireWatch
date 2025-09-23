@@ -18,7 +18,6 @@ export default function GeneralMetrics({
             >
                 <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 place-items-center md:place-items-stretch">
 
-
                     <div className="md:col-span-7 w-full flex justify-center">
                         <div className="relative w-full max-w-md sm:max-w-lg md:max-w-3xl xl:max-w-[980px] mx-auto">
                             <div className="relative aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 hover:shadow-xl transition-shadow duration-300">
@@ -27,21 +26,19 @@ export default function GeneralMetrics({
                                     src={metrics?.src}
                                     alt="Image Download"
                                 />
-
                             </div>
 
-                            <div className="relative">
-    <div className="absolute -bottom-10 -left-4 md:-bottom-16 md:-left-8 lg:-bottom-20 lg:-left-10 xl:-bottom-20 xl:-left-12">
-        <div className="relative w-20 md:w-24 lg:w-28 xl:w-32">
-            <img
-                className="w-full h-auto object-contain drop-shadow-2xl"
-                src={Risk?.src}
-                alt={Risk.alt}
-            />
-        </div>
-    </div>
-</div>
-<div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-primary/20 via-primary/20 to-primary/20 rounded-full" />
+                            <div className="absolute -bottom-8 -left-4 md:-bottom-20 md:-left-12 lg:-bottom-25 lg:-left-20">
+                                <div className="relative w-17 md:w-32 lg:w-40 xl:w-39">
+                                        <img
+                                            className="w-full h-auto object-contain drop-shadow-2xl"
+                                            src={Risk?.src}
+                                            alt={Risk.alt}
+                                        />
+                                    </div>
+                                </div>
+
+                            <div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-primary/20 via-primary/20 to-primary/20 rounded-full" />
                         </div>
                     </div>
 
