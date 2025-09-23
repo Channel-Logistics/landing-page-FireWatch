@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { slides } from "..";
 import StyleTextCarousel from "./TextStylesOfTheCarousel";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function CustomCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -59,28 +60,23 @@ export default function CustomCarousel() {
 
   return (
     <>
-      <section className="w-full max-w-[100vw] overflow-x-hidden">
+      <section className="w-full max-w-[100vw] overflow-x-hidden bg-gray-100 dark:bg-background">
         <div className="relative w-full mx-auto my-0 h-[32rem] mb-2.5">
           <div className="relative w-full h-full flex items-center justify-center overflow-hidden mb-1">
-            {/* Flechas de Navegación encima del carrusel */}
             <div className="absolute inset-y-0 w-full flex items-center justify-between px-4 z-20">
               <button
                 onClick={handlePrevClick}
                 className="w-14 h-14 flex items-center justify-center text-gray-900 hover:text-white transition-colors duration-200"
                 aria-label="Previous slide"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-10 h-10">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
+                <ChevronLeft className="w-10 h-10" />
               </button>
               <button
                 onClick={handleNextClick}
                 className="w-14 h-14 flex items-center justify-center text-gray-900 hover:text-white transition-colors duration-200"
                 aria-label="Next slide"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-10 h-10">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
+                <ChevronRight className="w-10 h-10" />
               </button>
             </div>
             
@@ -132,8 +128,6 @@ export default function CustomCarousel() {
           </div>
         </div>
       </section>
-      
-      {/* Puntos de Navegación (fuera del carrusel) */}
       <div className="flex justify-center items-center mt-4 space-x-2">
         {slides.map((_, index) => (
           <button
