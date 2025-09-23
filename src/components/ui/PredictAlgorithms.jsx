@@ -46,7 +46,7 @@ export default function PredictAlgoritgms({
 
 
               <div className="absolute -bottom-16 -right-4 md:-bottom-20 md:-right-8 lg:-bottom-24 lg:-right-20">
-                <div className="relative w-18 md:w-32 lg:w-40 xl:w-40">
+                <div className="relative w-17 md:w-32 lg:w-40 xl:w-39">
                   <img
                     className="w-full h-auto object-contain drop-shadow-2xl"
                     src={Simulationp?.src}
