@@ -1,10 +1,10 @@
 import { prediction, predictionMobile } from "../index";
 
 export default function SingleShowCase({
-    headline = "Smart maps that ",
-    highlight = "predict fire",
+    headline = "AI-Powered",
+    highlight = " Wildfire Predictions",
     description = " in real time",
-    subtitle = "FireWatch delivers interactive 3D maps enriched with satellite imagery and live climate layers. These maps help predict, detect, and track wildfires as they evolve in real time.",
+    subtitle = "Utilizing cutting-edge AI and machine learning algorithms, FireWatch enables proactive responses and empoweres communities with accurate, actionable insights to mitigate risks effectively.",
 }) {
     return (
         <section className="w-full  bg-gray-100">
@@ -30,16 +30,16 @@ export default function SingleShowCase({
 
                     <div className="md:col-span-7 w-full flex justify-center">
                         <div className="relative w-full max-w-md sm:max-w-lg md:max-w-3xl xl:max-w-[980px] mx-auto">
-                            <div className="relative aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative aspect-[2/1] rounded-xl overflow-hidden shadow-2xl ring-1 ring-black/5 hover:shadow-xl transition-shadow duration-300">
                                 <img
-                                    className="h-full w-full rounded-2xl"
+                                    className="h-full w-full object-cover rounded-xl"
                                     src={prediction?.src}
                                     alt="Image Download"
                                 />
 
                             </div>
-                            <div className="absolute -bottom-16 -right-4 md:-bottom-20 md:-right-8 lg:-bottom-24 lg:-right-20">
-                                <div className="relative w-17 md:w-32 lg:w-40 xl:w-39">
+                            <div className="absolute -bottom-16 right-0 md:-bottom-20 md:right-0 lg:-bottom-24 lg:right-0" style={{ transform: 'translateX(calc(50% - 100px)) translateY(15px)' }}>
+                                <div className="relative w-32 md:w-64 lg:w-80 xl:w-96">
                                     <img
                                         className="w-full h-auto object-contain drop-shadow-2xl"
                                         src={predictionMobile?.src}

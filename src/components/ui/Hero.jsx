@@ -21,11 +21,11 @@ export default function Hero() {
             <img
               src={LogoSpaceEyes.src}
               alt={LogoSpaceEyes.alt}
-              className="mx-auto md:mx-0 w-[220px] sm:w-[260px] md:w-[320px] lg:w-[380px] h-auto "
+              className="mx-auto md:mx-0 w-[180px] sm:w-[220px] md:w-[260px] lg:w-[300px] h-auto "
             />
 
             <h1
-              className="text-4xl sm:text-xl md:text-[2rem] lg:text-[3.5rem] font-normal mt-1 sm:mt-1 leading-[0.9] bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 bg-clip-text text-transparent "
+              className="text-3xl sm:text-lg md:text-[1.5rem] lg:text-[2.5rem] font-normal mt-1 sm:mt-1 leading-[0.9] bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 bg-clip-text text-transparent "
               style={{
                 backgroundSize: "200% 200%",
                 animation: "fireAnimation 3s ease-in-out infinite",
@@ -36,8 +36,8 @@ export default function Hero() {
               FireWatch
             </h1>
 
-            <p className="text-lg sm:text-xl text-muted-foreground mt-3 sm:mt-4 mb-8 text-pretty leading-relaxed">
-              An AI-powered platform that combines satellite imagery, weather data, and 3D visualization to detect hotspots, send immediate alerts, simulate fire spread, and optimize emergency response with automated reports and community integration.
+            <p className="text-sm sm:text-base text-muted-foreground mt-3 sm:mt-4 mb-8 text-pretty leading-relaxed">
+            An AI-Powered platform that combines satellite imagery, weather data, and 3D visualization to detect hotspots and monitor real-time reported fires worldwide. It delivers immediate alerts, simulates fire spread, and optimizes emergency response with automated reports and community integration.
             </p>
           </div>
 

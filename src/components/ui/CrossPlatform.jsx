@@ -83,7 +83,7 @@ export default function CrossPlatform({
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
               >
-                <span>or visit our web Application</span>
+                <span>Visit our Web Application</span>
                 <SquareArrowOutUpRight className="w-4 h-4 md:ml-1" />
               </motion.a>
             </div>

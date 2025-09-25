@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { slides } from "..";
 import StyleTextCarousel from "./TextStylesOfTheCarousel";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function CustomCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const intervalRef = useRef(null);
 
   const getImageStyle = (position) => {
     if (position === 0) {
@@ -41,6 +43,24 @@ export default function CustomCarousel() {
     return 2;
   };
 
+  const startAutoRotation = () => {
+    // Clear any existing interval
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+    
+    intervalRef.current = setInterval(() => {
+      setCurrentIndex((p) => (p + 1) % slides.length);
+    }, 6000);
+  };
+
+  const stopAutoRotation = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  };
+
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? slides.length - 1 : prevIndex - 1
@@ -51,18 +71,35 @@ export default function CustomCarousel() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
 
+  // Start auto-rotation on mount
   useEffect(() => {
-    const id = setInterval(() => {
-      setCurrentIndex((p) => (p + 1) % slides.length);
-    }, 6000);
-    return () => clearInterval(id);
+    startAutoRotation();
+    return () => stopAutoRotation();
   }, []);
+
+  // Reset auto-rotation timer when currentIndex changes (including manual navigation)
+  useEffect(() => {
+    startAutoRotation();
+  }, [currentIndex]);
+
+  // Handle hover state changes
+  useEffect(() => {
+    if (isHovered) {
+      stopAutoRotation();
+    } else {
+      startAutoRotation();
+    }
+  }, [isHovered]);
 
   return (
     <>
       <section className="w-full max-w-[100vw] overflow-x-hidden">
         <div className="relative w-full mx-auto my-0 h-[32rem] mb-2.5">
-          <div className="relative w-full h-full flex items-center justify-center overflow-hidden mb-1">
+          <div 
+            className="relative w-full h-full flex items-center justify-center overflow-hidden mb-1"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
             <div className="absolute inset-y-0 w-full flex items-center justify-between px-4 z-20">
               <button
                 onClick={handlePrevClick}
@@ -103,13 +140,13 @@ export default function CustomCarousel() {
                     <img
                       src={slide.src}
                       alt={slide.alt}
-                      className="w-full h-full object-cover rounded-xl bg-gray-50 dark:bg-surface"
+                      className="w-full h-full object-cover object-left rounded-xl bg-gray-50 dark:bg-surface"
                     />
                   )}
                   {slide.alt === "androidImage" && (
                     <StyleTextCarousel
                       label="HOW IT WORKS"
-                      title="AI-powered fire monitoring platform with real-time alerts and updates."
+                      title="Fire monitoring platform with real-time alerts and updates."
                       link="/how-it-works"
                       linkText="Read the Docs"
                     />

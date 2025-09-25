@@ -1,8 +1,8 @@
-import { videoSimulation, Simulationp } from "../index";
+import { predictAlgorithms, predictAlgorithmsMobile } from "../index";
 
 export default function PredictAlgoritgms({
-  headline = "Predictive propagation",
-  highlight = "algorithms",
+  headline = "AI Fire Spread",
+  highlight = "Prediction Algorithms",
   subtitle = "FireWatch runs advanced simulations that forecast how fires will spread. These predictive models account for terrain, weather, and vegetation to improve preparedness.",
 }) {
   return (
@@ -32,10 +32,10 @@ export default function PredictAlgoritgms({
 
           <div className="md:col-span-7 w-full flex justify-center">
             <div className="relative w-full max-w-md sm:max-w-lg md:max-w-3xl xl:max-w-[980px] mx-auto">
-              <div className="relative aspect-video md:aspect-auto rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 hover:shadow-xl transition-shadow duration-300">
+              <div className="relative aspect-[2/1] rounded-xl overflow-hidden shadow-2xl ring-1 ring-black/5 hover:shadow-xl transition-shadow duration-300">
                 <video
-                  className="h-full w-full rounded-2xl"
-                  src={videoSimulation?.src}
+                  className="h-full w-full object-cover rounded-xl"
+                  src={predictAlgorithms?.src}
                   autoPlay
                   muted
                   loop
@@ -45,12 +45,12 @@ export default function PredictAlgoritgms({
               </div>
 
 
-              <div className="absolute -bottom-16 -right-4 md:-bottom-20 md:-right-8 lg:-bottom-24 lg:-right-20">
-                <div className="relative w-17 md:w-32 lg:w-40 xl:w-39">
+              <div className="absolute -bottom-16 right-0 md:-bottom-20 md:right-0 lg:-bottom-24 lg:right-0" style={{ transform: 'translateX(calc(50% - 100px)) translateY(15px)' }}>
+                <div className="relative w-32 md:w-64 lg:w-80 xl:w-96">
                   <img
                     className="w-full h-auto object-contain drop-shadow-2xl"
-                    src={Simulationp?.src}
-                    alt={Simulationp.alt}
+                    src={predictAlgorithmsMobile?.src}
+                    alt="Fire Simulation Mobile"
                   />
                 </div>
               </div>

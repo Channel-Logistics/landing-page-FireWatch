@@ -1,13 +1,17 @@
 export const slides = [
-  { src: "/images/Climate.webp", alt: "fotoUno" },
-  { src: "/images/FireIndicator.webp", alt: "fotoDos" },
-  { src: "/videos/video-carrousel.mov", alt: "VideoFireWatch" },
-  { src: "/images/WindAndFire.webp", alt: "androidImage" },
+  { src: "/new-screenshots/main-carousel-4.png", alt: "androidImage" },
+  { src: "/new-screenshots/main-carousel-3.mov", alt: "VideoFireWatch" },
+  { src: "/new-screenshots/main-carousel-2.png", alt: "fotoDos" },
+  { src: "/new-screenshots/main-carousel-1.png", alt: "fotoUno" },
 ];
 
-export const prediction = { src: "/images/Prediction.webp", alt: "downloadApp" }
-export const infoMap = { src: "/images/infoMap.webp", alt: "downloadApp" }
-export const metrics = { src: "/images/metricsFire.webp", alt: "downloadApp" }
+export const prediction = { src: "/new-screenshots/prediction-web-screenshot.png", alt: "downloadApp" }
+export const infoMap = { src: "/new-screenshots/fire-list-web.png", alt: "downloadApp" }
+export const infoMapMobile = { src: "/new-screenshots/fire-list-mobile.png", alt: "downloadApp" }
+export const predictAlgorithms = { src: "/new-screenshots/main-carousel-3.mov", alt: "downloadApp" }
+export const predictAlgorithmsMobile = { src: "/new-screenshots/fire-simulation-mobile.png", alt: "downloadApp" }
+export const metrics = { src: "/new-screenshots/areas-web.png", alt: "downloadApp" }
+export const metricsMobile = { src: "/new-screenshots/areas-mobile.png", alt: "downloadApp" }
 
 export const LogoSpaceEyes = { src: "/logos/logo.png", alt: "SpaceEyes" }
 export const LogoSpaceEyesWhite = { src: "/logos/space-eyes-w1.png", alt: "SpaceEyes" }
@@ -75,4 +79,4 @@ export const Indexmap = { src: "/images/indexMapSimulation.webp", alt: "indexmap
 export const Predict = { src: "/images/predict.webp", alt: "predict" }
 export const Risk = { src: "/images/risk.webp", alt: "risk" }
 export const Simulationp = { src: "/images/simulationp.webp", alt: "simulationp" }
-export const predictionMobile = { src: "/images/PredictionMobile.webp", alt: "predictionMobile" }
+export const predictionMobile = { src: "/new-screenshots/prediction-mobile.png", alt: "predictionMobile" }

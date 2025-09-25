@@ -1,9 +1,9 @@
-import { metrics, Risk } from "../index";
+import { metrics, metricsMobile } from "../index";
 
 export default function GeneralMetrics({
-    headline = "General risk metrics ",
-    highlight = "indicators",
-    subtitle = "Each region is assigned a global risk score calculated from environmental and terrain data. This prioritization makes it easier to focus resources where fire risk is greatest.",
+    headline = "Track your ",
+    highlight = "Custom Areas",
+    subtitle = "Create and monitor custom areas for fire detection. Enable alerts to receive emails when fires are reported within your monitored areas.",
 }) {
     return (
         <section className="w-full">
@@ -20,20 +20,20 @@ export default function GeneralMetrics({
 
                     <div className="md:col-span-7 w-full flex justify-center">
                         <div className="relative w-full max-w-md sm:max-w-lg md:max-w-3xl xl:max-w-[980px] mx-auto">
-                            <div className="relative aspect-video md:aspect-[16/9] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5 hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative aspect-[2/1] rounded-xl overflow-hidden shadow-2xl ring-1 ring-black/5 hover:shadow-xl transition-shadow duration-300">
                                 <img
-                                    className="h-full w-full rounded-2xl"
+                                    className="h-full w-full object-cover rounded-xl"
                                     src={metrics?.src}
-                                    alt="Image Download"
+                                    alt="Track your Custom Areas"
                                 />
                             </div>
 
-                            <div className="absolute -bottom-8 -left-4 md:-bottom-20 md:-left-12 lg:-bottom-25 lg:-left-20">
-                                <div className="relative w-17 md:w-32 lg:w-40 xl:w-39">
+                            <div className="absolute -bottom-16 right-0 md:-bottom-20 md:right-0 lg:-bottom-24 lg:right-0" style={{ transform: 'translateX(calc(50% - 100px)) translateY(15px)' }}>
+                                <div className="relative w-32 md:w-64 lg:w-80 xl:w-96">
                                         <img
                                             className="w-full h-auto object-contain drop-shadow-2xl"
-                                            src={Risk?.src}
-                                            alt={Risk.alt}
+                                            src={metricsMobile?.src}
+                                            alt="Custom Areas Mobile"
                                         />
                                     </div>
                                 </div>
