@@ -46,7 +46,7 @@ export default function InfoMap({
                         </div>
                     </div>
 
-                    <div className="md:col-span-5 flex flex-col items-center md:items-start md:mt-25 text-center md:text-left ">
+                    <div className="md:col-span-5 flex flex-col items-center md:items-start md:mt-25 text-center md:text-left mt-20 md:mt-0">
                         <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
                             {headline}
                             <span className="text-orange-500"> {highlight}</span>
