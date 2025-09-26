@@ -1,4 +1,14 @@
 import { ChartNoAxesGantt } from 'lucide-react';
+import { 
+  Warning, 
+  Fire, 
+  MapPinArea, 
+  WarningDiamond, 
+  BellSimpleRinging, 
+  UsersThree, 
+  Cloud, 
+  CellTower 
+} from '@phosphor-icons/react';
 
 export const sidebarSections = [
   {
@@ -10,52 +20,52 @@ export const sidebarSections = [
   {
     id: 'high-priority',
     title: 'High Priority',
-    icon: "/icons/sidebar-high-priority-icon-2.webp",
+    icon: Warning,
     items: [{ id: 'high-priority', title: 'High Priority' }]
   },
   {
     id: 'fires',
     title: 'Fires',
-    icon: "/icons/flame-icon-stroke.webp",
+    icon: Fire,
     items: [
-      { id: 'all-fires', title: 'All Fires' },
-      { id: 'detail-fire', title: 'Details Fire' }
+      { id: 'all-fires', title: 'Reported Fires' },
+      { id: 'detail-fire', title: 'Fire Data' }
     ]
   },
   {
     id: 'monitoring-areas',
-    title: 'Monitorig Areas',
-    icon: "/icons/sidebar-areas-icon.webp",
+    title: 'Monitoring Areas',
+    icon: MapPinArea,
     items: [{ id: 'monitoring-areas', title: 'Monitoring Areas' }]
   },
   {
     id: 'predictions',
     title: 'Predictions',
-    icon: "/icons/prediction-icon-stroke.webp",
+    icon: WarningDiamond,
     items: [{ id: 'predictions', title: 'Predictions' }]
   },
   {
     id: 'teams',
     title: 'Teams',
-    icon: "/icons/sidebar-team-icon.webp",
+    icon: UsersThree,
     items: [{ id: 'teams', title: 'Teams' }]
   },
   {
     id: 'alerts',
     title: 'Alerts',
-    icon: "/icons/sidebar-bell-icon.webp",
+    icon: BellSimpleRinging,
     items: [{ id: 'alerts', title: 'Alerts' }]
   },
   {
     id: 'forecast',
     title: 'Forecast',
-    icon: "/icons/sidebar-cloud-icon.webp",
+    icon: Cloud,
     items: [{ id: 'forecast', title: 'Forecast' }]
   },
   {
     id: 'raws',
     title: 'Raws',
-    icon: "/icons/sidebar-raws-icon.webp",
+    icon: CellTower,
     items: [{ id: 'raws', title: 'Raws' }]
   },
   {

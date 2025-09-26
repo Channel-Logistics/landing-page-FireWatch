@@ -39,8 +39,8 @@ export default function Raws() {
           </div>
         </section>
 
-        <hr className="my-16 border-t-2 border-gray-200" />
-        <section className="mb-16">
+        {/* <hr className="my-16 border-t-2 border-gray-200" /> */}
+        {/* <section className="mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">How to View Station Data</h2>
           <div className="flex flex-col lg:flex-row items-start gap-12 max-w-6xl mx-auto">
             <div className="w-full lg:w-1/2">
@@ -70,7 +70,7 @@ export default function Raws() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <hr className="my-16 border-t-2 border-gray-200" />
 

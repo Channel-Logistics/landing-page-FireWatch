@@ -1,5 +1,5 @@
 import { Flame, Activity } from 'lucide-react';
-import { Alertone } from ".."
+import { alertsWeb } from ".."
 export default function Alerts() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
@@ -18,8 +18,8 @@ export default function Alerts() {
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
             <div className="w-full lg:w-1/2 h-96 md:h-[28rem] lg:h-[32rem] overflow-hidden flex items-center justify-center text-gray-500 mb-8 lg:mb-0">
               <img
-                src={Alertone.src}
-                alt={Alertone.alt}
+                src={alertsWeb.src}
+                alt={alertsWeb.alt}
                 className="w-full h-full object-contain rounded-2xl"
               />
             </div>
@@ -27,19 +27,19 @@ export default function Alerts() {
               <div>
                 <div className="flex items-center mb-3">
                   <Flame className="h-8 w-8 text-red-500 mr-3" />
-                  <h3 className="text-xl font-semibold text-gray-800">New Fire Alerts</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Updated Fire Alerts</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
-                  Receive an immediate notification the moment a new fire is detected by our system within your monitored areas. This alert includes the fire's precise location and an initial risk assessment, enabling a swift response.
+                  Get notified whenever there are any changes to fires you're monitoring, including size updates, containment changes, evacuation orders, or new fire activity. Stay informed with real-time updates on fire progression and status changes.
                 </p>
               </div>
               <div>
                 <div className="flex items-center mb-3">
                   <Activity className="h-8 w-8 text-orange-500 mr-3" />
-                  <h3 className="text-xl font-semibold text-gray-800">Status Updates</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">Area Alerts</h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
-                  Get real-time updates on active fires, including changes in containment, size, and severity. These notifications are essential for tracking the fire's progression and understanding the current situation.
+                  Receive instant notifications when a fire enters any of your custom monitoring areas. Set up personalized boundaries around properties, communities, or regions of interest to get alerted the moment fire activity is detected within those specific zones.
                 </p>
               </div>
             </div>

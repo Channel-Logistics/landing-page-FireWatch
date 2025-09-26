@@ -1,15 +1,15 @@
 import { Globe, BarChart2, Thermometer, Wind, Droplet, Sun, Zap, ArrowRight } from 'lucide-react';
-import { Prediction } from ".."
+import { prediction } from ".."
 
 export default function Predictions() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Wildfire Prediction System</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">AI Wildfire Predictions</h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Our advanced AI system analyzes real-time data to predict wildfire risks,
-            empowering communities to prepare and act proactively.
+          Real-time wildfire predictions driven by cutting-edge AI and machine learning algorithms, enabling proactive responses and empowering communities with accurate, actionable insights to mitigate risks effectively.
+
           </p>
         </header>
 
@@ -18,8 +18,8 @@ export default function Predictions() {
           <div className="flex flex-col lg:flex-row gap-12 items-center max-w-6xl mx-auto">
             <div className="flex flex-1 w-full bg-gray-200 rounded-lg items-center justify-center text-gray-500 mb-8 lg:mb-0 p-0">
               <img
-                src={Prediction.src}
-                alt={Prediction.alt}
+                src={prediction.src}
+                alt={prediction.alt}
                 className="w-full h-auto object-contain rounded-lg"
               />
             </div>

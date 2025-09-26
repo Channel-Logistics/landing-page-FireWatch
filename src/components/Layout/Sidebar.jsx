@@ -77,16 +77,16 @@ const Sidebar = ({
           <div key={section.id}>
             <button
               onClick={() => handleSectionHeaderClick(section)}
-              className={`flex items-center justify-between w-full px-3 py-2 rounded-lg font-medium text-lg transition-colors duration-200 ${isSectionActive
+              className={`flex items-center justify-between w-full px-3 py-2 rounded-lg font-medium text-sm transition-colors duration-200 ${isSectionActive
                   ? "bg-orange-500 text-white shadow-lg"
                   : "text-gray-600 hover:bg-gray-200 hover:text-gray-800"
                 }`}
             >
               <div className="flex items-center">
                 {typeof section.icon === "string" ? (
-                  <img src={section.icon} alt="icon" className="w-4 h-4 mr-3 object-contain" />
+                  <img src={section.icon} alt="icon" className="w-5 h-5 mr-3 object-contain" />
                 ) : (
-                  <section.icon className="w-4 h-4 mr-3" />
+                  <section.icon className="w-5 h-5 mr-3" size={20} />
                 )}
                 <span className="truncate">{section.title}</span>
               </div>

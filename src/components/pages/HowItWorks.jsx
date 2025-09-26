@@ -35,12 +35,12 @@ export default function HowItWorks() {
           <div className="w-full md:w-[calc(50%-1rem)]">
             <FeatureCard
               icon={<Activity className="h-8 w-8" />}
-              title="Real-Time Monitoring"
+              title="Real-Time Fire Monitoring"
               description="Get instant updates on wildfire incidents with immediate status changes and containment progress. Our system processes thousands of data points every second to keep you informed with the latest information."
               features={[
-                "Updates every 15 minutes",
-                "Instant emergency alerts",
-                "Response team tracking",
+                "Constant Updates",
+                "Instant Emergency Alerts",
+                "Response Team Tracking",
               ]}
               iconBgColor="bg-orange-100"
               iconColor="text-orange-600"
@@ -53,9 +53,9 @@ export default function HowItWorks() {
               title="Global Coverage"
               description="Monitor wildfires across different regions with integrated data from multiple fire management systems. We cover more than 150 countries with detailed information on each incident, keeping you connected worldwide."
               features={[
-                "Coverage in 150+ countries",
-                "Integration with local systems",
-                "Historical data from 10+ years",
+                "Coverage in 150+ Countries",
+                "Integration with Local Systems",
+                "Historical Data from 10+ Years",
               ]}
               iconBgColor="bg-blue-100"
               iconColor="text-blue-600"
@@ -68,9 +68,9 @@ export default function HowItWorks() {
               title="AI-Powered Predictions"
               description="Advanced machine learning algorithms provide accurate predictions of fire behavior and risk assessments. Our models have been trained with more than 10 years of historical data to help you stay ahead."
               features={[
-                "94% accuracy in predictions",
-                "Weather pattern analysis",
-                "Real-time risk assessment",
+                "94% Accuracy in Predictions",
+                "Weather Pattern Analysis",
+                "Real-time Risk Assessment",
               ]}
               iconBgColor="bg-green-100"
               iconColor="text-green-600"
@@ -82,9 +82,9 @@ export default function HowItWorks() {
               title="Custom Alerts"
               description="Receive instant notifications when fires are detected in your monitored areas. Configure specific alerts by location, intensity and threat type to stay informed and prepared."
               features={[
-                "Email and SMS notifications",
-                "Geographic zone alerts",
-                "Custom threshold configuration",
+                "Email and App Notifications",
+                "Geographic Zone Alerts",
+                "Custom Threshold Configuration",
               ]}
               iconBgColor="bg-red-100"
               iconColor="text-red-600"

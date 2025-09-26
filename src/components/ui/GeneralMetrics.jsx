@@ -3,7 +3,7 @@ import { metrics, metricsMobile } from "../index";
 export default function GeneralMetrics({
     headline = "Track your ",
     highlight = "Custom Areas",
-    subtitle = "Create and monitor custom areas for fire detection. Enable alerts to receive emails when fires are reported within your monitored areas.",
+    subtitle = "Create and monitor custom areas for fire detection. Enable alerts to receive emails when fires are reported, and updated,  within your monitored areas.",
 }) {
     return (
         <section className="w-full">

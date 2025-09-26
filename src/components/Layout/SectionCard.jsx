@@ -21,18 +21,15 @@ export default function SectionCard({
   const mediaComponent = (
     <div className={`w-full ${mediaHeight} rounded-lg flex items-center justify-start`}>
       {videoSrc ? (
-        <div className="relative w-full h-full rounded-lg overflow-hidden shadow-2xl ring-1 ring-black/5 bg-black">
-          <video
-            className="h-full w-full object-cover"
-            src={videoSrc}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-          />
-          <div className="pointer-events-none absolute inset-x-0 -bottom-6 h-14 blur-2xl bg-gradient-to-r from-orange-500/20 via-sky-500/20 to-emerald-500/20 rounded-full" />
-        </div>
+        <video
+          className="w-full h-full object-contain rounded-lg"
+          src={videoSrc}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        />
       ) : imageSrc ? (
         <img
           src={imageSrc}

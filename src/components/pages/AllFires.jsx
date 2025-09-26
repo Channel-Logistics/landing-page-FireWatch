@@ -1,12 +1,12 @@
 import { Bell, Search, Clock } from "lucide-react";
-import { pFires, pFireSpecificAlerts } from "..";
+import { pFires, pFireSpecificAlerts, fireListWeb } from "..";
 
 export default function AllFires() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto space-y-16">
         <header className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">All Fires</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Reported Fires</h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
             Real-time monitoring system offering immediate updates on
             up-to-date, current fires.
@@ -14,24 +14,16 @@ export default function AllFires() {
         </header>
 
         <section>
-          <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
-            Visual Guide: Complete Interface Overview
-          </h2>
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="p-6 rounded-lg border-2 border-dashed border-gray-300">
-              <h3 className="text-lg text-center font-semibold text-gray-700 mb-6">
-                Step 1: Main Interface with Navigation
-              </h3>
-              <div className="bg-gray-100 rounded-xl overflow-hidden">
-                <img
-                  src={pFires.src}
-                  alt={pFires.alt}
-                  className="w-full h-auto object-contain"
-                />
-              </div>
+          <div className="grid gap-8 md:grid-cols-1 max-w-4xl mx-auto">
+            <div className="w-full">
+              <img
+                src={fireListWeb.src}
+                alt={fireListWeb.alt}
+                className="w-full h-auto object-cover rounded-lg"
+              />
             </div>
 
-            <div className="bg-white p-6 rounded-lg border-2 border-dashed border-gray-300">
+            {/* <div className="bg-white p-6 rounded-lg border-2 border-dashed border-gray-300">
               <h3 className="text-lg text-center font-semibold text-gray-700 mb-6">
                 Step 2: Fire List with Sort and Filter Options
               </h3>
@@ -42,7 +34,7 @@ export default function AllFires() {
                   className="w-full h-auto object-contain"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -67,7 +59,7 @@ export default function AllFires() {
               <h3 className="text-xl font-semibold mb-4">Advanced Filtering</h3>
               <p className="text-gray-600">
                 Sort and filter fires by various criteria including acres
-                burned, status, location, and containment level.
+                burned, status, discovery time, last updated time, and containment level.
               </p>
             </div>
 
@@ -96,11 +88,11 @@ export default function AllFires() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    Comprehensive Fire Database
+                    Navigation Tabs
                   </h3>
                   <p className="text-gray-600">
-                    Access to 956+ active fires with complete information
-                    including source, status, location, and containment data.
+                    Easy access to All Fires, Perimeters, and Historical data
+                    through organized navigation tabs.
                   </p>
                 </div>
               </div>
@@ -111,11 +103,10 @@ export default function AllFires() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    Multiple Data Sources
+                    Comprehensive Fire Database
                   </h3>
                   <p className="text-gray-600">
-                    Information aggregated from multiple reliable wildfire
-                    monitoring systems for greater accuracy.
+                    Access to a variety of active fires with complete, up-to-date information.
                   </p>
                 </div>
               </div>
@@ -126,11 +117,11 @@ export default function AllFires() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    Advanced Sorting & Filtering
+                    Multiple Data Sources
                   </h3>
                   <p className="text-gray-600">
-                    Sort by acres burned, filter by status, and search for
-                    specific fires or locations.
+                    Information aggregated from multiple reliable wildfire
+                    monitoring systems for greater accuracy.
                   </p>
                 </div>
               </div>
@@ -143,44 +134,16 @@ export default function AllFires() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    Detailed Fire Information
+                    Advanced Sorting & Filtering
                   </h3>
                   <p className="text-gray-600">
-                    Each fire entry includes source, status, last updated time,
-                    coordinates, containment percentage, and calendar dates.
+                    Sort by acres burned, filter by status, and search for
+                    specific fires or locations.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-blue-600 font-bold">5</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    Add New Fires
-                  </h3>
-                  <p className="text-gray-600">
-                    "Add Fire +" functionality to manually add new fire incidents
-                    to the monitoring system.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-blue-600 font-bold">6</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    Navigation Tabs
-                  </h3>
-                  <p className="text-gray-600">
-                    Easy access to All Fires, Perimeters, and Historical data
-                    through organized navigation tabs.
-                  </p>
-                </div>
-              </div>
+            
             </div>
           </div>
         </section>
@@ -203,9 +166,6 @@ export default function AllFires() {
                 Uncontained fires requiring active suppression efforts. These pose
                 the highest risk and require immediate attention.
               </p>
-              <div className="text-sm text-red-600">
-                <strong>Examples:</strong> 25Lx-Muskeg, G90216
-              </div>
             </div>
 
             <div className="bg-green-50 p-8 rounded-lg border border-green-200">
@@ -219,9 +179,6 @@ export default function AllFires() {
                 Fires fully contained and under control. No further spread
                 expected, but monitoring continues.
               </p>
-              <div className="text-sm text-green-600">
-                <strong>Examples:</strong> We017, Ea061
-              </div>
             </div>
 
             <div className="bg-yellow-50 p-8 rounded-lg border border-yellow-200">

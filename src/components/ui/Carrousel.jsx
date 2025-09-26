@@ -147,7 +147,7 @@ export default function CustomCarousel() {
                     <StyleTextCarousel
                       label="HOW IT WORKS"
                       title="Fire monitoring platform with real-time alerts and updates."
-                      link="/how-it-works"
+                      link="/docs"
                       linkText="Read the Docs"
                     />
                   )}

@@ -1,34 +1,25 @@
 import { MapPin, Clock, Shield } from "lucide-react";
-import { highPriority, highPriorityView } from "..";
+import { highPriority, highPriorityView, highPriorityWeb } from "..";
 
 export default function HighPriority() {
   return (
     <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto space-y-16">
+      <div className="max-w-7xl mx-auto space-y-8">
         <header className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">High Priority</h1>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Immediate, proximity-based wildfire alerts for fires within five
-            miles of PIF locations—crucial situational intelligence at a glance.
+          Immediate, proximity-based wildfire alerts for fires within five miles of areas-crucial situational intelligence at a glance.
           </p>
         </header>
 
         <section>
-          <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
-            Visual Guide: Step-by-Step Interface
-          </h2>
           <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-lg border-2 border-dashed border-gray-300">
-              <h3 className="text-lg text-center font-semibold text-gray-700 mb-6">
-                Step 1: Complete High Priority View
-              </h3>
-              <div className="bg-gray-100 rounded-xl overflow-hidden">
-                <img
-                  src={highPriority.src}
-                  alt={highPriority.alt}
-                  className="w-full h-auto object-contain"
-                />
-              </div>
+            <div className="w-full">
+              <img
+                src={highPriorityWeb.src}
+                alt={highPriorityWeb.alt}
+                className="w-full h-auto object-cover rounded-lg"
+              />
             </div>
           </div>
       </section>
@@ -143,18 +134,7 @@ export default function HighPriority() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-red-600 font-bold">6</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Alert History</h3>
-                  <p className="text-gray-600">
-                    Access to complete alert history for trend analysis and
-                    pattern recognition.
-                  </p>
-                </div>
-              </div>
+            
             </div>
           </div>
         </section>

@@ -47,7 +47,7 @@ export default function CrossPlatform({
                 onClick={() => window.open("https://apps.apple.com/co/app/firewatch-ai-space-monitoring/id6498717343", "_blank", "noopener,noreferrer")}
                 src={appleImage.src}
                 alt={appleImage.alt}
-                className="w-[128px] h-[42px] object-contain cursor-pointer"
+                className="h-[42px] w-auto object-contain cursor-pointer"
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
@@ -57,7 +57,7 @@ export default function CrossPlatform({
                 onClick={() => window.open("https://play.google.com/store/apps/details?id=com.nativefirewatch&pcampaignid=web_share&pli=1", "_blank", "noopener,noreferrer")}
                 src={googleImage.src}
                 alt={googleImage.alt}
-                className="w-[128px] h-[42px] object-contain cursor-pointer"
+                className="h-[42px] w-auto object-contain cursor-pointer"
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.15 }}

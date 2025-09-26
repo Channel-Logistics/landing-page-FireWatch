@@ -1,13 +1,14 @@
 import { MapPin, Edit, Bell } from 'lucide-react';
-import { MoniAreas, Area, Polygon } from '..';
+import { MoniAreas, Area, Polygon, areaAlertsWeb } from '..';
+import SectionCard from '../Layout/SectionCard';
 
 export default function MonitoringAreas() {
   return (
-    <div className="bg-white min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto space-y-12">
+    <div className="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto space-y-16">
         <header className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900 mb-3">Monitoring Areas</h1>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Monitoring Areas</h1>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto">
             Create custom areas by defining polygons or entering an address with a radius. Enable alerts to receive emails when fires are reported nearby.
           </p>
         </header>
@@ -47,33 +48,13 @@ export default function MonitoringAreas() {
 
           <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
 
-          <section className="mb-16">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div className="order-1 lg:order-1">
-                <div className="w-85 h-full rounded-lg flex items-center justify-center bg-gray-50 hover:shadow-xl transition-shadow duration-300">
-                  <img
-                    src={Polygon.src}
-                    alt={Polygon.alt}
-                    className="w-full h-full object-contain rounded-lg"
-                  />
-                </div>
-              </div>
-              <div className="order-2 lg:order-2">
-                <div className="space-y-4">
-                  <h2 className="text-2xl font-bold text-gray-900 flex items-center gap-3">
-                    <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                      2
-                    </div>
-                    Areas List and Management
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed">
-                  Create an area by entering an address and selecting a custom radius to monitor proximity.
-                  This final step allows you to manage all your monitoring areas from a centralized interface with easy access to view and modify settings.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          <SectionCard
+            icon={MapPin}
+            title="Turn On Alerts"
+            description="Use the 'Turn On Alerts' button to receive notifications when a fire is detected in your custom area. This will help you stay informed and prepared."
+            imageSrc={areaAlertsWeb.src}
+            mediaPosition="left"
+          />
         </section>
 
         <hr className="my-16 border-t-2 border-gray-200 max-w-6xl mx-auto" />
@@ -134,18 +115,6 @@ export default function MonitoringAreas() {
                   <span className="text-blue-600 font-bold">2</span>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Asset Value Tracking</h3>
-                  <p className="text-gray-600">
-                    Track total asset value for each monitoring area with detailed policy information and unique identifiers for comprehensive coverage.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-blue-600 font-bold">3</span>
-                </div>
-                <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Flexible Radius Settings</h3>
                   <p className="text-gray-600">
                     Set custom radius distances (default 5 miles) to match your specific monitoring needs and risk assessment requirements.
@@ -157,7 +126,7 @@ export default function MonitoringAreas() {
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-blue-600 font-bold">4</span>
+                  <span className="text-blue-600 font-bold">3</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Search & Filter</h3>
@@ -169,7 +138,7 @@ export default function MonitoringAreas() {
 
               <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-blue-600 font-bold">5</span>
+                  <span className="text-blue-600 font-bold">4</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Creation Timestamps</h3>
@@ -181,7 +150,7 @@ export default function MonitoringAreas() {
 
               <div className="flex items-start space-x-4">
                 <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-blue-600 font-bold">6</span>
+                  <span className="text-blue-600 font-bold">5</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Quick Actions</h3>
