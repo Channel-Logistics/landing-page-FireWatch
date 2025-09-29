@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react"
-import { Menu, X, Globe, BookOpenText } from "lucide-react"
+import { Menu, X, BookOpenText } from "lucide-react"
 import { LogoSpaceEyes } from ".."
-import { AlertTriangle, FlameKindling } from "lucide-react"
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ onMobileMenuClick }) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -20,8 +19,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 overflow-hidden
         ${isScrolled
-            ? "bg-white/95 supports-[backdrop-filter]:bg-white/85 backdrop-blur-md shadow-lg border-b border-gray-300"
-            : "bg-white/80 supports-[backdrop-filter]:bg-white/65 backdrop-blur-md shadow-md border-b border-gray-200"
+          ? "bg-white/95 supports-[backdrop-filter]:bg-white/85 backdrop-blur-md shadow-lg border-b border-gray-300"
+          : "bg-white/80 supports-[backdrop-filter]:bg-white/65 backdrop-blur-md shadow-md border-b border-gray-200"
         }`}
     >
 
@@ -47,7 +46,6 @@ const Header = () => {
               </div>
             </Link>
           </div>
-
 
           <div className="hidden md:flex items-center space-x-6">
             <div className="hidden md:flex flex-1 justify-center">
@@ -87,10 +85,15 @@ const Header = () => {
             </a>
           </div>
 
-
           <div className="md:hidden flex items-center">
             <button
-              onClick={() => setIsMobileMenuOpen((v) => !v)}
+              onClick={() => {
+                if (onMobileMenuClick) {
+                  onMobileMenuClick();
+                } else {
+                  setIsMobileMenuOpen((v) => !v)
+                }
+              }}
               className="relative z-10 p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors"
               aria-label="Toggle menu"
               aria-expanded={isMobileMenuOpen}
@@ -105,7 +108,7 @@ const Header = () => {
           </div>
         </div>
 
-        {isMobileMenuOpen && (
+        {!onMobileMenuClick && isMobileMenuOpen && (
           <div id="mobile-menu" className="md:hidden pb-3">
             <div className="px-0 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-none mt-2 border-t border-gray-200">
               <Link
@@ -116,26 +119,6 @@ const Header = () => {
                 <BookOpenText className="w-4 h-4 mr-3" />
                 Docs
               </Link>
-              <div className="pt-2 mt-1 border-t border-gray-200 space-y-3">
-                <a
-                  href="https://firewatch.space-eyes.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-gradient-to-r from-orange-600 to-orange-500 text-white px-4 py-2.5 rounded-xl text-sm font-semibold block text-center shadow-md shadow-orange-600/20 active:scale-95 active:shadow-sm transition-all duration-200 ease-out"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Log In
-                </a>
-                <a
-                  href="https://firewatch.space-eyes.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-transparent border-2 border-orange-600 text-orange-600 px-4 py-2.5 rounded-xl text-sm font-semibold block text-center active:bg-orange-600 active:text-white active:scale-95 transition-all duration-200 ease-out"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Sign Up
-                </a>
-              </div>
             </div>
           </div>
         )}
