@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { Menu, X, BookOpenText } from "lucide-react"
-import { LogoSpaceEyes } from ".."
+import { LogoSpaceEyes, appleImage, googleImage } from ".."
+import * as motion from "motion/react-client"
 import { Link } from "react-router-dom";
 
 const Header = ({ onMobileMenuClick }) => {
@@ -8,6 +9,8 @@ const Header = ({ onMobileMenuClick }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const isDocs = location.pathname === "/docs";
+
+  const MotionImg = motion.img;
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50)
@@ -109,16 +112,52 @@ const Header = ({ onMobileMenuClick }) => {
         </div>
 
         {!onMobileMenuClick && isMobileMenuOpen && (
-          <div id="mobile-menu" className="md:hidden pb-3">
-            <div className="px-0 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-none mt-2 border-t border-gray-200">
+          <div id="mobile-menu" className="md:hidden pb-4">
+            <div className="mx-2 mt-3 bg-white/95 backdrop-blur-md rounded-xl shadow-lg border border-gray-100 divide-y divide-gray-100">
               <Link
                 to="/docs"
-                className="flex items-center px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-lg transition-colors duration-200"
+                className="flex items-center px-4 py-3 text-base font-medium text-gray-900 hover:bg-gray-50 hover:text-orange-600 rounded-t-xl transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <BookOpenText className="w-4 h-4 mr-3" />
+                <BookOpenText className="w-5 h-5 mr-3 text-orange-600" />
                 Docs
               </Link>
+              <div className="px-4 py-4 flex justify-center items-center gap-4">
+                <MotionImg
+                  onClick={() =>
+                    window.open(
+                      "https://apps.apple.com/co/app/firewatch-ai-space-monitoring/id6498717343",
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
+                  src={appleImage.src}
+                  alt="Download on App Store"
+                  aria-label="Download on the App Store"
+                  className="h-[42px] w-auto max-w-[160px] object-contain cursor-pointer hover:scale-105 hover:shadow-md transition-transform duration-200 ease-out"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.15 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                />
+                <MotionImg
+                  onClick={() =>
+                    window.open(
+                      "https://play.google.com/store/apps/details?id=com.nativefirewatch",
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
+                  src={googleImage.src}
+                  alt="Get it on Google Play"
+                  aria-label="Download on Google Play"
+                  className="h-[42px] w-auto max-w-[160px] object-contain cursor-pointer hover:scale-105 hover:shadow-md transition-transform duration-200 ease-out"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.15 }}
+                  transition={{ duration: 0.5, ease: "easeOut", delay: 0.05 }}
+                />
+              </div>
             </div>
           </div>
         )}
