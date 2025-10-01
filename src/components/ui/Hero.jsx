@@ -25,13 +25,7 @@ export default function Hero() {
             />
 
             <h1
-              className="text-3xl sm:text-lg md:text-[1.5rem] lg:text-[2.5rem] font-normal mt-1 sm:mt-1 leading-[0.9] bg-gradient-to-r from-orange-700 via-orange-600 to-orange-500 bg-clip-text text-transparent "
-              style={{
-                backgroundSize: "200% 200%",
-                animation: "fireAnimation 3s ease-in-out infinite",
-                textShadow: "0 2px 4px rgba(0,0,0,0.1)",
-                filter: "drop-shadow(0 4px 8px rgba(249, 115, 22, 0.2))",
-              }}
+              className="text-3xl font-bold mt-1 sm:mt-1 text-orange-500 block"
             >
               FireWatch
             </h1>
