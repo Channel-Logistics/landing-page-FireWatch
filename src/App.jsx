@@ -1,10 +1,9 @@
 import { useRef } from 'react'
-import Header from './components/layout/Header'
+import Header from './components/Layout/Header'
 import ElegantCarousel from './components/ui/Carrousel'
 import Hero from './components/ui/Hero'
 import SingleShowcase from './components/ui/SingleShowCase'
-import Footer from './components/layout/Footer'
-//import TrustedBy from './components/ui/TrustedBy'
+import Footer from './components/Layout/Footer'
 import CrossPlatform from './components/ui/CrossPlatform'
 import InfoMap from './components/ui/InfoMap'
 import PredictAlgoritgms from './components/ui/PredictAlgorithms'
@@ -17,7 +16,7 @@ function App() {
   const scrollRef = useRef(null)
 
   return (
-    <div className="w-full h-[100dvh] flex flex-col relative">
+    <div className="w-full h-[100dvh] flex flex-col relative overflow-x-hidden max-w-[100vw]">
 
       <ScrollProgressBar containerRef={scrollRef} />
 
@@ -28,7 +27,7 @@ function App() {
       <main
         ref={scrollRef}
         className="
-    flex-1 overflow-y-auto snap-y snap-mandatory scroll-smooth relative z-10
+    flex-1 overflow-y-auto overflow-x-hidden max-w-[100vw] snap-y snap-mandatory scroll-smooth relative z-10
     scroll-pt-[64px] sm:scroll-pt-[72px] md:scroll-pt-[80px]
   "
       >
