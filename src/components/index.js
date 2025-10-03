@@ -19,7 +19,7 @@ export const LogoSpaceEyesWhite = { src: "/logos/space-eyes-w1.png", alt: "Space
 export const appleImage = { src: "/images/apple.svg", alt: "appleImage" }
 export const googleImage = { src: "/images/google.svg", alt: "googleImage" }
 
-export const VideoFireWatch = { src: "/videos/VideoFireWatch.mp4", alt: "VideoFireWatch" }
+export const GlobeFireWatch = { src: "/videos/GlobeFireWatch.webm", alt: "GlobeFireWatch" }
 export const videoSimulation = { src: "/videos/simulationVideo.mov", alt: "videoSimulation" }
 
 export const logos = [
@@ -31,10 +31,9 @@ export const logos = [
   { src: "/logos/aws-nb.png", alt: "The Weather Channel" }
 ];
 
-export const androidImage = { src: "/images/android.webp", alt: "androidImage" }
+export const androidImage = { src: "/images/androidImage.webp", alt: "androidImage" }
 export const iosImage = { src: "/images/iphone.png", alt: "iosImage" }
 export const laptopImage = { src: "/images/laptop.png", alt: "laptopImage" }
-export const multiplatformImage = { src: "/images/multiplatform.png", alt: "multiplatformImage" }
 
 export const satellites = { src: "/animations/Satellites.gif", alt: "Satellites" }
 export const satellite = { src: "/animations/Satellite.gif", alt: "Satellite" }

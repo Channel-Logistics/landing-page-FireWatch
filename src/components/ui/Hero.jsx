@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react"
-import { satellite, satellites, VideoFireWatch, LogoSpaceEyes } from ".."
+import { satellite, satellites, GlobeFireWatch, LogoSpaceEyes } from ".."
 
 export default function Hero() {
   const videoRef = useRef(null);
@@ -11,7 +11,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidde pt-17 sm:pt-20 lg:pt-0">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-500" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -37,8 +37,8 @@ export default function Hero() {
 
 
           <div className="w-full md:w-2xl md:h-full flex justify-center">
-            <div className="flex justify-center items-center w-full h-auto mt-10">
-              <div className="relative w-[20rem] sm:w-[26rem] md:w-[28rem] lg:w-[30rem] aspect-square">
+            <div className="flex justify-center items-center w-full h-auto">
+              <div className="relative w-[15rem] sm:w-[20rem] md:w-[25rem] lg:w-[30rem] aspect-square">
                 <div className="absolute inset-0 rounded-full pointer-events-none z-0">
                   <div className="absolute inset-0 rounded-full opacity-20 blur-[100px] scale-110"></div>
                 </div>
@@ -55,8 +55,7 @@ export default function Hero() {
                     WebkitMaskImage: "radial-gradient(circle, black 99%, transparent 100%)",
                   }}
                 >
-                  <source src="/videos/VideoFireWatch.webm" type="video/webm" />
-                  <source src={VideoFireWatch.src} type="video/mp4" />
+                  <source src={GlobeFireWatch.src} type="video/webm" />
                 </video>
 
                 <div className="absolute w-[44rem] h-[24rem] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[30deg] pointer-events-none z-20">
@@ -70,12 +69,12 @@ export default function Hero() {
                 <img
                   src={satellite.src}
                   alt="Satélite"
-                  className="absolute w-20 top-[0%] left-[0%] z-30"
+                  className="absolute w-12 sm:w-16 md:w-20 lg:w-24 top-[0%] left-[0%] z-30"
                 />
                 <img
                   src={satellites.src}
                   alt="Satélites"
-                  className="absolute w-20 top-[0%] right-[0%] z-30"
+                  className="absolute w-12 sm:w-16 md:w-20 lg:w-24 top-[0%] right-[0%] z-30"
                 />
               </div>
             </div>

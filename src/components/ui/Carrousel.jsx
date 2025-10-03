@@ -7,6 +7,7 @@ export default function CustomCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const intervalRef = useRef(null);
+  const touchStartX = useRef(0);
 
   const getImageStyle = (position) => {
     if (position === 0) {
@@ -44,11 +45,9 @@ export default function CustomCarousel() {
   };
 
   const startAutoRotation = () => {
-    // Clear any existing interval
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
     }
-    
     intervalRef.current = setInterval(() => {
       setCurrentIndex((p) => (p + 1) % slides.length);
     }, 6000);
@@ -71,18 +70,15 @@ export default function CustomCarousel() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
 
-  // Start auto-rotation on mount
   useEffect(() => {
     startAutoRotation();
     return () => stopAutoRotation();
   }, []);
 
-  // Reset auto-rotation timer when currentIndex changes (including manual navigation)
   useEffect(() => {
     startAutoRotation();
   }, [currentIndex]);
 
-  // Handle hover state changes
   useEffect(() => {
     if (isHovered) {
       stopAutoRotation();
@@ -95,12 +91,21 @@ export default function CustomCarousel() {
     <>
       <section className="w-full max-w-[100vw] overflow-x-hidden">
         <div className="relative w-full mx-auto my-0 h-[32rem] mb-2.5">
-          <div 
+          <div
             className="relative w-full h-full flex items-center justify-center overflow-hidden mb-1"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onTouchStart={(e) => (touchStartX.current = e.touches[0].clientX)}
+            onTouchEnd={(e) => {
+              const touchEndX = e.changedTouches[0].clientX;
+              if (touchStartX.current - touchEndX > 50) {
+                handleNextClick();
+              } else if (touchEndX - touchStartX.current > 50) {
+                handlePrevClick();
+              }
+            }}
           >
-            <div className="absolute inset-y-0 w-full flex items-center justify-between px-4 z-20">
+            <div className="absolute inset-y-0 w-full sm:flex hidden items-center justify-between px-4 z-20">
               <button
                 onClick={handlePrevClick}
                 className="w-14 h-14 flex items-center justify-center text-gray-900 hover:text-white transition-colors duration-200"
@@ -116,7 +121,6 @@ export default function CustomCarousel() {
                 <ChevronRight className="w-10 h-10" />
               </button>
             </div>
-            
             {slides.map((slide, index) => {
               const position = getPosition(index);
               const style = getImageStyle(position);
